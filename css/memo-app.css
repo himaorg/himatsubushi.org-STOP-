@@ -1,0 +1,24 @@
+body{
+    background-color: #a63f46;
+}
+
+#field{
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#add{
+    padding: 50px;
+    font-size: 30px;
+}
+
+.card{
+    width: 500px;
+    height: 180px;
+    background-color: #fafff0;
+    color: #4b5e6e;
+    font-size: 30px;
+    margin: 5px;
+    word-break:break-all;
+}
