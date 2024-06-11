@@ -1,17 +1,3 @@
-const release_note_button = document.getElementById("release-note-button");
-const main2 = document.getElementById("main2");
-const create_note_button = document.getElementById("create-note-button");
-
-// クリックしたらモーダルを開く
-release_note_button.addEventListener("click", () => {
-main2.style.display="block";
-});
-
-// クリックしたらモーダルを閉じる
-create_note_button.addEventListener("click", () => {
-main2.style.display="none";
-});
-
 // // ウィンドウの外をクリックして閉じる
 document.addEventListener("click", (e) => {
     console.log(e.target);

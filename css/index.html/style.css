@@ -167,9 +167,8 @@ border-radius: 30px;
 /*slider*/
 
 .slide-wrap{
-	max-width: 970px;
-	width: 100%;
-	margin: 0 auto;
+	width: 1115px;
+	height: auto;
 }
 
 .slick-prev {
@@ -188,7 +187,8 @@ border-radius: 30px;
     display: block;
     width: 41px;
     height: 78px;
-    background: url(../images/top/prev.png) no-repeat;
+	transform: rotate(180deg);
+    background: url(https://himatsubushi.org/images/common/指arrow.png) no-repeat;
     background-size: contain;
 }
 
@@ -208,7 +208,7 @@ border-radius: 30px;
     display: block;
     width: 41px;
     height: 78px;
-    background: url(../images/top/next.png) no-repeat right;
+    background: url(https://himatsubushi.org/images/common/指arrow.png) no-repeat right;
     background-size: contain;
 }
 
@@ -263,7 +263,8 @@ border-radius: 30px;
 		display: block;
 		width: 20px;
 		height: 39px;
-		background: url(../images/top/prev.png) no-repeat;
+		transform: rotate(180deg);
+		background: url(https://himatsubushi.org/images/common/指arrow.png) no-repeat;
 		background-size: contain;
 	}
 
@@ -281,7 +282,7 @@ border-radius: 30px;
 		display: block;
 		width: 20px;
 		height: 39px;
-		background: url(../images/top/next.png) no-repeat right;
+		background: url(https://himatsubushi.org/images/common/指arrow.png) no-repeat right;
 		background-size: contain;
 	}
 
@@ -381,7 +382,7 @@ nav ul li:last-child
 }
 nav ul li.navi01 a
 {
-	background: url(../images/common/navi01.png) no-repeat center;
+	/* background: url(https://yuzu-soft.com/images/common/navi01.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -389,11 +390,11 @@ nav ul li.navi01 a
 }
 nav ul li.navi01 a:hover
 {
-	background: url(../images/common/navi01.png) no-repeat center #FC0;
+	background: url(https://yuzu-soft.com/images/common/navi01.png) no-repeat center rgb(68, 80, 190);
 }
 nav ul li.navi02 a
 {
-	background: url(../images/common/navi02.png) no-repeat center;
+	background: url(https://yuzu-soft.com/images/common/navi02.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -401,11 +402,11 @@ nav ul li.navi02 a
 }
 nav ul li.navi02 a:hover
 {
-	background: url(../images/common/navi02.png) no-repeat center #FC0;
+	background: url(https://yuzu-soft.com/images/common/navi02.png) no-repeat center #FC0;
 }
 nav ul li.navi03 a
 {
-	background: url(../images/common/navi03.png) no-repeat center;
+	background: url(https://yuzu-soft.com/images/common/navi03.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -413,11 +414,11 @@ nav ul li.navi03 a
 }
 nav ul li.navi03 a:hover
 {
-	background: url(../images/common/navi03.png) no-repeat center #FC0;
+	background: url(https://yuzu-soft.com/images/common/navi03.png) no-repeat center #FC0;
 }
 nav ul li.navi04 a
 {
-	background: url(../images/common/navi04.png) no-repeat center;
+	background: url(https://yuzu-soft.com/images/common/navi04.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -425,11 +426,11 @@ nav ul li.navi04 a
 }
 nav ul li.navi04 a:hover
 {
-	background: url(../images/common/navi04.png) no-repeat center #FC0;
+	background: url(https://yuzu-soft.com/images/common/navi04.png) no-repeat center #FC0;
 }
 nav ul li.navi05 a
 {
-	background: url(../images/common/navi05.png) no-repeat center;
+	background: url(https://yuzu.soft.com/images/common/navi05.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -437,11 +438,11 @@ nav ul li.navi05 a
 }
 nav ul li.navi05 a:hover
 {
-	background: url(../images/common/navi05.png) no-repeat center #FC0;
+	background: url(https://yuzu-soft.com/images/common/navi05.png) no-repeat center #FC0;
 }
 nav ul li.navi06 a
 {
-	background: url(../images/common/navi06.png) no-repeat center;
+	background: url(https://yuzu-soft.com/images/common/navi06.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
@@ -449,8 +450,8 @@ nav ul li.navi06 a
 }
 nav ul li.navi06 a:hover
 {
-	background: url(../images/common/navi06.png) no-repeat center #FC0;
-}
+	background: url(https://yuzu-soft.com/images/common/navi06.png) no-repeat center #FC0;
+} */
 
 /*下層ナビ*/
 
@@ -622,44 +623,44 @@ h2
 h2.midashi01
 {
 	background-image:
-	url("../images/common/midashi01.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi01.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h2.midashi02
 {
 	background-image:
-	url("../images/common/midashi02.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi02.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h2.midashi03
 {
 	background-image:
-	url("../images/common/midashi03.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi03.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h2.midashi04
 {
 	background-image:
-	url("../images/common/midashi04.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi04.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h2.midashi05
 {
 	background-image:
-	url("../images/common/midashi05.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi05.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h2.midashi06
 {
 	background-image:
-	url("../images/common/midashi06.png") ,
-	url("../images/common/midashi_right.png") ,
-	url("../images/common/midashi_bg.png");
+	url("https://yuzu-soft.com/images/common/midashi06.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/common/midashi_bg.png");
 }
 h3
 {
@@ -674,37 +675,37 @@ h3
 h3.midashi01
 {
 	background-image:
-	url("../images/top/midashi01.png") ,
-	url("../images/top/midashi_right.png") ,
-	url("../images/top/midashi_bg.png");
+	url("https://yuzu-soft.com/images/top/midashi01.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_bg.png");
 }
 h3.midashi02
 {
 	background-image:
-	url("../images/top/midashi02.png") ,
-	url("../images/top/midashi_right.png") ,
-	url("../images/top/midashi_bg.png");
+	url("https://yuzu-soft.com/images/top/midashi02.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_bg.png");
 }
 h3.midashi03
 {
 	background-image:
-	url("../images/top/midashi03.png") ,
-	url("../images/top/midashi_right.png") ,
-	url("../images/top/midashi_bg.png");
+	url("https://yuzu-soft.com/images/top/midashi03.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_bg.png");
 }
 h3.midashi04
 {
 	background-image:
-	url("../images/top/midashi04.png") ,
-	url("../images/top/midashi_right.png") ,
-	url("../images/top/midashi_bg.png");
+	url("https://yuzu-soft.com/images/top/midashi04.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
+	url("https://yuzu-soft/images/top/midashi_bg.png");
 }
 h3.midashi05
 {
 	background-image:
-	url("../images/top/midashi05.png") ,
-	url("../images/top/midashi_right.png") ,
-	url("../images/top/midashi_bg.png");
+	url("https://yuzu-soft.com/images/top/midashi05.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
+	url("https://yuzu-soft.com/images/top/midashi_bg.png");
 }
 h4
 {
@@ -979,7 +980,10 @@ h2
 /* ボタン */
 #bgm-button{
     display: flex;
-	margin-left: 35%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: #282828;
     /* 文字の色 */
     color: #cccccc;

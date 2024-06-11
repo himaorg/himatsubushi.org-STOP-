@@ -1,6 +1,6 @@
 const images = [
-    "/10.images/神経衰弱/image1.jpg", "/10.images/神経衰弱/image2.jpg", "/10.images/神経衰弱/image3.jpg", "/10.images/神経衰弱/image4.jpg",
-    "/10.images/神経衰弱/image1.jpg", "/10.images/神経衰弱/image2.jpg", "/10.images/神経衰弱/image3.jpg", "/10.images/神経衰弱/image4.jpg"
+    "./images/神経衰弱/image1.jpg", "./images/神経衰弱/image2.jpg", "./images/神経衰弱/image3.jpg", "./images/神経衰弱/image4.jpg",
+    "./images/神経衰弱/image1.jpg", "./images/神経衰弱/image2.jpg", "./images/神経衰弱/image3.jpg", "./images/神経衰弱/image4.jpg"
 ];
 
 let flippedCards = [];

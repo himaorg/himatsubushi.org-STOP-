@@ -21,15 +21,15 @@
     <meta name="twitter:site" content="@work_himaorg">
     <meta name="twitter:image" content="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストA.png">
 
-    <link href="https://himatsubushi.org/css/index.html/reset.css" rel="stylesheet" type="text/css">
-    <link href="https://himatsubushi.org/css/index.html/style.css" rel="stylesheet" type="text/css">
-    <link href="https://himatsubushi.org/css/index.html/meanmenu.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.html/reset.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.html/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.html/meanmenu.css" rel="stylesheet" type="text/css">
 
     <!-- flexslider -->
 
-    <link rel="stylesheet" href="https://himatsubushi.org/css/index.html/slider.css">
+    <link rel="stylesheet" href="./css/index.html/slider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://himatsubushi.org/js/index.html/slider.js"></script>
+    <script src="./js/index.html/slider.js"></script>
 
     <script type="text/javascript" charset="utf-8">
         $(window).load(function () {
@@ -44,12 +44,12 @@
 
     <!-- slick -->
 
-    <link href="https://himatsubushi.org/css/index.html/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="https://himatsubushi.org/css/index.html/slick.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.html/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/index.html/slick.css" rel="stylesheet" type="text/css">
 
     <!-- return top -->
 
-    <script src="https://himatsubushi.org/js/index.html/smoothscloll.js" type="text/javascript"></script>
+    <script src="./js/index.html/smoothscloll.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function () {
             var topBtn = $('#page-top');
@@ -74,7 +74,7 @@
 
     <!-- meanmenu -->
 
-    <script src="https://himatsubushi.org/js/index.html/meanmenu.js"></script>
+    <script src="./js/index.html/meanmenu.js"></script>
     <script>
         $(document).ready(function () {
             $('nav').meanmenu({
@@ -88,49 +88,8 @@
 <body>
 
 
-    <button id="bgm-button" onclick="openPopup()">webサイト全体のBGMを流す</button>
-
-    <script>
-        function openPopup() {
-            var popupWidth = 500;
-            var popupHeight = 400;
-            var left = (screen.width / 2) - (popupWidth / 2);
-            var top = (screen.height / 2) - (popupHeight / 2);
-
-            var popup = window.open('', 'popup', 'width=' + popupWidth + ',height=' + popupHeight + ',top=' + top + ',left=' + left);
-
-            
-            popup.document.write(`
-                <html>
-                <head>
-                    <title>SoundCloud Player</title>
-                </head>
-                <body>
-                    <iframe id="soundcloud-player" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1829984511&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                    </iframe>
-                    <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
-                        font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                    <a href="https://soundcloud.com/himaorg" title="ひまおーぐ(himatsubushi.org)" target="_blank" style="color: #cccccc; text-decoration: none;">
-                    ひまおーぐ(himatsubushi.org)
-                    </a> · 
-                    <a href="https://soundcloud.com/himaorg/sets/this-is-autoplay-on-index-html" title="this is autoplay on index.html" target="_blank" 
-                    style="color: #cccccc; text-decoration: none;">
-                    this is autoplay on index.html
-                    </a>
-                    </div>
-                </body>
-                </html>
-            `);
-
-            popup.document.close();
-            popup.focus(); // ポップアップウィンドウを前面に表示させる
-        }
-    </script>
-
-
     <!-- cautionのcookie -->
-    <script src="https://himatsubushi.org/js/index.html/cookie.js"></script>
+    <script src="./js/index.html/cookie.js"></script>
     <script type="text/javascript">
         $(function () {
             if ($.cookie("caution") == 'yes') {
@@ -161,7 +120,7 @@
 
         <div id="caution-bg">
 
-            <p>このWebサイトは18歳未満の方には有害な情報を含んでいたりいなかったりします。
+            <p>このWebサイトは18歳未満の方には有害な情報を含んでいません。
             <p>
             <p>あなたは18歳以上ですか？</p>
 
@@ -183,7 +142,52 @@
 
         <div id="header">
 
-            <div id="logo"><a href="https://himatsubushi.org/index.html"><img style="width: 80px;" src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストA.png"></a></div>
+            <div id="logo"><a href="https://himatsubushi.org/index.html"><img style="width: 80px;" src="./images/Pixivに投稿したイラスト/イラストA.png"></a></div>
+
+
+            <!-- BGMを演奏する↓ -->
+            <button id="bgm-button" onclick="openPopup()">webサイト全体のBGMを流す</button>
+
+    
+            <script>
+                function openPopup() {
+                    var popupWidth = 500;
+                    var popupHeight = 400;
+                    var left = (screen.width / 2) - (popupWidth / 2);
+                    var top = (screen.height / 2) - (popupHeight / 2);
+        
+                    var popup = window.open('', 'popup', 'width=' + popupWidth + ',height=' + popupHeight + ',top=' + top + ',left=' + left);
+        
+                    
+                    popup.document.write(`
+                        <html>
+                        <head>
+                            <title>SoundCloud Player</title>
+                        </head>
+                        <body>
+                            <iframe id="soundcloud-player" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1829984511&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                            </iframe>
+                            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
+                                font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+                            <a href="https://soundcloud.com/himaorg" title="ひまおーぐ(himatsubushi.org)" target="_blank" style="color: #cccccc; text-decoration: none;">
+                            ひまおーぐ(himatsubushi.org)
+                            </a> · 
+                            <a href="https://soundcloud.com/himaorg/sets/this-is-autoplay-on-index-html" title="this is autoplay on index.html" target="_blank" 
+                            style="color: #cccccc; text-decoration: none;">
+                            this is autoplay on index.html
+                            </a>
+                            </div>
+                        </body>
+                        </html>
+                    `);
+        
+                    popup.document.close();
+                    popup.focus(); // ポップアップウィンドウを前面に表示させる
+                }
+            </script>
+            <!-- BGMを演奏する↑ -->
+                    
 
             <!-- social link -->
 
@@ -192,7 +196,7 @@
                     <li>
                         <a href="https://twitter.com/share?count=horizontal&original_referer=https://himatsubushi.org&text=@work_himaorg&url=https://himatsubushi.org&text=(何でも書いていいですよ)"
                             onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-                            <img style="width: 50px;" src="https://himatsubushi.org/images/common/twitter.png" alt="twitter">
+                            <img style="width: 50px;" src="./images/common/twitter.png" alt="twitter">
                             ←お問い合わせはXのポストから
                         </a>
                     </li>
@@ -214,11 +218,11 @@
 
             <ul>
 
-                <li class="navi01" style="background-image: url(https://himatsubushi.org/images/textures/43.png);"><a href="#"></a></li>
-                <li class="navi02" style="background-image: url(https://himatsubushi.org/images/textures/11.png);"><a href="#"></a></li>
-                <li class="navi03" style="background-image: url(https://himatsubushi.org/images/textures/16.png);"><a href="#"></a></li>
-                <li class="navi05" style="background-image: url(https://himatsubushi.org/images/background/background\(2\).jpg);"><a href="#"></a></li>
-                <li class="navi06" style="background-image: url(https://himatsubushi.org/images/background/background.jpg);"><a href="#"></a></li>
+                <li class="navi01" style="background-image: url(./images/textures/43.png);"><a href="#"></a></li>
+                <li class="navi02" style="background-image: url(./images/textures/11.png);"><a href="#"></a></li>
+                <li class="navi03" style="background-image: url(./images/textures/16.png);"><a href="#"></a></li>
+                <li class="navi05" style="background-image: url(./images/common/youtube.png);"><a href="#"></a></li>
+                <li class="navi06" style="background-image: url(./images/background/background.jpg);"><a href="#"></a></li>
 
             </ul>
 
@@ -243,9 +247,24 @@
     </div>
 
     <!-- /main slider -->
+     <!-- 右上の画像 -->
+    <img src="" alt="">
 
 
 
+     <!-- /右上の画像 -->
+    <!-- right slider -->
+
+
+
+
+    <!-- /right slider -->
+     <!-- under slider -->
+
+
+
+
+     <!-- /under slider -->
     <!-- contents -->
 
     
@@ -256,8 +275,8 @@
 
                 <li>
                     <div class="topic-box" style="width: 450px;">
-                        <a href="https://himatsubushi.org/06.ブログ/BLOG.HOME.html">
-                            <div><img src="https://himatsubushi.org/images/blog.jpg" alt=""></div>
+                        <a href="./06.ブログ/BLOG.HOME.html">
+                            <div><img src="./images/blog.jpg" alt=""></div>
                             <div class="text">ブログ</div>
                         </a>
                     </div>
@@ -266,8 +285,8 @@
 
                 <li>
                     <div class="topic-box" style="width: 200px;">
-                        <a href="https://himatsubushi.org/html/memo-app.html">
-                            <div><img src="https://himatsubushi.org/images/memo-app.jpg" alt=""></div>
+                        <a href="./html/memo-app.html">
+                            <div><img src="./images/memo-app.jpg" alt=""></div>
                             <div class="text">メモアプリ</div>
                         </a>
                     </div>
@@ -276,8 +295,8 @@
 
                 <li>
                     <div class="topic-box" style="width: 200px;">
-                        <a href="https://himatsubushi.org/html/shinkeisuijaku.html">
-                            <div><img src="https://himatsubushi.org/images/shinkeisiujaku.jpg" alt=""></div>
+                        <a href="./html/shinkeisuijaku.html">
+                            <div><img src="./images/shinkeisiujaku.jpg" alt=""></div>
                             <div class="text">神経衰弱</div>
                         </a>
                     </div>
@@ -286,8 +305,8 @@
 
                 <li>
                     <div class="topic-box" style="width: 200px;">
-                        <a href="https://himatsubushi.org/html/three.html">
-                            <div><img src="https://himatsubushi.org/images/three.jpg" alt=""></div>
+                        <a href="./html/three.html">
+                            <div><img src="./images/three.jpg" alt=""></div>
                             <div class="text">3D描画</div>
                         </a>
                     </div>
@@ -296,8 +315,8 @@
 
                 <li>
                     <div class="topic-box" style="width: 200px;">
-                        <a href="https://himatsubushi.org/html/otaku-contents.html">
-                            <div><img src="https://himatsubushi.org/images/otaku-contents.jpg" alt=""></div>
+                        <a href="./html/otaku-contents.html">
+                            <div><img src="./images/otaku-contents.jpg" alt=""></div>
                             <div class="text">オタクコンテンツ</div>
                         </a>
                     </div>
@@ -316,181 +335,187 @@
                         <div class="update-frame">
 
                             <dl>
+                                <dt>2024.6.3</dt>
+                                <dd><a href="./releasenote-createnote.html#2.04">ver.2.04にアップデートしました。</a></dd>
+                            </dl>
+
+
+                            <dl>
                                 <dt>2024.5.30</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#2.03">ver.2.03にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#2.03">ver.2.03にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.5.26</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#2.02">ver.2.02にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#2.02">ver.2.02にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.5.26</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#2.01">ver.2.01にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#2.01">ver.2.01にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.5.3</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#2.00">ver.2.00にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#2.00">ver.2.00にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.4.19</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.27">ver.1.27にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.27">ver.1.27にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.4.18</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.26">ver.1.26にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.26">ver.1.26にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.3.29</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.25">ver.1.25にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.25">ver.1.25にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2024.3.26</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.24">ver.1.24にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.24">ver.1.24にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.17</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.23">ver.1.23にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.23">ver.1.23にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.15</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.22">ver.1.22にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.22">ver.1.22にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.14</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.21">ver.1.21にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.21">ver.1.21にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.12</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.20">ver.1.20にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.20">ver.1.20にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.6</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.19">ver.1.19にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.19">ver.1.19にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.5</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.18">ver.1.18にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.18">ver.1.18にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.4</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.17">ver.1.17にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.17">ver.1.17にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.3.3</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.16">ver.1.16にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.16">ver.1.16にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.2.27</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.15">ver.1.15にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.15">ver.1.15にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.2.25</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.14">ver.1.14にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.14">ver.1.14にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.2.24</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.13">ver.1.13にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.13">ver.1.13にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.2.19</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.12">ver.1.12にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.12">ver.1.12にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.2.16</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.11">ver.1.11にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.11">ver.1.11にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.1.30</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.10">ver.1.10にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.10">ver.1.10にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.1.24</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.9">ver.1.9にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.9">ver.1.9にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.1.14</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.8">ver.1.8にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.8">ver.1.8にアップデートしました。</a></dd>
                             </dl>
 
 
                             <dl>
                                 <dt>2023.1.2</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.7">ver.1.7にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.7">ver.1.7にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.1.1</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.6">ver.1.6にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.6">ver.1.6にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.12.13</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.5">ver.1.5にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.5">ver.1.5にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.11.25</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.4">ver.1.4にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.4">ver.1.4にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.11.15</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.3">ver.1.3にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.3">ver.1.3にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.11.10</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.2">ver.1.2にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.2">ver.1.2にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.11.6</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.1">ver.1.1にアップデートしました。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.1">ver.1.1にアップデートしました。</a></dd>
                             </dl>
 
                             <dl>
                                 <dt>2023.11.5</dt>
-                                <dd><a href="https://himatsubushi.org/releasenote-createnote.html#1.0">今からサイトの運用を始めます。</a></dd>
+                                <dd><a href="./releasenote-createnote.html#1.0">今からサイトの運用を始めます。</a></dd>
                             </dl>
 
                         </div>
@@ -526,23 +551,23 @@
 
 
                         <div style="text-align:center"><p class=""><a href="https://soundcloud.com/himaorg" target="_blank"><img
-                            src="" alt="SoundCloud"></a></p></div>
+                            src="./images/バナー/soundcloud.jpg" alt="SoundCloud"></a></p></div>
                         
                         
                         <div style="text-align:center"><p class=""><a href="https://youtube.com/@work.himaorg" target="_blank"><img
-                            src="" alt="YouTube"></a></p></div>
+                            src="./images/バナー/youtube.jpg" alt="YouTube"></a></p></div>
                             
                             
                         <div style="text-align:center"><p class=""><a href="https://discord.gg/QWgNeHzxxt" target="_blank"><img
-                                src="" alt="Discord"></a></p></div>
+                                src="./images/バナー/discode.jpg" alt="Discord"></a></p></div>
                                 
                                 
                         <div style="text-align:center"><p class=""><a href="https://himaorg.hatenablog.com" target="_blank"><img
-                                            src="" alt="はてなブログ"></a></p></div>
+                                            src="./images/バナー/はてな.jpg" alt="はてなブログ"></a></p></div>
 
                                             
                         <div style="text-align:center"><p class=""><a href="https://www.pixiv.net/users/104630745" target="_blank"><img
-                                            src="" alt="Pixiv"></a></p></div>
+                                            src="./images/バナー/pixiv.jpg" alt="Pixiv"></a></p></div>
                                             
                 </div>
 
@@ -572,7 +597,7 @@
 
     <!-- /footer -->
 
-    <script src="https://himatsubushi.org/js/index.html/slick.js"></script>
+    <script src="./js/index.html/slick.js"></script>
     <script type="text/javascript">
         $(function () {
             $(".slider").slick({
