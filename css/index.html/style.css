@@ -1,11 +1,6 @@
-@charset "UTF-8";
-
-/*汎用設定*/
-
-
 body
 {
-	color: #333;
+	color: #6C3;
 	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
@@ -383,7 +378,7 @@ border-radius: 30px;
 
 nav
 {
-	background: #ffbb00;
+	background: #d92446;
 }
 nav ul
 {
@@ -405,75 +400,63 @@ nav ul li:last-child
 }
 nav ul li.navi01 a
 {
-	background: url(https://yuzu-soft.com/images/common/navi01.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi01 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi01.png) no-repeat center rgb(68, 80, 190);
+	background-color: #f6de8d;
 }
 nav ul li.navi02 a
 {
-	background: url(https://yuzu-soft.com/images/common/navi02.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi02 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi02.png) no-repeat center #FC0;
+	background: #f6de8d;
 }
 nav ul li.navi03 a
 {
-	background: url(https://yuzu-soft.com/images/common/navi03.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi03 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi03.png) no-repeat center #FC0;
+	background: #f6de8d;
 }
 nav ul li.navi04 a
 {
-	background: url(https://yuzu-soft.com/images/common/navi04.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi04 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi04.png) no-repeat center #FC0;
+	background: #f6de8d;
 }
 nav ul li.navi05 a
 {
-	background: url(https://yuzu.soft.com/images/common/navi05.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi05 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi05.png) no-repeat center #FC0;
+	background: #f6de8d;
 }
 nav ul li.navi06 a
 {
-	background: url(https://yuzu-soft.com/images/common/navi06.png) no-repeat center;
 	display: block;
 	overflow: hidden;
 	padding: 1em 0;
-	text-indent: -9999px;
 }
 nav ul li.navi06 a:hover
 {
-	background: url(https://yuzu-soft.com/images/common/navi06.png) no-repeat center #FC0;
+	background: #f6de8d;
 }
 
 /*下層ナビ*/
@@ -630,7 +613,6 @@ nav ul li.navi06 a:hover
 	margin: 0px 0px 0px 7em;
 	color: #930;
 }
-
 /*見出し*/
 
 h2
@@ -643,48 +625,6 @@ h2
 	width: 100%;
 	margin-bottom: 20px;
 }
-h2.midashi01
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi01.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
-h2.midashi02
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi02.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
-h2.midashi03
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi03.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
-h2.midashi04
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi04.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
-h2.midashi05
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi05.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
-h2.midashi06
-{
-	background-image:
-	url("https://yuzu-soft.com/images/common/midashi06.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/common/midashi_bg.png");
-}
 h3
 {
 	background-size: 250px 25px,30px 25px,10px 25px;
@@ -695,52 +635,11 @@ h3
 	width: 100%;
 	margin-bottom: 30px;
 }
-h3.midashi01
-{
-	background-image:
-	url("https://yuzu-soft.com/images/top/midashi01.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_bg.png");
-}
-h3.midashi02
-{
-	background-image:
-	url("https://yuzu-soft.com/images/top/midashi02.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_bg.png");
-}
-h3.midashi03
-{
-	background-image:
-	url("https://yuzu-soft.com/images/top/midashi03.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_bg.png");
-}
-h3.midashi04
-{
-	background-image:
-	url("https://yuzu-soft.com/images/top/midashi04.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
-	url("https://yuzu-soft/images/top/midashi_bg.png");
-}
-h3.midashi05
-{
-	background-image:
-	url("https://yuzu-soft.com/images/top/midashi05.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_right.png") ,
-	url("https://yuzu-soft.com/images/top/midashi_bg.png");
-}
+
 h4
 {
 	font-size: 1.2em;
 	margin-bottom: 0.7em;
-}
-
-/*採用情報*/
-
-.recruit-dummy
-{
-	padding: 5em 0;
 }
 
 /*フッター*/
@@ -758,19 +657,6 @@ h4
 	text-align: center;
 	padding: 1em 0;
 }
-#page-top
-{
-	position: fixed;
-	bottom: 20px;
-	right: 20px;
-	z-index: 100;
-	background: url(/images/textures/133.png) no-repeat;
-	width: 40px;
-	height: 40px;
-	text-indent: -9999px;
-	cursor: pointer;
-}
-
 
 /*年齢認証*/
 
@@ -819,212 +705,4 @@ h4
 #caution-bg .btn-wrap .btn-no
 {
 	float: right;
-}
-
-/*MOBILE--------------------------------------------------------------------------------------*/
-
-@media only screen and (max-width: 767px) {
-
-/*エリア指定*/
-
-#header-base
-{
-	height: 60px;
-}
-#header
-{
-	width: 100%;
-	background: url(/images/textures/11.png) no-repeat center center;
-	height: 60px;
-}
-#header #logo
-{
-	left: 5px;
-	top: 5px;
-}
-#header #logo img
-{
-	height: 50px;
-}
-#header #social
-{
-	right: 5px;
-	top: 15px;
-}
-
-
-/*ナビゲーション*/
-
-nav ul
-{
-	width: 100%;
-}
-
-/*下層ナビ*/
-
-#s-navi
-{
-	margin-bottom: 10px;
-}
-#s-navi ul
-{
-	width: 100%;
-	display: block;
-	table-layout: fixed;
-	list-style: none;
-}
-#s-navi ul li
-{
-	display: block;
-	text-align: center;
-	border-left: none;
-	border-top: 1px solid #ccc;
-}
-#s-navi ul li:last-child
-{
-	border-right: none;
-	border-bottom: 1px solid #ccc;
-}
-
-
-/*トップバナー*/
-
-#top-banner-l ul li
-{
-	margin-bottom: 5px;
-}
-#top-banner-s ul
-{
-	margin-bottom: 5px;
-}
-#top-banner-s ul li
-{
-	margin-bottom: 5px;
-}
-
-/*topics*/
-
-
-.topic-wrap li{
-	flex-basis: 100%;
-	margin-bottom: 20px;
-	padding: 0 10px;
-	position: relative;
-	box-sizing: border-box;
-}
-
-
-/*アイテムフレーム*/
-
-.item-frame
-{
-	padding: 10px;
-	margin-bottom: 10px;
-	overflow: hidden;
-}
-.item-frame .pic
-{
-	float: none;
-	width: 50%;
-	margin: 0px auto;
-}
-.item-frame .name
-{
-	font-weight: bold;
-	color: #F60;
-	font-size: 1.2em;
-	margin-bottom: 0;
-	margin-top: 0.5em;
-}
-.item-frame .name2
-{
-	border-bottom: 2px dotted #CCCCCC;
-	margin-bottom: 0.5em;
-	padding-bottom: 0.5em;
-	color: #39C;
-	font-size: 1em;
-}
-
-/*見出し*/
-
-h2
-{
-	margin-bottom: 10px;
-}
-
-/*フッター*/
-
-.footer
-{
-	width: 100%;
-	line-height: 1.5em;
-	font-size: 10px;
-}
-#page-top
-{
-	bottom: 5px;
-	right: 5px;
-}
-
-/*年齢認証*/
-
-#caution-bg
-{
-	width: 90%;
-	padding: 20px;
-}
-
-/*トップページフレーム*/
-
-.top-frame-wrap
-{
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 -15px;
-}
-.top-frame-wrap .top-frame-cell
-{
-	flex-basis: 100%;
-	padding: 0 15px;
-	margin-bottom: 30px;
-	box-sizing: border-box;
-}
-.top-frame-wrap .top-frame-cell2
-{
-	flex-basis: 100%;
-	padding: 0 15px;
-	margin-bottom: 30px;
-	box-sizing: border-box;
-}
-
-
-}
-
-/* ボタン */
-#bgm-button{
-    display: flex;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #282828;
-    /* 文字の色 */
-    color: #cccccc;
-    border: none;
-    /* ボタンを大きくする */
-    padding: 20px 40px;
-    /* ボーダーを下に付ける */
-    border-bottom: 7px solid #000;
-    box-shadow: 0px 3px 4px rgb(0, 0, 0);
-    cursor: pointer;
-    font-size: 23px;
-    /* ホバーの処理を0.2sかけて行う */
-    transition: all 0.2s;
-}    
-
-#bgm-button:hover{
-    /* 上に5px空ける */
-    margin-top: 5px;
-    /* ボーダーの太さを再設定することで、ボタンっぽくなる */
-    border-bottom: 1px solid #000;
 }
