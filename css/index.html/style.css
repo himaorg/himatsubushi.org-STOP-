@@ -1,6 +1,6 @@
 body
 {
-	color: #6C3;
+	color: #66cc33;
 	font-family: 'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo,sans-serif;
 	font-size: 14px;
 	line-height: 1.6em;
@@ -14,17 +14,17 @@ body
 a:link
 {
 	text-decoration: none;
-	color: #6C3;
+	color: #66cc33;
 }
 a:visited
 {
 	text-decoration: none;
-	color: #6C3;
+	color: #66cc33;
 }
 a:hover
 {
 	text-decoration: underline;
-	color: #F60;
+	color: #ff6600;
 }
 img
 {
