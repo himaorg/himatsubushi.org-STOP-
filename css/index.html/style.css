@@ -577,6 +577,9 @@ nav ul li.navi06 a:hover
 	box-sizing: border-box;
 	overflow: hidden;
 }
+.top-frame-cell{
+	display: flex;
+}
 .top-frame-wrap .top-frame-cell2
 {
 	flex-basis: 100%;

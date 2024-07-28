@@ -1,80 +1,11 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Shippori+Mincho&display=swap');    
-    </style>
 </head>
 <body>
-    <h1>プロフィール</h1>
-    <p id="name">名前：ひまおーぐ</p>
-    <p id="location">住所：岡山県岡山市</p>
-    <p id="portfolio">ポートフォリオ：このwebサイト</p>
-    <p>出来ること：webサイト制作</p>
-
-    <h1 id="form">お仕事受付フォーム</h1>
-        <form action="/jobs-offer.php" method="post">
-            <label for="name">名前：</label>
-            <input type="text" id="name"  name="name" required>
-            <br>
-            <label for="email">メールアドレス：</label>
-            <input type="text" id="email" name="email" required>
-            <br>
-            <label for="comment">コメント：</label>
-            <textarea id="comment" name="comment" rows="5" cols="40" required></textarea>            <br>
-            <button type="submit">送信</button>
-        </form>
-
-    <style>
-        body{
-            font-family: "Shippori Mincho", serif;
-            font-optical-sizing: auto;
-        }
-        #comment {
-            width: 100%; /* 幅を親要素に合わせる */
-            height: 300px; /* 高さを150pxに設定 */
-            box-sizing: border-box; /* パディングとボーダーを含む幅と高さの計算 */
-            color: #cccccc;
-            background-color: #1f1f1f;
-            font-size: 18px;
-            font-family: "Shippori Mincho", serif;
-            font-optical-sizing: auto;
-        }    
-    </style>
-    <script>
-        document.getElementById('comment').addEventListener('keydown', function(e) {
-            if (e.key === 'Tab') {
-                e.preventDefault();
-                const start = this.selectionStart;
-                const end = this.selectionEnd;
-
-                // set textarea value to: text before caret + tab + text after caret
-                this.value = this.value.substring(0, start) + "\t" + this.value.substring(end);
-
-                // put caret at right position again
-                this.selectionStart = this.selectionEnd = start + 1;
-            }
-        });
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script>
         // objectの作り方
         const ヴァンパイア = {
@@ -132,5 +63,6 @@
         console.log(ユピネルの味方);
         console.log(ヘルカネスの味方);
     </script>
+
 </body>
 </html>
