@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist</title>
+</head>
+<body>
+    <!-- ▼ToDoList▼ -->
+        <!-- ▼▼ContentSerch▼▼ -->
+                <!-- ▼▼▼TitleSerchButton▼▼▼ -->
+                <button class="title-serch-button">TITLE</button>
+                <!-- ▲▲▲TitleSerchButton▲▲▲ -->
+                <!-- ▼▼▼CategorySerchButton▼▼▼ -->
+                <button class="category-serch-button">CATEGORY</button>
+                <!-- ▲▲▲CategorySerchButton▲▲▲ -->
+                <!-- ▼▼▼TagSerch▼▼▼ -->
+                <button class="tag-serch-button">TAG</button>
+                <!-- ▲▲▲Tagserch▲▲▲ -->
+                <!-- ▼▼▼ContentSerch▼▼▼ -->
+                <button class="content-serch-button">CONTENT</button>
+                <!-- ▲▲▲ContentSerch▲▲▲ -->
+                <!-- ▼▼▼Input▼▼▼ -->
+                <input class="serch-input" type="text">                
+                <!-- ▲▲▲Input▲▲▲ -->
+        <!-- ▲▲ContentSerch▲▲ -->
+        <!-- ▼▼About▼▼ -->
+        <div class="main">
+            <!-- ▼▼▼title▼▼▼ -->
+            <div class="title-wrap">
+                <textarea class="title-node"></textarea>
+                    
+            </div>
+            <!-- ▲▲▲title▲▲▲ -->
+            <!-- ▼▼▼PostAt▼▼▼ -->
+            <div class="post-at-wrap">
+                <lavel for="post-at-node">投稿日　：</lavel>
+                <input class="post-at-node">
+            </div>
+            <!-- ▲▲▲PostAt▲▲▲ -->
+            <!-- ▼▼▼Category▼▼▼ -->
+            <div class="category-wrap">
+                <lavel for="category-node">カテゴリ：</lavel>
+                <input class="category-node">
+                <input class="category-node">
+                <input class="cotegory-node">
+            </div>
+            <!-- ▲▲▲Category▲▲▲ -->
+            <!-- ▼▼▼tag▼▼▼ -->
+            <div class="tag-wrap">
+                <lavel for="tag-node">タグ　　：</lavel>
+                <input class="tag-node">
+                <input class="tag-node">
+                <input class="tag-node">
+            </div>
+            <!-- ▲▲▲tag▲▲▲ -->
+        </div>
+            <style>
+                .main:hover{
+                    background-color:#F10;
+                }
+            </style>
+            <script>
+                // DOMContentLoadedを使って、DOMに、localStorageに保存されているデータを入力する
+                    // queryselectorで要素を取得
+                    const titleNode = document.querySelector("title-node");
+                    const postAtNode = document.querySelector("post-at-node");
+                    document.querySelectorAll("category-node");
+                    document.querySelectorAll("tag-node");
+
+                    // Web Storage APIを使って、ブラウザに保存されたデータを呼び出す
+                    document.addEventListener("DOMContentLoaded",function(){
+                        // もし、ローカルストレージにtitleというkeyが存在するなら、
+                        if(localStorage.getItem("title"){
+                            // title-nodeに、ローカルストレージに保存されている"titleNode"を表示する
+                            titleNode.value=localStorage.getItem("");
+                        }
+                    }
+                )
+                        
+
+
+
+
+
+
+                // DOMが変化した時、それを、localStorageに保存する
+
+
+            </script>
+        <!-- ▲▲▲About▲▲▲ -->        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!-- todolist -->
+</body>
+</html>
