@@ -43,7 +43,7 @@
                 <lavel for="category-node">カテゴリ：</lavel>
                 <input class="category-node">
                 <input class="category-node">
-                <input class="cotegory-node">
+                <input class="category-node">
             </div>
             <!-- ▲▲▲Category▲▲▲ -->
             <!-- ▼▼▼tag▼▼▼ -->
@@ -60,34 +60,6 @@
                     background-color:#F10;
                 }
             </style>
-            <script>
-                // DOMContentLoadedを使って、DOMに、localStorageに保存されているデータを入力する
-                    // queryselectorで要素を取得
-                    const titleNode = document.querySelector("title-node");
-                    const postAtNode = document.querySelector("post-at-node");
-                    document.querySelectorAll("category-node");
-                    document.querySelectorAll("tag-node");
-
-                    // Web Storage APIを使って、ブラウザに保存されたデータを呼び出す
-                    document.addEventListener("DOMContentLoaded",function(){
-                        // もし、ローカルストレージにtitleというkeyが存在するなら、
-                        if(localStorage.getItem("title"){
-                            // title-nodeに、ローカルストレージに保存されている"titleNode"を表示する
-                            titleNode.value=localStorage.getItem("");
-                        }
-                    }
-                )
-                        
-
-
-
-
-
-
-                // DOMが変化した時、それを、localStorageに保存する
-
-
-            </script>
         <!-- ▲▲▲About▲▲▲ -->        
         
         
@@ -98,7 +70,7 @@
         
         
         
-        
-        <!-- todolist -->
+    <script src="../js/todolist.js"></script>    
+    <!-- todolist -->
 </body>
 </html>
