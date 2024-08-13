@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>todolist</title>
+    <link rel="stylesheet" href="../css/todolist.css">
 </head>
 <body>
-    <!-- ▼ToDoList▼ -->
+    <div id="ToDoList">
         <!-- ▼▼ContentSerch▼▼ -->
                 <!-- ▼▼▼TitleSerchButton▼▼▼ -->
                 <button class="title-serch-button">TITLE</button>
@@ -24,7 +25,12 @@
                 <input class="serch-input" type="text">                
                 <!-- ▲▲▲Input▲▲▲ -->
         <!-- ▲▲ContentSerch▲▲ -->
-        <!-- ▼▼About▼▼ -->
+
+
+
+
+
+        <!-- ▼▼ひな型▼▼ -->
         <div class="main">
             <!-- ▼▼▼title▼▼▼ -->
             <div class="title-wrap">
@@ -34,13 +40,13 @@
             <!-- ▲▲▲title▲▲▲ -->
             <!-- ▼▼▼PostAt▼▼▼ -->
             <div class="post-at-wrap">
-                <label for="post-at-node">投稿日　：</lavel>
+                <label for="post-at-node">投稿日　：</label>
                 <input class="post-at-node">
             </div>
             <!-- ▲▲▲PostAt▲▲▲ -->
             <!-- ▼▼▼Category▼▼▼ -->
             <div class="category-wrap">
-                <label for="category-node">カテゴリ：</lavel>
+                <label for="category-node">カテゴリ：</label>
                 <input class="category-node">
                 <input class="category-node">
                 <input class="category-node">
@@ -48,29 +54,27 @@
             <!-- ▲▲▲Category▲▲▲ -->
             <!-- ▼▼▼tag▼▼▼ -->
             <div class="tag-wrap">
-                <label for="tag-node">タグ　　：</lavel>
+                <label for="tag-node">タグ　　：</label>
                 <input class="tag-node">
                 <input class="tag-node">
                 <input class="tag-node">
             </div>
             <!-- ▲▲▲tag▲▲▲ -->
         </div>
-            <style>
-                .main:hover{
-                    background-color:#F10;
-                }
-            </style>
-        <!-- ▲▲▲About▲▲▲ -->        
+        <!-- ▲▲▲ひな型▲▲▲ -->        
+
+
         
-        
-        
-        
-        
+        <!-- 削除ボタン -->
+         <button id="delete">削除</button>
+
+         <!-- 追加ボタン -->
+          <button id="add">追加</button>
+    </div>        
         
         
         
         
     <script src="../js/todolist.js"></script>    
-    <!-- todolist -->
 </body>
 </html>
