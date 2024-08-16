@@ -4,10 +4,10 @@
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="5" value="機能の追加&lt;br&gt;・投稿日を自動で入力する&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                <mxCell id="5" value="機能の追加&lt;br&gt;・投稿日を自動で入力する&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
                     <mxGeometry x="10" y="40" width="370" height="220" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="修正&lt;br&gt;・adjecentHTMLで新規作成したToDoリストが、想定通りに動かないバグ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" vertex="1" parent="1">
+                <mxCell id="6" value="修正&lt;br&gt;・adjecentHTMLを使って新規作成したToDoリストに、`&lt;span style=&quot;background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;selected`&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;関数を付与することができていないバグ&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=20;" parent="1" vertex="1">
                     <mxGeometry x="440" y="75" width="300" height="150" as="geometry"/>
                 </mxCell>
             </root>
