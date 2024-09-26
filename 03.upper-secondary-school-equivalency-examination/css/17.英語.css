@@ -9,44 +9,7 @@ body {
     margin-bottom: 20px;
 }
 
-.header-form label {
-    display: block;
-    margin: 5px 0;
-}
-
-.answer-sheet {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.question {
-    display: flex;
-    align-items: center;
-}
-
-.question-number {
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.choices {
-    display: flex;
-    gap: 15px;
-}
-
-.choices label {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    cursor: pointer;
-}
-
-input[type="radio"] {
-    accent-color: #4caf50;
-}
-
-#check-button {
+#result-button{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #4caf50;
@@ -57,12 +20,6 @@ input[type="radio"] {
     transition: background-color 0.3s;
 }
 
-#check-button:hover {
+#result-button:hover{
     background-color: #45a049;
-}
-
-#result {
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
 }
