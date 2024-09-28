@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="content"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        fetch("/01.create/novel/log/2024-09-24/秩序と混沌の調和をとるために勇者と魔王が奔走する話.md")
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById("content").innerHTML = marked.parse(markdown);
+            })
+            .catch(error => console.error("Error fetching the Markdown file:", error));
+    </script>
+</body>
+</html>
