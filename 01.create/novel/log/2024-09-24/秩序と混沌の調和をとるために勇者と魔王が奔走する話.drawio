@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
-        <mxGraphModel dx="831" dy="719" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1260" dy="1027" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -217,37 +217,37 @@
                 <mxCell id="75" value="翌日の朝、克人と朱雀は、宿の朝食を取りながら話し合いました。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4962" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="76" value="ユグドラシルを開発したのは神だ。ユグドラシルを保守するのはドライアドだ。ユグドラシルを監視するのは天使だ。ユグドラシルを破壊するのは悪魔だ。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="76" value="ユグドラシルを開発したのは神だ。ユグドラシルを保守するのはドライアドだ。ユグドラシルを監視するのは天使だ。ユグドラシルを破壊するのは悪魔だ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3400" y="255" width="220" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="77" value="この世界はユグドラシルによって存続している。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="77" value="この世界はユグドラシルによって存続している。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3240" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="夜眠る時の気持ちは、面白い。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="78" value="夜眠る時の気持ちは、面白い。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2920" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" value="為すべきことを考える。この世に生を受けた意味を考える。明日やるべきことを考える。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="79" value="為すべきことを考える。この世に生を受けた意味を考える。明日やるべきことを考える。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3080" y="280" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="81" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                <mxCell id="81" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4920" y="41.25" width="10" height="980" as="geometry"/>
                 </mxCell>
-                <mxCell id="82" value="では人間は何か。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="82" value="では人間は何か。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3680" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="83" value="人間はエンドユーザーだ。人間は与えられた選択肢からマシなものを選ぶことしかできない。デベロッパーが用意した世界で、デベロッパーが用意した分岐点を、できるだけミスの無いように選択し続けることしかできない。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="83" value="人間はエンドユーザーだ。人間は与えられた選択肢からマシなものを選ぶことしかできない。デベロッパーが用意した世界で、デベロッパーが用意した分岐点を、できるだけミスの無いように選択し続けることしかできない。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="3840" y="245" width="310" height="130" as="geometry"/>
                 </mxCell>
-                <mxCell id="84" value="ユグドラシルは楔だ。エンドユーザーは楔に繋がれている。他の楔に繋ぎ直すことはできない。この楔しか無いのだ。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="84" value="ユグドラシルは楔だ。エンドユーザーは楔に繋がれている。他の楔に繋ぎ直すことはできない。この楔しか無いのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4180" y="255" width="220" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="85" value="デベロッパーは違う。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="85" value="デベロッパーは違う。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4440" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="86" value="新しい楔を開発することができる。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="86" value="新しい楔を開発することができる。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4600" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4760" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
             </root>

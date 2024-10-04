@@ -1,856 +1,96 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-
-<head prefix="og: https://ogp.me/ns# fb: https://ogp.me/ns/fb# article: https://ogp.me/ns/article#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIMAORG</title>
-    <meta name="Keywords" content="HIMAORG,ひまおーぐ">
-    <meta name="Description" content="HIMAORG">
-    <meta name="author" content="himaorg">
-
-    <meta property="og:title" content="HIMAORG">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://himatsubushi.org/">
-    <meta property="og:image" content="https://himatsubushi.org/">
-    <meta property="og:site_name" content="HIMAORG">
-    <meta property="og:description" content="HIMAORG">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@work_himaorg">
-    <meta name="twitter:image" content="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストA.png">
-
-    <link href="./css/index.html/reset.css" rel="stylesheet" type="text/css">
-    <link href="./css/index.html/style.css" rel="stylesheet" type="text/css">
-    <link href="./css/index.html/meanmenu.css" rel="stylesheet" type="text/css">
-
-    <!-- flexslider -->
-
-    <link rel="stylesheet" href="./css/index.html/slider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-    <script src="./js/index.html/slider.js"></script>
-
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                directionNav: false,
-                slideshowSpeed: 16000,
-                animationSpeed: 1500,
-                pauseOnAction: false
-            });
-        });
-    </script>
-
-    <!-- slick -->
-
-    <link href="./css/index.html/slick-theme.css" rel="stylesheet" type="text/css">
-    <link href="./css/index.html/slick.css" rel="stylesheet" type="text/css">
-
-    <!-- return top -->
-
-    <script src="./js/index.html/smoothscloll.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function () {
-            var topBtn = $('#page-top');
-            topBtn.hide();
-            //スクロールが200に達したらボタン表示
-            $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
-                    topBtn.fadeIn();
-                } else {
-                    topBtn.fadeOut();
-                }
-            });
-            //スクロールしてトップ
-            topBtn.click(function () {
-                $('html,body').animate({
-                    scrollTop: 0
-                }, 500);
-                return false;
-            });
-        });
-    </script>
-
-    <!-- meanmenu -->
-
-    <script src="./js/index.html/meanmenu.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('nav').meanmenu({
-                meanMenuContainer: "#meanmenu", // メニューを表示させる位置
-            });
-        });
-    </script>
-
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
-
 <body>
-
-
-    <!-- cautionのcookie -->
-    <script src="./js/index.html/cookie.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            if ($.cookie("caution") == 'yes') {
-                $('#caution').css({ display: 'none' });
-            }
-            $(window).load(function () {
-                $('body').addClass('access');
-            })
-        });
-    </script>
-    <script>
-        $(function () {
-            $(".btn-yes").on('click', function () {
-                $.cookie("caution", "yes", { expires: 30 });
-                $("#caution").fadeOut(500);
-            });
-            $(".btn-no").on('click', function () {
-                location.href = "https://www.google.co.jp";
-            });
-        });	
-    </script>
+    <header>
+        <!-- ▼▼▼　login　▼▼▼ -->
+        <!-- ▲▲▲  login  ▲▲▲ -->
+    </header>
 
 
 
-    <!-- caution -->
-
-    <div id="caution">
-
-        <div id="caution-bg">
-
-            <p>あなたは18歳以上ですか？</p>
-
-            <div class="btn-wrap">
-                <div class="btn-yes"><img src="#" alt="はい"></div>
-                <div class="btn-no"><img src="#" alt="いいえ"></div>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- /caution -->
-
-
-    <!-- header -->
-
-
-    <div id="header-base">
-
-        <div id="header">
-
-            <div id="logo"><a href="https://himatsubushi.org/index.html"><img style="width: 80px;" src="./images/Pixivに投稿したイラスト/イラストA.png"></a></div>
-
-
-            <!-- BGMを演奏する↓ -->
-            <button id="bgm-button" onclick="openPopup()">webサイト全体のBGMを流す</button>
+    <!-- ▼▼▼  navigation  ▼▼▼ -->
+    <nav>
+        <ul>
+            <li><a href="#">ショップ</a></li>
+            <li><a href="#">書庫</a></li>
+            <li><a href="#">倉庫</a></li>
+            <li><a href="#">プロフィール</a></li>
+            <li><a href="#">研究</a></li>
+            <li><a href="#">任務</a></li>
+            <li><a href="#">クエリを投げる</a></li>
+            <li><a href="#">SLACK</a></li>
+        </ul>
+    </nav>
+    <!-- ▲▲▲  navigation  ▲▲▲ -->
 
     
-            <script>
-                function openPopup() {
-                    var popupWidth = 500;
-                    var popupHeight = 400;
-                    var left = (screen.width / 2) - (popupWidth / 2);
-                    var top = (screen.height / 2) - (popupHeight / 2);
-        
-                    var popup = window.open('', 'popup', 'width=' + popupWidth + ',height=' + popupHeight + ',top=' + top + ',left=' + left);
-        
-                    
-                    popup.document.write(`
-                        <html>
-                        <head>
-                            <title>SoundCloud Player</title>
-                        </head>
-                        <body>
-                            <iframe id="soundcloud-player" width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
-                            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1829984511&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-                            </iframe>
-                            <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; 
-                                font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-                            <a href="https://soundcloud.com/himaorg" title="ひまおーぐ(himatsubushi.org)" target="_blank" style="color: #cccccc; text-decoration: none;">
-                            ひまおーぐ(himatsubushi.org)
-                            </a> · 
-                            <a href="https://soundcloud.com/himaorg/sets/this-is-autoplay-on-index-html" title="this is autoplay on index.html" target="_blank" 
-                            style="color: #cccccc; text-decoration: none;">
-                            this is autoplay on index.html
-                            </a>
-                            </div>
-                        </body>
-                        </html>
-                    `);
-        
-                    popup.document.close();
-                    popup.focus(); // ポップアップウィンドウを前面に表示させる
-                }
-            </script>
-            <!-- BGMを演奏する↑ -->
-                    
-
-            <!-- social link -->
-
-            <div id="social">
-                <ul>
-                    <li>
-                        <a href="https://twitter.com/share?count=horizontal&original_referer=https://himatsubushi.org&text=@work_himaorg&url=https://himatsubushi.org&text=(何でも書いていいですよ)"
-                            onclick="window.open(this.href, 'tweetwindow', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
-                            <img style="width: 50px;" src="./images/common/twitter.png" alt="twitter">
-                            ←お問い合わせはXのポストから
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- /social link -->
-
-        </div>
-
+    
+    
+    <!-- ▼▼▼　Slider　▼▼▼ -->
+    <div id="Slider">
+        <a id="link" href="#">
+            <img id="image" src="./images/ai/diary.jpeg" alt="一つ目の画像">
+        </a>
     </div>
+    <!-- ▲▲▲　Slider　▲▲▲ -->
 
-    <!-- /header -->
 
-    <!-- navi -->
 
-    <div id="meanmenu">
-        <nav style="display: block;">
 
-            <ul>
+    <!-- ▼▼▼  プロット・執筆  ▼▼▼ -->
+    <a href="">
+        <div id="prot">プロット</div>
+    </a>
+    <a href="">
+        <div id="write">執筆</div>
+    </a>
+    <!-- ▲▲▲  プロット・執筆  ▲▲▲ -->
 
-                <li class="navi01"><a href="https://join.slack.com/t/himatsubushitalk/shared_invite/zt-2pdlr4wfk-PS9OBO_xEPG26Pu53dyUPw">ブログ書く人募集します。</a></li>
-                <li class="navi02"><a href="https://join.slack.com/t/slack-1nm7338/shared_invite/zt-2oyy0uztj-Mi2msJbOt0ODu_t47~Kfgg">高卒認定試験を受験する人募集します。</a></li>
-                <li class="navi03"><a href="#">XXXX</a></li>
-                <li class="navi04"><a href="#">XXXX</a></li>
-                <li class="navi05"><a href="#">XXXX</a></li>
 
-            </ul>
 
-        </nav>
+
+    <!-- ▼▼▼  News form the HIMAORG  ▼▼▼ -->
+    <a href="#">
+        <div id="newsFormTheHIMAORG">開発者からのお知らせ</div>
+    </a>
+    <!-- ▲▲▲  News form the HIMAORG  ▲▲▲ -->
+
+
+
+
+    <!-- ▼▼▼  contactTheHIMAORG  ▼▼▼ -->
+    <a href="#">
+        <div id="contactTheHIMAORG">開発者に問い合わせる</div>
+    </a>
+    <!-- ▲▲▲  contactTheHIMAORG  ▲▲▲ -->
+
+
+
+
+
+    <!-- ▼▼▼  account  ▼▼▼ -->
+     <div id="account">
+        <img id="logo" src="./images/common/guest.png" alt="">
+        <div id="name">ゲストユーザー</div>
     </div>
+    <!-- ▲▲▲  account  ▲▲▲ -->
 
 
-    <!-- /navi -->
 
-    <!-- main slider -->
 
-    <div class="slide-wrap">
+    <!-- upper-secondary-school-equivalency-examination -->
+     <a href="./upper-secondary-school-equivalency-examination/ussee.html">
+        <div id="upper-secondary-school-equivalency-examination">高認試験の過去問を解くアプリ</div>
+     </a>
 
-        <ul class="slider">
-            <li><a href="https://www.pixiv.net/artworks/117249661"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストA.png" alt=""></a></li>
-            <li><a href="https://www.pixiv.net/artworks/118536245"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストB.png" alt=""></a></li>
-            <li><a href="https://www.pixiv.net/artworks/118536271"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストC.png" alt=""></a></li>
 
-
-        </ul>
-
-    </div>
-
-    <!-- /main slider -->
-     <!-- 右上の画像 -->
-    <a href="https://himatsubushi.org/job.html"><img class="img-wrap" src="./images/お仕事募集中/求人求職.jpg" alt=""></a>
-
-
-
-     <!-- /右上の画像 -->
-    <!-- right slider -->
-    <div class="right-slide-wrap">
-
-        <ul class="slider">
-            <li><a href="https://www.pixiv.net/artworks/117249661"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストA.png" alt=""></a></li>
-            <li><a href="https://www.pixiv.net/artworks/118536245"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストB.png" alt=""></a></li>
-            <li><a href="https://www.pixiv.net/artworks/118536271"><img src="https://himatsubushi.org/images/Pixivに投稿したイラスト/イラストC.png" alt=""></a></li>
-
-
-        </ul>
-
-    </div>
-
-
-
-
-    <!-- /right slider -->
-     <!-- under slider -->
-     
-
-
-     <!-- /under slider -->
-    <!-- contents -->    
-    <div id="wrapper">
-
-
-        <ul class="topic-wrap">
-
-            <li>
-                <div class="topic-box" style="width: 400px;">
-                    <a href="/upper-secondary-school-equivalency-examination/ussee.html">
-                        <div><img src="/images/ai/高卒認定試験.jpeg" alt=""></div>
-                        <div class="text">高卒認定試験（ベータ版）</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 400px;">
-                    <a href="02.discover/blog/page/blog.php">
-                        <div><img src="/images/ai/タコスの具材になった初音ミク.jpeg" alt=""></div>
-                        <div class="text">ブログ（ベータ版）</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 400px;">
-                    <a href="02.discover/novel/page/senario.php">
-                        <div><img src="/images/ai/シュルク.jpeg" alt=""></div>
-                        <div class="text">小説(ベータ版)</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 400px;">
-                    <a href="02.discover/diary/page/diary.php">
-                        <div><img src="/images/ai/diary.jpeg" alt=""></div>
-                        <div class="text">日記(ベータ版)</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 200px;">
-                    <a href="/todolist/page/todolist.html">
-                        <div><img src="/images/ai/Todolist.jpeg" alt=""></div>
-                        <div class="text">Todolist(アルファ版)</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 200px;">
-                    <a href="/rss/page/rss.php">
-                        <div><img src="/images/ai/rss logo.jpeg" alt=""></div>
-                        <div class="text">RSS（pre-アルファ版）</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 200px;">
-                    <a href="99.others/html/memo-app.html">
-                        <div><img src="/images/ai/マクドナルドでハンバーガーを食べる初音ミク.jpeg" alt=""></div>
-                        <div class="text">メモアプリ(アルファ版)</div>
-                    </a>
-                </div>
-            </li>
-
-
-            <li>
-                <div class="topic-box" style="width: 200px;">
-                    <a href="99.others/html/calculation.html">
-                        <div><img src="/images/ai/ダンボールから飛び出してくる初音ミク.jpeg" alt=""></div>
-                        <div class="text">演算アプリ（アルファ版）</div>
-                    </a>
-                </div>
-            </li>
-
-            
-        </ul>
-
-        <div class="top-frame-wrap">
-
-            <div class="top-frame-cell">
-
-                <h3 class="midashi02">更新履歴</h3>
-
-                <!-- update -->
-                <div class="update-frame">
-
-                    <dl>
-                        <dt>2024.09.28</dt>
-                        <dd><a href="./releasenote.html#2.12.0">ver.2.12.0にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.27</dt>
-                        <dd><a href="./releasenote.html#2.11.12">ver.2.11.12にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.26</dt>
-                        <dd><a href="./releasenote.html#2.11.11">ver.2.11.11にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.20</dt>
-                        <dd><a href="./releasenote.html#2.11.10">ver.2.11.10にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.19</dt>
-                        <dd><a href="./releasenote.html#2.11.9">ver.2.11.9にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.17</dt>
-                        <dd><a href="./releasenote.html#2.11.8">ver.2.11.8にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.09.14</dt>
-                        <dd><a href="./releasenote.html#2.11.7">ver.2.11.7にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>？</dt>
-                        <dd><a href="./releasenote.html#2.11.6">ver.2.11.6にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>？</dt>
-                        <dd><a href="./releasenote.html#2.11.5">ver.2.11.5にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.9.11</dt>
-                        <dd><a href="./releasenote.html#2.11.4">ver.2.11.4にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.9.11</dt>
-                        <dd><a href="./releasenote.html#2.11.3">ver.2.11.3にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.9.5</dt>
-                        <dd><a href="./releasenote.html#2.11.2">ver.2.11.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.9.2</dt>
-                        <dd><a href="./releasenote.html#2.11.1">ver.2.11.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.31</dt>
-                        <dd><a href="./releasenote.html#2.11">ver.2.11にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.16</dt>
-                        <dd><a href="./releasenote.html#2.10.5">ver.2.10.5にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.13</dt>
-                        <dd><a href="./releasenote.html#2.10.4">ver.2.10.4にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.9</dt>
-                        <dd><a href="./releasenote.html#2.10.3">ver.2.10.3にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.9</dt>
-                        <dd><a href="./releasenote.html#2.10.2">ver.2.10.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.9</dt>
-                        <dd><a href="./releasenote.html#2.10.1">ver.2.10.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.8</dt>
-                        <dd><a href="./releasenote.html#2.10">ver.2.10にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.8.4</dt>
-                        <dd><a href="./releasenote.html#2.9">ver.2.9にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.28</dt>
-                        <dd><a href="./releasenote.html#2.8.3">ver.2.8.3にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.24</dt>
-                        <dd><a href="./releasenote.html#2.8.2">ver.2.8.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.23</dt>
-                        <dd><a href="./releasenote.html#2.8.1">ver.2.8.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.20</dt>
-                        <dd><a href="./releasenote.html#2.8">ver.2.8にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.20</dt>
-                        <dd><a href="./releasenote.html#2.7.2">ver.2.7.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.20</dt>
-                        <dd><a href="./releasenote.html#2.7.1">ver.2.7.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.10</dt>
-                        <dd><a href="./releasenote.html#2.7">ver.2.7にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.9</dt>
-                        <dd><a href="./releasenote.html#2.6">ver.2.6にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.8</dt>
-                        <dd><a href="./releasenote.html#2.5.1">ver.2.5.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.7</dt>
-                        <dd><a href="./releasenote.html#2.5">ver.2.5にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.7.7</dt>
-                        <dd><a href="./releasenote.html#2.4.2">ver.2.4.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.6.17</dt>
-                        <dd><a href="./releasenote.html#2.4.1">ver.2.4.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.6.17</dt>
-                        <dd><a href="./releasenote.html#2.4">ver.2.4にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.6.11</dt>
-                        <dd><a href="./releasenote.html#2.3.3">ver.2.3.3にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.6.11</dt>
-                        <dd><a href="./releasenote.html#2.3.2">ver.2.3.2にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.6.11</dt>
-                        <dd><a href="./releasenote.html#2.3.1">ver.2.3.1にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.5.30</dt>
-                        <dd><a href="./releasenote.html#2.03">ver.2.03にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.5.26</dt>
-                        <dd><a href="./releasenote.html#2.02">ver.2.02にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.5.26</dt>
-                        <dd><a href="./releasenote.html#2.01">ver.2.01にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.5.3</dt>
-                        <dd><a href="./releasenote.html#2.00">ver.2.00にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.4.19</dt>
-                        <dd><a href="./releasenote.html#1.27">ver.1.27にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.4.18</dt>
-                        <dd><a href="./releasenote.html#1.26">ver.1.26にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.3.29</dt>
-                        <dd><a href="./releasenote.html#1.25">ver.1.25にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2024.3.26</dt>
-                        <dd><a href="./releasenote.html#1.24">ver.1.24にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.17</dt>
-                        <dd><a href="./releasenote.html#1.23">ver.1.23にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.15</dt>
-                        <dd><a href="./releasenote.html#1.22">ver.1.22にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.14</dt>
-                        <dd><a href="./releasenote.html#1.21">ver.1.21にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.12</dt>
-                        <dd><a href="./releasenote.html#1.20">ver.1.20にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.6</dt>
-                        <dd><a href="./releasenote.html#1.19">ver.1.19にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.5</dt>
-                        <dd><a href="./releasenote.html#1.18">ver.1.18にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.4</dt>
-                        <dd><a href="./releasenote.html#1.17">ver.1.17にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.3.3</dt>
-                        <dd><a href="./releasenote.html#1.16">ver.1.16にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.2.27</dt>
-                        <dd><a href="./releasenote.html#1.15">ver.1.15にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.2.25</dt>
-                        <dd><a href="./releasenote.html#1.14">ver.1.14にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.2.24</dt>
-                        <dd><a href="./releasenote.html#1.13">ver.1.13にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.2.19</dt>
-                        <dd><a href="./releasenote.html#1.12">ver.1.12にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.2.16</dt>
-                        <dd><a href="./releasenote.html#1.11">ver.1.11にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.1.30</dt>
-                        <dd><a href="./releasenote.html#1.10">ver.1.10にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.1.24</dt>
-                        <dd><a href="./releasenote.html#1.9">ver.1.9にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.1.14</dt>
-                        <dd><a href="./releasenote.html#1.8">ver.1.8にアップデートしました。</a></dd>
-                    </dl>
-
-
-                    <dl>
-                        <dt>2023.1.2</dt>
-                        <dd><a href="./releasenote.html#1.7">ver.1.7にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.1.1</dt>
-                        <dd><a href="./releasenote.html#1.6">ver.1.6にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.12.13</dt>
-                        <dd><a href="./releasenote.html#1.5">ver.1.5にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.11.25</dt>
-                        <dd><a href="./releasenote.html#1.4">ver.1.4にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.11.15</dt>
-                        <dd><a href="./releasenote.html#1.3">ver.1.3にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.11.10</dt>
-                        <dd><a href="./releasenote.html#1.2">ver.1.2にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.11.6</dt>
-                        <dd><a href="./releasenote.html#1.1">ver.1.1にアップデートしました。</a></dd>
-                    </dl>
-
-                    <dl>
-                        <dt>2023.11.5</dt>
-                        <dd><a href="./releasenote.html#1.0">今からサイトの運用を始めます。</a></dd>
-                    </dl>
-
-                </div>
-
-                <!-- /update -->
-
-
-
-                <div class="top-frame-cell">
-
-                    <h3 class="midashi03">HIMAORG・X</h3>
-                    <div class="twitter-frame" style="height: 250px;">
-                        <a class="twitter-timeline" href="https://twitter.com/work_himaorg" data-chrome="noheader nofooter noborders">@work_himaorg からのツイート</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    </div>                    
-                </div>
-
-            </div>
-
-
-            <!-- blog banner -->
-
-            <div class="top-frame-wrap">
-
-
-                <div class="top-frame-cell2">
-                    <h3 class="midashi04">外部サービス</h3>
-
-
-                        <div style="text-align:center"><p class=""><a href="https://soundcloud.com/himaorg" target="_blank"><img
-                            src="./images/バナー/soundcloud.jpg" alt="SoundCloud"></a></p>
-                        </div>
-                        
-                        
-                        <div style="text-align:center"><p class=""><a href="https://youtube.com/@work.himaorg" target="_blank"><img
-                            src="./images/バナー/youtube.jpg" alt="YouTube"></a></p>
-                        </div>
-                            
-                            
-                        <div style="text-align:center"><p class=""><a href="" target="_blank"><img
-                            src="./images/textures/11.png" alt="Slack"></a></p>
-                        </div>
-                                
-                                            
-                        <div style="text-align:center"><p class=""><a href="https://www.pixiv.net/users/104630745" target="_blank"><img
-                            src="./images/バナー/pixiv.jpg" alt="Pixiv"></a></p>
-                        </div>
-                                            
-                </div>
-
-            </div>
-
-            <!-- /blog banner -->
-
-
-        </div>
-    </div>
-    <!-- /contents -->
-
-
-    <!-- footer -->
-
-    <div id="footer-base">
-
-        <div class="footer">
-            &copy; 2024 HIMAORG all rights reserved.
-        </div>
-
-    </div>
-    <!-- /footer -->
-
-    <script src="./js/index.html/slick.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $(".slider").slick({
-                autoplay: true,
-                arrows: true,
-                speed: 700,
-                adaptiveHeight: true,
-            });
-        });
-    </script>
+    <script src="./main.js"></script>
 </body>
-
 </html>
