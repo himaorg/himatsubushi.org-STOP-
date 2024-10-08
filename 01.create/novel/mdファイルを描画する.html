@@ -10,7 +10,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch("/01.create/diary/2024-12-todo.md")
+        fetch("/01.create/novel/秩序と混沌の調和をとるために勇者と魔王が奔走する話.md")
             .then(response => response.text())
             .then(markdown => {
                 document.getElementById("content").innerHTML = marked.parse(markdown);
