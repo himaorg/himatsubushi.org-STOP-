@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
-        <mxGraphModel dx="1900" dy="1024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1764" dy="1438" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -250,26 +250,23 @@
                 <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4760" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="88" value="生身の恋愛をする男女と、夢を見る男と、夢を見る女がいます。これらは分断された世界に住んでいます。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="88" value="生身の恋愛をする男女と、夢を見る男と、夢を見る女がいます。これらは分断された世界に住んでいます。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6120" y="75" width="230" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="89" value="男性向けの恋愛シミュレーションゲームを作ります。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="89" value="男性向けの恋愛シミュレーションゲームを作ります。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6120" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="90" value="女性向けの恋愛シミュレーションゲームを作ります。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="90" value="女性向けの恋愛シミュレーションゲームを作ります。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6280" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="91" value="生身の男女の恋愛を観察します。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="91" value="生身の男女の恋愛を観察します。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6440" y="270" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="92" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
+                <mxCell id="92" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6040" y="45" width="10" height="935" as="geometry"/>
                 </mxCell>
-                <mxCell id="93" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
+                <mxCell id="93" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
                     <mxGeometry x="6060" y="45" width="10" height="935" as="geometry"/>
-                </mxCell>
-                <mxCell id="95" value="# 天使とは&lt;br style=&quot;font-size: 18px;&quot;&gt;- function ぴぴるぴるぴるぴぴるぴー を発動することで、天使の力を使うことが出来る。&lt;br&gt;&lt;br&gt;# 世界樹（ユグドラシル）とは&lt;br&gt;- 運命の織機、法則の織機、ルフの輪廻転生が作動する為に必要な楔的存在。&lt;br&gt;&lt;br&gt;# 運命の織機とは&lt;br&gt;-&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
-                    <mxGeometry x="4990" y="635" width="740" height="190" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
