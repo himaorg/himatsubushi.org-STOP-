@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nap-timer.css">
+</head>
+<body>
+    <div class="container">
+        <h1>音楽再生タイマー</h1>
+        <label for="time">時間（秒）:</label>
+        <input type="number" id="time" min="1" placeholder="時間を入力">
+        <button id="startButton">スタート</button>
+        <button id="stopButton">停止</button>
+        <audio id="audio" src="../audios/coffee-shop-in-the-afternoon-137709.mp3" preload="auto"></audio>
+        <div id="countdownDisplay">残り時間: <span id="countdown">0</span> 秒</div>
+    </div>
+    <script src="./nap-timer.js"></script>
+</body>
+</html>

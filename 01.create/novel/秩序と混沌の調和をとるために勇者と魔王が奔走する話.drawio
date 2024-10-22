@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
-        <mxGraphModel dx="2792" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1560" dy="804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -250,56 +250,59 @@
                 <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4760" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="88" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="88" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4962" y="1170" width="4628" height="420" as="geometry"/>
                 </mxCell>
-                <mxCell id="89" value="金色モザイク&lt;br&gt;銀色モザイク&lt;br&gt;水色モザイク&lt;br&gt;空色モザイク&lt;br&gt;土色モザイク&lt;br&gt;鳥色モザイク&lt;br&gt;人色モザイク&lt;br&gt;魚色モザイク&lt;br&gt;曼荼羅色モザイク" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="89" value="金色モザイク&lt;br&gt;銀色モザイク&lt;br&gt;水色モザイク&lt;br&gt;空色モザイク&lt;br&gt;土色モザイク&lt;br&gt;鳥色モザイク&lt;br&gt;人色モザイク&lt;br&gt;魚色モザイク&lt;br&gt;曼荼羅色モザイク" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="4990" y="1200" width="170" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="90" value="星のダイアグラム&lt;br&gt;自我のダイアグラム&lt;br&gt;社会階層のダイアグラム&lt;br&gt;絆のダイアグラム&lt;br&gt;曼荼羅のダイアグラム" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="90" value="星のダイアグラム&lt;br&gt;自我のダイアグラム&lt;br&gt;社会階層のダイアグラム&lt;br&gt;絆のダイアグラム&lt;br&gt;曼荼羅のダイアグラム" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5166" y="1200" width="220" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="91" value="SummerPockets&lt;br&gt;SpringPockets&lt;br&gt;WintarPockets&lt;br&gt;曼荼羅Pockets" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="91" value="SummerPockets&lt;br&gt;SpringPockets&lt;br&gt;WintarPockets&lt;br&gt;曼荼羅Pockets" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5400" y="1200" width="160" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="92" value="止まらない雨&lt;br&gt;止まらないリベラル&lt;br&gt;止まらない曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="92" value="止まらない雨&lt;br&gt;止まらないリベラル&lt;br&gt;止まらない曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5580" y="1200" width="190" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="93" value="希望の架け橋&lt;br&gt;保守の架け橋&lt;br&gt;ギャルゲーの架け橋&lt;br&gt;曼荼羅の架け橋" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="93" value="希望の架け橋&lt;br&gt;保守の架け橋&lt;br&gt;ギャルゲーの架け橋&lt;br&gt;曼荼羅の架け橋" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5770" y="1190" width="190" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="94" value="三島ゆかり&lt;br&gt;三島茜&lt;br&gt;三島葵&lt;br&gt;三島ウナ&lt;br&gt;三島あかり&lt;br&gt;三島曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="94" value="三島ゆかり&lt;br&gt;三島茜&lt;br&gt;三島葵&lt;br&gt;三島ウナ&lt;br&gt;三島あかり&lt;br&gt;三島曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5975" y="1190" width="110" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="95" value="置き忘れた文化&lt;br&gt;置き忘れた黎明（レイメイ）&lt;br&gt;置き忘れた勇気&lt;br&gt;置き忘れた浄幣&lt;br&gt;置き忘れた煉獄&lt;br&gt;置き忘れた深淵" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="95" value="置き忘れた文化&lt;br&gt;置き忘れた黎明（レイメイ）&lt;br&gt;置き忘れた勇気&lt;br&gt;置き忘れた浄幣&lt;br&gt;置き忘れた煉獄&lt;br&gt;置き忘れた深淵" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="6110" y="1190" width="260" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="96" value="DEAR HIKIKOMORI&lt;br&gt;DEAR ASD&lt;br&gt;DEAR TENCHISO^ZO^&lt;br&gt;DEAR SE^KIMATSU&lt;br&gt;DEAR MANDARA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="96" value="DEAR HIKIKOMORI&lt;br&gt;DEAR ASD&lt;br&gt;DEAR TENCHISO^ZO^&lt;br&gt;DEAR SE^KIMATSU&lt;br&gt;DEAR MANDARA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="6380" y="1180" width="210" height="120" as="geometry"/>
                 </mxCell>
-                <mxCell id="97" value="ましろ色シンフォニー&lt;br&gt;ごくさい色シンフォニー&lt;br&gt;めいさい色シンフォニー&lt;br&gt;まんだら色シンフォニー" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="97" value="ましろ色シンフォニー&lt;br&gt;ごくさい色シンフォニー&lt;br&gt;めいさい色シンフォニー&lt;br&gt;まんだら色シンフォニー" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="6626" y="1180" width="220" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="98" value="DEATH STRANDING&lt;br&gt;- デーモンが DEATH STRANDING を実行する&lt;br&gt;- 防ぐためには、世界樹に正しいクエリを投げなければならない&lt;br&gt;- デーモン及び DEATH STRANDING を肯定するのが天使教とその信徒だ&lt;br&gt;- デーモン及び DEATH STRANDING を否定するのが悪魔教とその信徒だ&lt;br&gt;- 世界は過去に四回 DEATH STRANDING が起きている&lt;br&gt;- 五回目のDEATH STRANDING を引き起こすために、天使教はデーモン狩り（誘拐）をしている&lt;br&gt;- 五回目の DEATH STRANDING を防ぐために、悪魔教はデーモン狩り（殺害）をしている&lt;br&gt;- 主人公はデーモンを保護している" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="98" value="DEATH STRANDING&lt;br&gt;- デーモンが DEATH STRANDING を実行する&lt;br&gt;- 防ぐためには、世界樹に正しいクエリを投げなければならない&lt;br&gt;- デーモン及び DEATH STRANDING を肯定するのが天使教とその信徒だ&lt;br&gt;- デーモン及び DEATH STRANDING を否定するのが悪魔教とその信徒だ&lt;br&gt;- 世界は過去に四回 DEATH STRANDING が起きている&lt;br&gt;- 五回目のDEATH STRANDING を引き起こすために、天使教はデーモン狩り（誘拐）をしている&lt;br&gt;- 五回目の DEATH STRANDING を防ぐために、悪魔教はデーモン狩り（殺害）をしている&lt;br&gt;- 主人公はデーモンを保護している" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="6860" y="1180" width="800" height="210" as="geometry"/>
                 </mxCell>
-                <mxCell id="99" value="セントラルAI が演算の結果、自らの UNINSTALL を実行する&lt;br&gt;- 消えてく生物に手を伸ばすことは無意味である&lt;br&gt;- 全ては無に帰すのだから、全ては等価であり、無価値である&lt;br&gt;- 主人公はセントラルAI の復元を試みる" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="99" value="セントラルAI が演算の結果、自らの UNINSTALL を実行する&lt;br&gt;- 消えてく生物に手を伸ばすことは無意味である&lt;br&gt;- 全ては無に帰すのだから、全ては等価であり、無価値である&lt;br&gt;- 主人公はセントラルAI の復元を試みる" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="7760" y="1190" width="520" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="100" value="セントベレス教団の宗派は悪魔教だ&lt;br&gt;八大竜王の宗派は天使教だ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="100" value="セントベレス教団の宗派は悪魔教だ&lt;br&gt;八大竜王の宗派は天使教だ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="4962" y="1005" width="410" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="101" value="# 悪魔教の司教&lt;br&gt;- 西浩紀&lt;br&gt;# 悪魔教の司祭&lt;br&gt;- アルカテイル&lt;br&gt;- アシッドテイル&lt;br&gt;- ヘンゼル（スライム）&lt;br&gt;- グレーテル（暴風竜）&lt;br&gt;- 明鏡（兄）&lt;br&gt;- 止水（弟）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="101" value="# 悪魔教の司教&lt;br&gt;- 西浩紀&lt;br&gt;# 悪魔教の司祭&lt;br&gt;- アルカテイル&lt;br&gt;- アシッドテイル&lt;br&gt;- ヘンゼル（スライム）&lt;br&gt;- グレーテル（暴風竜）&lt;br&gt;- 明鏡（兄）&lt;br&gt;- 止水（弟）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5386" y="930" width="390" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="102" value="# 天使教の司教&lt;br&gt;- ハルマゲドン&lt;br&gt;&lt;br&gt;# 天使教の司祭&lt;br&gt;-&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                <mxCell id="102" value="# 天使教の司教&lt;br&gt;- ハルマゲドン&lt;br&gt;&lt;br&gt;# 天使教の司祭&lt;br&gt;-&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
                     <mxGeometry x="5800" y="930" width="400" height="230" as="geometry"/>
                 </mxCell>
-                <mxCell id="103" value="HAPPY PARTY TRAIN&lt;br&gt;SAD PARTY TRAIN&lt;br&gt;NOSTALGIC PARTY TRAIN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
-                    <mxGeometry x="8440" y="1190" width="250" height="80" as="geometry"/>
+                <mxCell id="103" value="HAPPY PARTY TRAIN&lt;br&gt;SAD PARTY TRAIN&lt;br&gt;NOSTALGIC PARTY TRAIN&lt;br&gt;MANDARA PARTY TRAIN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="8440" y="1180" width="250" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="104" value="春擬き&lt;br&gt;夏擬き&lt;br&gt;秋擬き&lt;br&gt;冬擬き" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
-                    <mxGeometry x="8820" y="1190" width="80" height="100" as="geometry"/>
+                <mxCell id="104" value="春擬き&lt;br&gt;夏擬き&lt;br&gt;秋擬き&lt;br&gt;冬擬き&lt;br&gt;曼荼羅擬き" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="1" vertex="1">
+                    <mxGeometry x="8805" y="1180" width="110" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="105" value="紫敷布団&lt;br&gt;赤敷布団&lt;br&gt;青敷布団&lt;br&gt;橙敷布団&lt;br&gt;曼荼羅敷布団" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="8990" y="1180" width="130" height="120" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

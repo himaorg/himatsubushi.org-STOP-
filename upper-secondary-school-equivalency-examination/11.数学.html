@@ -11,7 +11,7 @@
     <div class="header">
         <h1><a target="_blank" href="https://www.mext.go.jp/content/20240709-mxt_syogai02-mext_000032680_R5-2sugaku.pdf">2023年・第二回・数学問題用紙</a></h1>
     </div>
-    <h1>マークシート解答用紙</h1>
+    <h1>マークシート解答用紙（使用不可）</h1>
     <form id="markSheetForm">
         <!-- 問題01 -->
         <p>1-1-ア (配点: 問題01と問題02が正解で5点)</p>
@@ -230,17 +230,17 @@
                     if (parseInt(userAnswer.value) === correctAnswer) {
                         totalScore += points[question];  // 正解の場合はその問題の配点を加算
 
-                        // question01 と question02 が両方正解している場合に加算
-                        if (question01Correct && question02Correct) {
-                            totalPoints += 5;  // 例: 両方正解なら2点加算
-                        }
-
-                        // question13 と question14 が両方正解している場合に加算
-                        if (question01Correct && question02Correct) {
-                            totalPoints += 3;  // 例: 両方正解なら2点加算
-                        }
                     }
                     
+                }
+                // question01 と question02 が両方正解している場合に加算
+                if (question01Correct && question02Correct) {
+                    totalPoints += 5;  // 例: 両方正解なら2点加算
+                }
+
+                // question13 と question14 が両方正解している場合に加算
+                if (question01Correct && question02Correct) {
+                    totalPoints += 3;  // 例: 両方正解なら2点加算
                 }
 
                 maxScore += points[question];  // 全問題の最大得点を計算

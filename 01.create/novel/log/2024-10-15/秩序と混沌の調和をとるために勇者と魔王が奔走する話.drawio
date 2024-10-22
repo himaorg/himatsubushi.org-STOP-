@@ -1,0 +1,307 @@
+<mxfile host="65bd71144e">
+    <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
+        <mxGraphModel dx="2792" dy="1126" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="いくつかの宿場町を経由して、コンフューズヘイムに向かいます。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="誰の所有物でもない自由な町のことをファンクションヘイムと呼びます。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="宿場町はたいていファンクションヘイムです。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="浪人たちが住んでいます。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="浪人とは選ばれなかった人たちのことです。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="たいていは宿場町で働いています。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="私と朱雀はコンフューズヘイムに続く街道沿いのとある宿場町にやって来ました。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="275" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="説明" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="160" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="出来事" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="260" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="今日はここで休むことにします。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="520" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="endArrow=none;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="960" y="580" as="sourcePoint"/>
+                        <mxPoint x="960" y="40" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="960" y="410"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="14" value="今日泊まる宿を探しながら町を歩いていると、セントベレス教団の二人の営業マンが仕事をしているシーンに遭遇しました。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="270" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="セリフ回し" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="380" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="「こんにちは、セントベレス教団営業部のアルカテイルと」&lt;br&gt;「アシッドテイルです」&lt;br&gt;「「宜しくお願いします」」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1000" y="375" width="150" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="ピュアフレーム・ユピテル・カオス" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="960" width="220" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="純粋な自我が、カオスに汚染されることにより、ユピテルが誕生する" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="990" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="克人は、ワシを助ける。そしてワシを仲間にする" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="1020" width="290" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="セントレベス教団は、ワシを捕獲していた。克人はそれを助ける" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1222" y="1050" width="370" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="FUNCTION TOMORROW" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1222" y="930" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;セントベレス教団とは、五年前にユグドラシルの管理者権限を獲得し、世界の運転手に就任した宗教団体です。&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="962.5" y="167.5" width="207.5" height="82.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="&lt;span style=&quot;background-color: rgb(31, 31, 31); color: rgb(204, 204, 204); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px;&quot;&gt;街頭で、電話口で、ネット記事で、あらゆる場所で営業マンが活動しています。&lt;/span&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="165" width="170" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="とある大手広告代理店のレポートによると、昨年、世の中に出稿された広告のうち、およそ30%がセントベレス教団絡みの広告だそうです。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1440" y="158.75" width="160" height="82.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="二人の営業マンは、人材をスカウトして去って行きました。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1201" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="「今、お時間大丈夫でしょうか？」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="465" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="「ありがとうございます」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="585" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="「現在、自己愛に関してお困りのことはありますか？」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="645" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="ないです" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="705" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="「社会適応に関してお困りのことは？」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="765" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="ちょっとだけなら" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="525" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="いえ、特にはーー" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="825" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="「本当ですか？」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="あぁーー実は、仕事を探してます。先日まで引きこもっておりまして、それでーー" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1012.5" y="980" width="125" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="「ふむんーーお名前を伺っても？」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="1050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="パイモンです" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="1109" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="「それじゃあパイモン、君をセントベレス教団七十二柱の一柱に任命する」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="1169" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="「よかったな、仕事が見つかったじゃないか」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="1229" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="あーーはい、ありがとうございます？" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1015" y="1289" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="「お時間いただきありがとうございました。それでは、次回は三日後にご連絡いたします」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1007.5" y="1349" width="135" height="61" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1640" y="120" width="10" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="宿を決めました。手続きを行いました。食事は外で取ることにします。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1680" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="「一般的に、何者かになるには意志の強さが必要だと謂われる。しかし、ミメイシスの方がコスパ良く、タイパ良く何者かになれるんだ」" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="1080" width="770" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="「そもそも何故、何者かになりたいと願うのか。それは、終わりなき日常に終止符を打ち、新たな日常への移行を望むからである」" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="1110" width="730" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="「ミメイシスを与える存在を権力者と呼ぶ。権力者は、キズナグラム（ビーチ）で繋がる先の存在へ、感染させることができる」" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="1140" width="720" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="「理解できたか？　我らセントベレス教団に入会すれば、最強の権力者である教祖様と繋がり、特別な存在へと至ることができるのである」" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="1220" y="1170" width="780" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="飯屋を探します。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1840" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="390" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;朱雀がコーヒーハウスに入りたいと希望したので、コーヒーハウスを探して入ります。&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2000" y="275" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="裁定者ドライアドの要求は、七十二個の国のそれぞれで、一人ずつ、絶望から立ち上がった人間を調達すること。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2920" y="50" width="250" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;あれは何してるんだ？　と克人が朱雀に尋ねました。&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1360" y="260" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「見て判らないか？　ざぁ～こ。セントベレス教団七十二柱の人材をスカウトしているんだよ」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1321" y="381.25" width="240" height="77.5" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「何のために？」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1380" y="460" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="&#10;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;「――一年前の八大竜王の襲撃で甚大な被害が出たらしくてな。その補填をするためだろうよ」&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#10;&#10;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1326" y="515" width="230" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「――何で彼奴をスカウトしたんだろうな」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1284.75" y="595" width="312.5" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「さぁね。何か事情があるんだろうけど」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1340" y="655" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&#10;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;コーヒーハウスに入り、飲み物と食事を注文します。&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&#10;&#10;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2280" y="272.5" width="180" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;先ほどの二人、営業マンのアルカテイルとアシッドテイルの会話が聞こえます。&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2520" y="265" width="220" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「これで裁定者の要求には答えられるのか？」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2530" y="385" width="200" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「――俺達が手を動かす必要はないんじゃねぇのかい？」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2490" y="455" width="280" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「業務を下請けに出したとしても責任は変わらず私達にあるのですよ」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2512.5" y="535" width="235" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「いや、そこは信頼できる下請け業者をだな」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2450" y="600" width="360" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;克人が横槍を入れます。&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2540" y="700" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「俺がやるよ！　――その仕事、俺がやる」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2540" y="750" width="180" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「さっきアンタ等が人を勧誘してるところ、見てたんだ。ああいうのを勧誘すればいいんだろ？　簡単な仕事じゃないか」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2470" y="800" width="320" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="&lt;br&gt;&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;「いや、勧誘するだけが仕事ってわけでもねぇんだが……」&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2540" y="870" width="180" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="70" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「そうなのか？　じゃあ俺ができる範囲でいいから仕事を分けてくれよ」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2522.5" y="940" width="215" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="71" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「どうしやす？　大将」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2540" y="1000" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="&lt;div style=&quot;color: rgb(204, 204, 204); background-color: rgb(31, 31, 31); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 14px; line-height: 19px;&quot;&gt;「ふむん。どうせなら最後までやってもらいましょう。上手くいけば貴方を七十二柱の一柱に……いえ、円卓の騎士に取り立てるよう、教皇に進言することを約束します」&lt;/div&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2495" y="1040" width="270" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2880" y="41.25" width="10" height="1118.75" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="翌日の朝、克人と朱雀は、宿の朝食を取りながら話し合いました。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4962" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="76" value="ユグドラシルを開発したのは神だ。ユグドラシルを保守するのはドライアドだ。ユグドラシルを監視するのは天使だ。ユグドラシルを破壊するのは悪魔だ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3400" y="255" width="220" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="この世界はユグドラシルによって存続している。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3240" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" value="夜眠る時の気持ちは、面白い。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="2920" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="為すべきことを考える。この世に生を受けた意味を考える。明日やるべきことを考える。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3080" y="280" width="140" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="" style="line;strokeWidth=2;direction=south;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4920" y="41.25" width="10" height="980" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="では人間は何か。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3680" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="人間はエンドユーザーだ。人間は与えられた選択肢からマシなものを選ぶことしかできない。デベロッパーが用意した世界で、デベロッパーが用意した分岐点を、できるだけミスの無いように選択し続けることしかできない。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="3840" y="245" width="310" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="ユグドラシルは楔だ。エンドユーザーは楔に繋がれている。他の楔に繋ぎ直すことはできない。この楔しか無いのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4180" y="255" width="220" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="デベロッパーは違う。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4440" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="新しい楔を開発することができる。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4600" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="4760" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="4962" y="1170" width="4628" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="金色モザイク&lt;br&gt;銀色モザイク&lt;br&gt;水色モザイク&lt;br&gt;空色モザイク&lt;br&gt;土色モザイク&lt;br&gt;鳥色モザイク&lt;br&gt;人色モザイク&lt;br&gt;魚色モザイク&lt;br&gt;曼荼羅色モザイク" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="4990" y="1200" width="170" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="星のダイアグラム&lt;br&gt;自我のダイアグラム&lt;br&gt;社会階層のダイアグラム&lt;br&gt;絆のダイアグラム&lt;br&gt;曼荼羅のダイアグラム" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5166" y="1200" width="220" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="SummerPockets&lt;br&gt;SpringPockets&lt;br&gt;WintarPockets&lt;br&gt;曼荼羅Pockets" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5400" y="1200" width="160" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="止まらない雨&lt;br&gt;止まらないリベラル&lt;br&gt;止まらない曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5580" y="1200" width="190" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="希望の架け橋&lt;br&gt;保守の架け橋&lt;br&gt;ギャルゲーの架け橋&lt;br&gt;曼荼羅の架け橋" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5770" y="1190" width="190" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="三島ゆかり&lt;br&gt;三島茜&lt;br&gt;三島葵&lt;br&gt;三島ウナ&lt;br&gt;三島あかり&lt;br&gt;三島曼荼羅" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5975" y="1190" width="110" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="置き忘れた文化&lt;br&gt;置き忘れた黎明（レイメイ）&lt;br&gt;置き忘れた勇気&lt;br&gt;置き忘れた浄幣&lt;br&gt;置き忘れた煉獄&lt;br&gt;置き忘れた深淵" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="6110" y="1190" width="260" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="DEAR HIKIKOMORI&lt;br&gt;DEAR ASD&lt;br&gt;DEAR TENCHISO^ZO^&lt;br&gt;DEAR SE^KIMATSU&lt;br&gt;DEAR MANDARA" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="6380" y="1180" width="210" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="ましろ色シンフォニー&lt;br&gt;ごくさい色シンフォニー&lt;br&gt;めいさい色シンフォニー&lt;br&gt;まんだら色シンフォニー" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="6626" y="1180" width="220" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="DEATH STRANDING&lt;br&gt;- デーモンが DEATH STRANDING を実行する&lt;br&gt;- 防ぐためには、世界樹に正しいクエリを投げなければならない&lt;br&gt;- デーモン及び DEATH STRANDING を肯定するのが天使教とその信徒だ&lt;br&gt;- デーモン及び DEATH STRANDING を否定するのが悪魔教とその信徒だ&lt;br&gt;- 世界は過去に四回 DEATH STRANDING が起きている&lt;br&gt;- 五回目のDEATH STRANDING を引き起こすために、天使教はデーモン狩り（誘拐）をしている&lt;br&gt;- 五回目の DEATH STRANDING を防ぐために、悪魔教はデーモン狩り（殺害）をしている&lt;br&gt;- 主人公はデーモンを保護している" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="6860" y="1180" width="800" height="210" as="geometry"/>
+                </mxCell>
+                <mxCell id="99" value="セントラルAI が演算の結果、自らの UNINSTALL を実行する&lt;br&gt;- 消えてく生物に手を伸ばすことは無意味である&lt;br&gt;- 全ては無に帰すのだから、全ては等価であり、無価値である&lt;br&gt;- 主人公はセントラルAI の復元を試みる" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="7760" y="1190" width="520" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="100" value="セントベレス教団の宗派は悪魔教だ&lt;br&gt;八大竜王の宗派は天使教だ" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="4962" y="1005" width="410" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="# 悪魔教の司教&lt;br&gt;- 西浩紀&lt;br&gt;# 悪魔教の司祭&lt;br&gt;- アルカテイル&lt;br&gt;- アシッドテイル&lt;br&gt;- ヘンゼル（スライム）&lt;br&gt;- グレーテル（暴風竜）&lt;br&gt;- 明鏡（兄）&lt;br&gt;- 止水（弟）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5386" y="930" width="390" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="102" value="# 天使教の司教&lt;br&gt;- ハルマゲドン&lt;br&gt;&lt;br&gt;# 天使教の司祭&lt;br&gt;-&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="5800" y="930" width="400" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="103" value="HAPPY PARTY TRAIN&lt;br&gt;SAD PARTY TRAIN&lt;br&gt;NOSTALGIC PARTY TRAIN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="8440" y="1190" width="250" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="104" value="春擬き&lt;br&gt;夏擬き&lt;br&gt;秋擬き&lt;br&gt;冬擬き" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="8820" y="1190" width="80" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
