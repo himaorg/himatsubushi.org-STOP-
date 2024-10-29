@@ -1,3 +1,26 @@
+#abcdefg{
+    background-image: url(./images/backGround/frame-5.png);
+    background-size: cover;
+    background-position: center;
+    color: #f1f1f1;
+    font-size: 3.0vw;
+    position: fixed;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    bottom: 10%;
+    right: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
 /* ▼▼▼  navigation  ▼▼▼ */
 nav {
     position: fixed;
