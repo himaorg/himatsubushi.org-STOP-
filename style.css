@@ -42,7 +42,7 @@ nav ul {
 nav ul li {
     padding: 0 1%;
     font-size: 2.0vw;
-    background-image: url(../images/common/button.png);
+    background-image: url(./images/common/button.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
