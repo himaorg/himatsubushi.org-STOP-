@@ -10,7 +10,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch("/01.create/diary/2024-11-01.md")
+        fetch("/01.create/blog/新しいホームページを作る過程での発見を纏める.md")
             .then(response => response.text())
             .then(markdown => {
                 document.getElementById("content").innerHTML = marked.parse(markdown);
