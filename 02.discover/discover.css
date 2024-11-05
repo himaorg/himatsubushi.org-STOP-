@@ -1,0 +1,46 @@
+body{
+    background-image: url(../images/backGround/hatsuneMiku.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: top;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    top: 45%;
+    width: 80%;
+    left: 10%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%;
+    padding: 0.5% 5%; 
+    margin: 0;
+}
+
+nav ul li{
+    padding: 0 1%;
+    font-size: 6.0vw;
+    background-image: url(../images/backGround/the-background-945096_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #66cc33;
+}
+
+a:hover
+{
+	text-decoration: underline;
+	color: #ff6600;
+}

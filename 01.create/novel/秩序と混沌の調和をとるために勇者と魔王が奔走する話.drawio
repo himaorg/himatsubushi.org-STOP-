@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
-        <mxGraphModel dx="585" dy="866" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="3820" dy="2815" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -218,10 +218,10 @@
                     <mxGeometry x="4962" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="76" value="ユグドラシルを開発したのは神だ。ユグドラシルを保守するのはドライアドだ。ユグドラシルを監視するのは天使だ。ユグドラシルを破壊するのは悪魔だ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3400" y="255" width="220" height="110" as="geometry"/>
+                    <mxGeometry x="3080" y="92.5" width="220" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="77" value="この世界はユグドラシルによって存続している。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3240" y="280" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="2920" y="117.5" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="78" value="夜眠る時の気持ちは、面白い。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="2920" y="280" width="120" height="60" as="geometry"/>
@@ -233,22 +233,22 @@
                     <mxGeometry x="4920" y="41.25" width="10" height="980" as="geometry"/>
                 </mxCell>
                 <mxCell id="82" value="では人間は何か。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3680" y="280" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="3630" y="117.5" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="83" value="人間はエンドユーザーだ。人間は与えられた選択肢からマシなものを選ぶことしかできない。デベロッパーが用意した世界で、デベロッパーが用意した分岐点を、できるだけミスの無いように選択し続けることしかできない。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="3840" y="245" width="310" height="130" as="geometry"/>
+                    <mxGeometry x="3800" y="82.5" width="310" height="130" as="geometry"/>
                 </mxCell>
                 <mxCell id="84" value="ユグドラシルは楔だ。エンドユーザーは楔に繋がれている。他の楔に繋ぎ直すことはできない。この楔しか無いのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4180" y="255" width="220" height="110" as="geometry"/>
+                    <mxGeometry x="3360" y="92.5" width="220" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="85" value="デベロッパーは違う。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4440" y="280" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="4160" y="117.5" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="86" value="新しい楔を開発することができる。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4600" y="280" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="4320" y="117.5" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="87" value="生の自由度からして全然違うのだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="4760" y="280" width="120" height="60" as="geometry"/>
+                    <mxGeometry x="4480" y="117.5" width="120" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="88" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4962" y="1170" width="8848" height="420" as="geometry"/>
@@ -358,23 +358,38 @@
                 <mxCell id="127" value="イーダちゃんと学生さん&lt;br&gt;イーダちゃんと惑星さん&lt;br&gt;イーダちゃんと初音さん&lt;br&gt;イーダちゃんと鏡音さん&lt;br&gt;&lt;br&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;人間はどうして争うの？&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;イーダちゃんは不思議に思って尋ねました。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;それはね、人間が社会化されているからだよ。&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;と、惑星さんは言いました。&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;br/&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
                     <mxGeometry x="12030" y="1185" width="400" height="140" as="geometry"/>
                 </mxCell>
-                <mxCell id="129" value="コミュ力が不足していると、社会から無視・回避・排除される。これを防ぐ為にも、やはりコミュ力は必要十分まで上げなければならない。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="129" value="コミュ力が不足していると、社会から無視・回避・排除される。これを防ぐ為にも、やはりコミュ力は必要十分まで上げなければならない。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="8200" y="265" width="160" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="130" value="&lt;p&gt;コミュ力とは、目の前の会話にリソースを注ぎ込んだ時に出力されるエネルギーのことだ。&lt;/p&gt;&lt;p&gt;メモリが他のタスクで占有されている場合、目の前の会話に分配するリソースが不足する。その結果コミュ障になるのだ。&lt;/p&gt;&lt;p&gt;だからコミュ障の抜本的解決策は、リソースの分配を見直すことと、メモリを強化することの二つに絞られる。&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="130" value="&lt;p&gt;コミュ力とは、目の前の会話にリソースを注ぎ込んだ時に出力されるエネルギーのことだ。&lt;/p&gt;&lt;p&gt;メモリが他のタスクで占有されている場合、目の前の会話に分配するリソースが不足する。その結果コミュ障になるのだ。&lt;/p&gt;&lt;p&gt;だからコミュ障の抜本的解決策は、リソースの分配を見直すことと、メモリを強化することの二つに絞られる。&lt;/p&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="7885" y="225" width="270" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="131" value="人間は気の持ち様を立て直しながら生きている。気の持ち様の立て直し方は色々ある。コミュ障は大概、ノベルコンテンツで気の持ち様を立て直している。陽キャは大概、他者とのコミュニケーションで気の持ち様を立て直している。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="131" value="人間は気の持ち様を立て直しながら生きている。気の持ち様の立て直し方は色々ある。コミュ障は大概、ノベルコンテンツで気の持ち様を立て直している。陽キャは大概、他者とのコミュニケーションで気の持ち様を立て直している。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="6480" y="255" width="280" height="110" as="geometry"/>
                 </mxCell>
-                <mxCell id="132" value="コミュ障が耽溺しがちなノベルコンテンツには、落とし穴がある。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="132" value="コミュ障が耽溺しがちなノベルコンテンツには、落とし穴がある。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="6800" y="275" width="140" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="133" value="そこで登場するのが世界樹に関連するテクノロジーだ。" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="133" value="そこで登場するのが世界樹に関連するテクノロジーだ。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="8400" y="280" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="134" value="&lt;p&gt;特定のアカシックレコードに接続してデータを喰らう為に必要な媒質が、アーカーシャという端末だ。&lt;/p&gt;&lt;p&gt;アーカーシャには種類があって、それぞれのアーカーシャからは違うデータを喰らうことができる。&lt;/p&gt;&lt;p&gt;グリーンアーカーシャは、社会に復帰する為に必要な情報を喰わせてくれる。&lt;/p&gt;&lt;p&gt;レッドアーカーシャは、地位を高める為に必要な情報を喰わせてくれる。&lt;/p&gt;&lt;p&gt;イエローアーカーシャは、プラットフォームを作る為に必要な情報を喰わせてくれる。&lt;/p&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="134" value="&lt;p&gt;特定のアカシックレコードに接続してデータを喰らう為に必要な媒質が、アーカーシャという端末だ。&lt;/p&gt;&lt;p&gt;アーカーシャには種類があって、それぞれのアーカーシャからは違うデータを喰らうことができる。&lt;/p&gt;&lt;p&gt;グリーンアーカーシャは、社会に復帰する為に必要な情報を喰わせてくれる。&lt;/p&gt;&lt;p&gt;レッドアーカーシャは、地位を高める為に必要な情報を喰わせてくれる。&lt;/p&gt;&lt;p&gt;イエローアーカーシャは、プラットフォームを作る為に必要な情報を喰わせてくれる。&lt;/p&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="8560" y="202.5" width="310" height="225" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3280" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="136" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3440" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="137" value="ユグドラシル&lt;br style=&quot;font-size: 48px;&quot;&gt;ハルマゲドン&lt;br style=&quot;font-size: 48px;&quot;&gt;コンステレーション&lt;br style=&quot;font-size: 48px;&quot;&gt;楔&lt;br style=&quot;font-size: 48px;&quot;&gt;炎上&lt;br style=&quot;font-size: 48px;&quot;&gt;閉鎖性&lt;br style=&quot;font-size: 48px;&quot;&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=48;" vertex="1" parent="1">
+                    <mxGeometry x="3455" y="795" width="460" height="360" as="geometry"/>
+                </mxCell>
+                <mxCell id="138" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="3601" y="280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="139" value="宿場町" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=48;" vertex="1" parent="1">
+                    <mxGeometry x="3040" y="880" width="170" height="70" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
