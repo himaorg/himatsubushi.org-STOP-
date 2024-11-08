@@ -1,15 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
 // ▼▼▼　Slider　▼▼▼
 const images = [
     {src: "./images/ai/diary.jpeg", link: "#"},
