@@ -27,7 +27,7 @@ setInterval(arrayGoNext, 3000);
 // ▼▼▼  3D描画  ▼▼▼
 import * as THREE from "three";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { MMDLoader } from 'three/addons/loaders/MMDLoader.js';
+import { MMDLoader } from "three/addons/loaders/MMDLoader.js";
 
 // 基本設定
 const scene = new THREE.Scene();
@@ -37,17 +37,18 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 // 環境光の追加
-const light = new THREE.AmbientLight(0x404040, 2); // 色と強度
+const light = new THREE.AmbientLight(0x404040, 5); // 色と強度
 scene.add(light);
 
-// GLTF形式のモデルデータを読み込む
-const loader = new GLTFLoader();
-// GLTFファイルのパスを指定
-const gltf = await loader.loadAsync('./3D-Model/ウナ.gltf');
-// 読み込み後に3D空間に追加
-const model = gltf.scene;
+// モデルデータを読み込む
+const loader = new MMDLoader();
+const model = await loader.loadAsync('./3D-Model/V6Spicy 音街ウナ（公式モデル）.pmx');
 scene.add(model);
-camera.position.z = 5;
+camera.position.y = 8;
+camera.position.z = 15;
+light.position.x = 0;
+light.position.y = 0;
+light.position.z = 20;
 
 // アニメーションループ
 function animate() {
