@@ -5,8 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HIMAORG</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/loaders/GLTFLoader.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.167.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.167.0/examples/jsm/"
+            }
+        }
+    </script>
     <link rel="icon" href="./99.others/favicon/HIMAORG-Logo.png" type="image/png">
 </head>
 <body>
@@ -94,7 +100,7 @@
         <div id="upper-secondary-school-equivalency-examination">高認試験の過去問を解くアプリ</div>
      </a>
 
+     <script type="module" src="./main.js"></script>
 
-    <script src="./main.js"></script>
 </body>
 </html>

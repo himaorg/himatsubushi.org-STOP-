@@ -13,3 +13,4 @@
 # prefix-*
 
 *.php
+*.bin

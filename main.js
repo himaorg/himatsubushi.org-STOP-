@@ -25,37 +25,35 @@ setInterval(arrayGoNext, 3000);
 
 
 // ▼▼▼  3D描画  ▼▼▼
-// シーンの作成
+import * as THREE from "three";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { MMDLoader } from 'three/addons/loaders/MMDLoader.js';
+
+// 基本設定
 const scene = new THREE.Scene();
-
-// カメラの作成 (視野角, アスペクト比, 近くの範囲, 遠くの範囲)
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-// レンダラーの作成
-const renderer = new THREE.WebGLRenderer({ alpha: true });//alpha: true：背景の不透明度を0％にする
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setClearColor(0x000000, 0);//背景色を無色に指定する
 document.body.appendChild(renderer.domElement);
 
-// オブジェクトの作成 (例: ボックスジオメトリ)
-const geometry = new THREE.BoxGeometry();
-const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-const cube = new THREE.Mesh(geometry, material);
-scene.add(cube);
+// 環境光の追加
+const light = new THREE.AmbientLight(0x404040, 2); // 色と強度
+scene.add(light);
 
-// カメラの位置設定
+// GLTF形式のモデルデータを読み込む
+const loader = new GLTFLoader();
+// GLTFファイルのパスを指定
+const gltf = await loader.loadAsync('./3D-Model/ウナ.gltf');
+// 読み込み後に3D空間に追加
+const model = gltf.scene;
+scene.add(model);
 camera.position.z = 5;
 
 // アニメーションループ
 function animate() {
     requestAnimationFrame(animate);
-
-    // オブジェクトを回転させる
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-
-    // シーンをレンダリング
     renderer.render(scene, camera);
 }
 animate();
+
 // ▲▲▲  3D描画  ▲▲▲
