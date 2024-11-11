@@ -35,6 +35,8 @@ const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerH
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
+new THREE.WebGLRenderer({ alpha: true });
+renderer.setClearColor(0x000000, 0);
 
 // 環境光の追加
 const light = new THREE.AmbientLight(0x404040, 5); // 色と強度
@@ -42,13 +44,14 @@ scene.add(light);
 
 // モデルデータを読み込む
 const loader = new MMDLoader();
-const model = await loader.loadAsync('./3D-Model/V6Spicy 音街ウナ（公式モデル）.pmx');
+const model = await loader.loadAsync('./3D-Model/魔理沙/霧雨魔理沙R.pmx');
 scene.add(model);
 camera.position.y = 8;
 camera.position.z = 15;
 light.position.x = 0;
 light.position.y = 0;
 light.position.z = 20;
+model.scale.set(0.5,0.5,0.5)
 
 // アニメーションループ
 function animate() {
