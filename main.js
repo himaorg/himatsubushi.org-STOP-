@@ -56,6 +56,7 @@ model.scale.set(0.5,0.5,0.5)
 // アニメーションループ
 function animate() {
     requestAnimationFrame(animate);
+    model.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
 animate();
