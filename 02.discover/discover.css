@@ -44,3 +44,21 @@ a:hover
 	text-decoration: underline;
 	color: #ff6600;
 }
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar{
+    width: 300px;
+}
+
+#submit{
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #ff6600;
+}

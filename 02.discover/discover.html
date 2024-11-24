@@ -5,13 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>discover</title>
     <link rel="stylesheet" href="./discover.css">
+    <!-- コンテンツの形式（小説, ブログ, 日記, 動画）を選択して、それぞれでキーワード検索する（PHPで） -->
 </head>
 <body>
+    <div id="container">
+        <form action="search.php" method="get">
+            <input id="bar" type="text" name="keyword">
+            <select name="database">
+                <option value="database1">小説</option>
+                <option value="database2">ブログ</option>
+                <option value="database3">日記</option>
+                <option value="database4">動画</option>
+            </select>
+            <input id="submit" type="submit" value="検索">
+        </form>
+    </div>
     <nav>
         <ul>
             <li><a href="/02.discover/novel/page/senario.php">小説</a></il>
             <li><a href="/02.discover/blog/page/blog.php">ブログ</a></li>
             <li><a href="/02.discover/diary/page/diary.php">日記</a></li>
+            <li><a href="/02.discover/movie/page/movie.php">動画</a></li>
         </ul>
     </nav>
 </body>
