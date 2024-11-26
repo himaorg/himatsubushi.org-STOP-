@@ -1,8 +1,8 @@
 // ▼▼▼　Slider　▼▼▼
 const images = [
-    {src: "./images/ai/diary.jpeg", link: "#"},
-    {src: "./images/ai/シュルク.jpeg", link: "#"},
-    {src: "./images/ai/四神.jpeg", link: "#"},
+    {src: "../images/ai/diary.jpeg", link: "#"},
+    {src: "../images/ai/シュルク.jpeg", link: "#"},
+    {src: "../images/ai/四神.jpeg", link: "#"},
 ]
 
 let current = 0;
@@ -44,7 +44,7 @@ scene.add(light);
 
 // モデルデータを読み込む
 const loader = new MMDLoader();
-const model = await loader.loadAsync('./07.3D-Model/魔理沙/霧雨魔理沙R.pmx');
+const model = await loader.loadAsync('../07.3D-Model/魔理沙/霧雨魔理沙R.pmx');
 scene.add(model);
 camera.position.y = 8;
 camera.position.z = 15;
