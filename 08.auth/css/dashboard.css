@@ -150,6 +150,9 @@
     align-items: end;
     color: #ffffe0;
     font-weight: bold;
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
 }
 /* ▲▲▲  account  ▲▲▲ */
 
