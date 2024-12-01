@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>執筆</title>
+    <link rel="stylesheet" href="./write.css">
+</head>
+<body>
+
+    <textarea name="textarea" id="textarea" placeholder="ここにMarkdownを入力してください。write object と preview objectは、移動することができます。"></textarea>
+
+    <div id="container">
+        <div id="preview"></div>
+        <div class="resizer" alt="サイズ変更"></div>
+    </div>
+
+    <div id="controls">
+        <button id="import">インポート</button>
+        <button id="export">エクスポート</button>
+        <input type="file" id="fileInput" style="display: none;" accept=".md,.txt">
+    </div>
+    
+      
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        const textarea = document.getElementById("textarea");
+
+        textarea.addEventListener("input", ()=>{
+            const writing = textarea.value;
+            preview.innerHTML = marked.parse(writing);
+        });
+
+    </script>
+    <script src="./write.js"></script>
+</body>
+</html>
