@@ -1,7 +1,7 @@
 // ▼▼▼　Slider　▼▼▼
 const images = [
-    {src: "../images/ai/diary.jpeg", link: "#"},
-    {src: "../images/ai/シュルク.jpeg", link: "#"},
+    {src: "../images/slider/広告掲載枠.png", link: "#"},
+    {src: "../images/slider/小説執筆者募集.png", link: "#"},
     {src: "../images/ai/四神.jpeg", link: "#"},
 ]
 

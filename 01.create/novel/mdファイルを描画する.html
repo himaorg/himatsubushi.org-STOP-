@@ -4,13 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        #content {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3, h4, h5, h6 {
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+        }
+        p {
+            margin: 10px 0;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul, ol {
+            margin: 10px 0 10px 20px;
+        }
+        code {
+            background-color: #f4f4f9;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: "Courier New", monospace;
+        }
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background: #f4f4f9;
+            border-left: 4px solid #3498db;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <div id="content"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch("/01.create/novel/log/2024-11-26/秩序と混沌の調和をとるために勇者と魔王が奔走する話.md")
+        fetch("/01.create/blog/職務経歴書.md")
             .then(response => response.text())
             .then(markdown => {
                 document.getElementById("content").innerHTML = marked.parse(markdown);

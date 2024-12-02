@@ -30,6 +30,7 @@
     background-size: cover;
     color: #ffffe0;
     font-size: 20px;
+    word-break: break-all;
     line-height: 10px;
     cursor: grab;
     position: relative;
