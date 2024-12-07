@@ -1,0 +1,22 @@
+#Yggdrasil{
+    background-image:url(../images/backGround/silver-oak-297713_1920.png);
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    left: 0%;
+    position: absolute;
+    z-index: -1;
+}
+
+#container{
+    right: 0%;
+    width: 25%;
+    height: 100vh;
+    position: absolute;
+}
+
+.post{
+    width: 35%;
+    height: 80vh;
+}
