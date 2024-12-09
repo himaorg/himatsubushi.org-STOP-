@@ -232,3 +232,8 @@ a:visited{
     color: #ffffe0;
     font-weight: bold;
 }
+
+#social{
+    position: relative !important;
+    top: 40%;
+}

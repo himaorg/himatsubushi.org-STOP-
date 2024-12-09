@@ -238,5 +238,6 @@ a:visited{
 }
 
 #social{
-    top: 20%;
+    position: relative !important;
+    top: 40%;
 }

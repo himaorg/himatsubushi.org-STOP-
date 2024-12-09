@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // ページ読み込み時にメモを取得
     const loadMemos = async () => {
-        const response = await fetch('./load-memos.php');
+        const response = await fetch('/load-tokumei.php');
         const memos = await response.json();
         memos.forEach((memo) => {
             createMemoElement(memo.id, memo.title, memo.content);
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                 memo_text[memo_id] = textarea.value;
 
                 // データベースに更新を送信
-                await fetch('./update-memo.php', {
+                await fetch('/update-tokumei.php', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
@@ -53,30 +53,17 @@ document.addEventListener("DOMContentLoaded", async () => {
     add_memo.addEventListener("click", async () => {
         const memo_id = `${Date.now()}`;
         const title = "新しいメモ";
-    
-        try {
-            const response = await fetch('./add-memo.php', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ id: memo_id, title, content: '' }),
-            });
-    
-            const result = await response.json();
-    
-            if (result.status === 'success') {
-                createMemoElement(memo_id, title);
-            } else {
-                // エラーメッセージを表示
-                console.error(result.message);
-                alert(result.message || 'メモの作成に失敗しました');
-            }
-        } catch (error) {
-            console.error('メモ作成エラー:', error);
-            alert('通信エラーが発生しました');
-        }
+
+        // サーバーに新しいメモを保存
+        await fetch('/add-memo.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id: memo_id, title, content: '' }),
+        });
+
+        createMemoElement(memo_id, title);
     });
-    
+
     // 初期ロード
     await loadMemos();
 });
-
