@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <style>
+    <style>
         body {
             font-family: "Arial", sans-serif;
             line-height: 1.6;
@@ -62,14 +62,14 @@
             font-style: italic;
             color: #555;
         }
-    </style> -->
+    </style>
 </head>
 <body>
     <div id="content"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script>
-        fetch("/01.create/diary/2024-12-25.md")
+        fetch("/01.create/blog/職務経歴書.md")
             .then(response => response.text())
             .then(markdown => {
                 document.getElementById("content").innerHTML = marked.parse(markdown);
