@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Ex4e78yeorhTX2S8gjIM" name="ページ1">
-        <mxGraphModel dx="1698" dy="2420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2662" dy="2577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -26,10 +26,10 @@
                     <mxGeometry x="320" y="275" width="140" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="大枠の説明" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="160" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="-1240" y="150" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="具体的なエピソード" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="30" y="265" width="100" height="100" as="geometry"/>
+                    <mxGeometry x="-1250" y="260" width="100" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="12" value="今日はここで休むことにします。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="520" y="280" width="120" height="60" as="geometry"/>
@@ -47,7 +47,7 @@
                     <mxGeometry x="1000" y="270" width="150" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="15" value="セリフ回し" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="40" y="380" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="-1240" y="375" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="16" value="「こんにちは、セントベレス教団営業部のアルカテイルと」&lt;br&gt;「アシッドテイルです」&lt;br&gt;「「宜しくお願いします」」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="1000" y="375" width="150" height="90" as="geometry"/>
@@ -304,9 +304,6 @@
                 <mxCell id="106" value="「まずはパイモンに会おう」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4962" y="385" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="107" value="一つ目のローカル（コンステレーションヘイム）" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="4910" y="50" width="450" height="80" as="geometry"/>
-                </mxCell>
                 <mxCell id="108" value="「パイモンは72柱の候補だ。彼が本当に72柱になれるのかを見極めなければならない」" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="4938" y="445" width="168" height="75" as="geometry"/>
                 </mxCell>
@@ -448,74 +445,110 @@
                 <mxCell id="162" value="リヴァイアサンとは、コンステレーションの土台となる枠組みである。リヴァイアサンという土台の上でコンステレーションが発生することにより、メッシュマップが形成される。経済はメッシュマップを越えて運用されるが、インディビデュアルのサイコロジカルはメッシュマップの内側に閉じ籠る。この現象は、物質的に豊かになってもサイコが豊かにならない原因となっている。" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="10600" y="105" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="163" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" vertex="1" parent="1">
+                <mxCell id="163" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=3;" parent="1" vertex="1">
                     <mxGeometry x="10980" y="560" width="400" height="400" as="geometry"/>
                 </mxCell>
-                <mxCell id="166" value="" style="endArrow=none;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=5;startFill=1;endFill=0;" edge="1" parent="1" source="163" target="163">
+                <mxCell id="166" value="" style="endArrow=none;startArrow=classic;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;strokeWidth=5;startFill=1;endFill=0;" parent="1" source="163" target="163" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="11010" y="610" as="sourcePoint"/>
                         <mxPoint x="11060" y="560" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="167" value="" style="endArrow=classic;startArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=5;startFill=0;" edge="1" parent="1" source="163" target="163">
+                <mxCell id="167" value="" style="endArrow=classic;startArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=5;startFill=0;" parent="1" source="163" target="163" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="11010" y="610" as="sourcePoint"/>
                         <mxPoint x="11060" y="560" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="168" value="want" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="168" value="want" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="10830" y="725" width="130" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="169" value="have" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=50;rounded=0;" vertex="1" parent="1">
+                <mxCell id="169" value="have" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=50;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="11115" y="480" width="130" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="170" value="happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="170" value="happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11000" y="585" width="150" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="171" value="happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="171" value="happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11200" y="780" width="150" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="172" value="un&lt;br&gt;happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="172" value="un&lt;br&gt;happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11200" y="585" width="150" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="173" value="un&lt;br&gt;happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="173" value="un&lt;br&gt;happy" style="ellipse;whiteSpace=wrap;html=1;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11000" y="785" width="150" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="174" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="178" target="176">
+                <mxCell id="174" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="178" target="176" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="11420" y="430" as="sourcePoint"/>
                         <mxPoint x="10940" y="420" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="175" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="179" target="177">
+                <mxCell id="175" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="179" target="177" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="10940" y="1063.89" as="sourcePoint"/>
                         <mxPoint x="11380" y="1063.89" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="176" value="hard" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="176" value="hard" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="10760" y="390" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="177" value="hard" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="177" value="hard" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11440" y="1050" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="178" value="easy" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="178" value="easy" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="11440" y="390" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="179" value="easy" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" vertex="1" parent="1">
+                <mxCell id="179" value="easy" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;strokeWidth=3;fontSize=50;" parent="1" vertex="1">
                     <mxGeometry x="10760" y="1045" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="180" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="179" target="176">
+                <mxCell id="180" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="179" target="176" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="11325" y="550" as="sourcePoint"/>
                         <mxPoint x="10885" y="550" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="181" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="178" target="177">
+                <mxCell id="181" value="" style="endArrow=classic;html=1;fontSize=50;strokeWidth=10;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="178" target="177" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="12020" y="520" as="sourcePoint"/>
                         <mxPoint x="11460" y="525" as="targetPoint"/>
                     </mxGeometry>
+                </mxCell>
+                <mxCell id="182" value="一つ目のローカル（コンステレーションヘイム）" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-840" y="-310" width="450" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="183" value="地上は核の炎に包まれた。人類は地下シェルター生活を行うことになった" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-210" y="167.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="184" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="50" y="60" width="10" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="185" value="ガイドからこの世界について解説される" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="-490" y="-80" width="450" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="186" value="MySWW, MariaYB, Netizensの闘争が苛烈を極めた" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-370" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="187" value="" style="line;strokeWidth=2;direction=south;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-480" y="60" width="10" height="490" as="geometry"/>
+                </mxCell>
+                <mxCell id="188" value="主人公が目覚める" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="-1030" y="-80" width="450" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="189" value="バックルームで目が覚めると、そこは釣り堀だった" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1060" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="191" value="釣りをすると、72柱の悪魔のうちの1柱が釣れた" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-910" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="192" value="彼はガイドを務めてくれると申し出た" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-740" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="193" value="サバイバル開始" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=30;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="-80" width="450" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="195" value="明日から、就職活動をする" style="whiteSpace=wrap;html=1;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="660" y="270" width="280" height="210" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
