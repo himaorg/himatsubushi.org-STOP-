@@ -1,0 +1,44 @@
+body{
+    background-image: url(../images/backGround/hatsuneMiku.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+#nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    color:aqua;
+    list-style: none;
+}
+
+#header{
+    font-size: 42px;
+    background-color: aliceblue;
+}
+
+#content{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+    box-shadow: 2px,2px,5px;
+}
+
+#content li{
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+#nav a{
+    color: aqua;
+    text-decoration: none;
+}
+
+#content a{
+    color: aquamarine;
+    text-decoration: none;
+}
