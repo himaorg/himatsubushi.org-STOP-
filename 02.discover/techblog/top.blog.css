@@ -1,6 +1,7 @@
 body{
-    background-image: url(../images/backGround/hatsuneMiku.jpg);
+    background-image: url(../images/backGround/119.png);
     background-size: cover;
+    background-attachment: fixed;
     z-index: -1;
 }
 
@@ -9,28 +10,40 @@ body{
     width: 60%;
     justify-content: space-between;
     color:aqua;
+    background-color: #2a293c;
     list-style: none;
+    margin-bottom: 3%;
 }
 
 #header{
-    font-size: 42px;
+    font-size: 3vw;
     background-color: aliceblue;
 }
 
-#content{
+.midashi{
+    font-size: 3vw;
+    color: #f1f1f1;
+    background-color: #010101;
+    width: 50%;
+    margin-left: 2.9%;
+}
+
+.content{
     display: flex;
     list-style: none;
-    gap: 10px;
-    width: 50%;
+    width: 80%;
     height: auto;
+    gap: 10px;
     flex-wrap: wrap;
     box-shadow: 2px,2px,5px;
 }
 
-#content li{
-    font-size: 30px;
-    width: 100px;
+.content li{
+    font-size: 2vw;
+    width: 20vw;
     height: 100px;
+    color: black;
+    background-color: #f1f1f1;
 }
 
 #nav a{
@@ -38,7 +51,7 @@ body{
     text-decoration: none;
 }
 
-#content a{
+.content a{
     color: aquamarine;
     text-decoration: none;
 }
