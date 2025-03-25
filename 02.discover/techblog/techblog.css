@@ -1,0 +1,65 @@
+body{
+    background-image: url(../../images/backGround/119.png);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#nav{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    color:aqua;
+    background-color: #2a293c;
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+#header{
+    font-size: 3vw;
+    background-color: aliceblue;
+}
+
+.midashi{
+    font-size: 3vw;
+    color: #f1f1f1;
+    background-color: #010101;
+    width: 50%;
+    margin-left: 2.9%;
+}
+
+.content{
+    display: flex;
+    list-style: none;
+    width: 80%;
+    height: auto;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-shadow: 2px,2px,5px;
+}
+
+.content li{
+    font-size: 1.5vw;
+    width: 20vw;
+    height: 100px;
+    color: black;
+    background-color: #f1f1f1;
+}
+
+#nav a{
+    color: aqua;
+    text-decoration: none;
+}
+
+.content a{
+    color: aquamarine;
+    text-decoration: none;
+}
+
+.content li.selected {
+    background-color: yellow;
+}
+
+.content li:hover{
+    cursor: pointer;
+}
