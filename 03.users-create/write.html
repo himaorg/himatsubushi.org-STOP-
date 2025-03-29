@@ -4,35 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>執筆</title>
-    <link rel="stylesheet" href="./write.css">
+    <style>
+        #input,#preview{
+            width: 50%;
+            height: 80vh;
+            padding: 0.5em;
+            margin: 0.5em;
+            border: solid #ddd;
+            box-sizing: border-box;
+            overflow-y: scroll;
+            font-size: 1.1em;
+            font-weight: normal;
+            line-height: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+        #wrap{
+            display: flex;
+            justify-content: space-between;
+        }
+        #input{
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-
-    <textarea name="textarea" id="textarea" placeholder="ここにMarkdownを入力してください。write object と preview objectは、移動することができます。"></textarea>
-
-    <div id="container">
+    <div id="wrap">
+        <textarea name="" id="input" placeholder="マークダウン記法で書いてください。右側にHTMLプレビューが表示されます。save/loadなどの機能は下の方にあります。"></textarea>
+        
+        
         <div id="preview"></div>
-        <div class="resizer" alt="サイズ変更"></div>
     </div>
-
-    <div id="controls">
-        <button id="import">インポート</button>
-        <button id="export">エクスポート</button>
-        <input type="file" id="fileInput" style="display: none;" accept=".md,.txt">
+    <div>
+        <!-- <input type="file" id="selectInputFile" accept=".md">
+        <button id="export">名前をつけて保存</button> -->
     </div>
-    
-      
-    
+        
+        
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        const textarea = document.getElementById("textarea");
 
-        textarea.addEventListener("input", ()=>{
-            const writing = textarea.value;
-            preview.innerHTML = marked.parse(writing);
+
+
+    <script>
+        const input = document.getElementById("input");
+        const preview = document.getElementById("preview");
+
+        input.addEventListener("input",()=>{
+            const inputText = input.value;
+            const inputTextParsed = marked.parse(inputText);
+            preview.innerHTML = inputTextParsed;
         });
 
+
+        const inport = document.getElementById("inport");
+        const export = document.getElementById("export");
+
+        inport.addEventListener("change",(){
+
+        })
     </script>
-    <script src="./write.js"></script>
 </body>
 </html>
