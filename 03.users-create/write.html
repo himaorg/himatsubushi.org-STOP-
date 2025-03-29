@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,15 +31,13 @@
 </head>
 <body>
     <div id="wrap">
-        <textarea name="" id="input" placeholder="マークダウン記法で書いてください。右側にHTMLプレビューが表示されます。save/loadなどの機能は下の方にあります。"></textarea>
+        <textarea id="input" placeholder="マークダウン記法で書いてください。右側にHTMLプレビューが表示されます。"></textarea>
         
         
         <div id="preview"></div>
     </div>
-    <div>
-        <!-- <input type="file" id="selectInputFile" accept=".md">
-        <button id="export">名前をつけて保存</button> -->
-    </div>
+    <input type="file" id="selectInputFile" accept=".md">
+    <button id="exportBtn">名前をつけて保存（動かない）</button>
         
         
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -47,21 +45,41 @@
 
 
     <script>
+        // markdownからHTMLへparsed
         const input = document.getElementById("input");
         const preview = document.getElementById("preview");
-
-        input.addEventListener("input",()=>{
-            const inputText = input.value;
-            const inputTextParsed = marked.parse(inputText);
+    
+        input.addEventListener("input",() => {
+            const inputTextParsed = marked.parse(input.value);
             preview.innerHTML = inputTextParsed;
         });
 
+        // import
+        const selectInputFile = document.getElementById("selectInputFile")
+        selectInputFile.addEventListener("change",(changeEvent) => {
+            const importFiles = changeEvent.target.files[0];
+            if(importFiles){
+                const reader = new FileReader();
+                reader.onload = (readerEvent) => {
+                    const readAsMarkdownText = readerEvent.target.result;
+                    input.value = readAsMarkdownText;
+                    updatePreview();
+                }
+                reader.readAsText(importFiles);
+            }
+        })
 
-        const inport = document.getElementById("inport");
-        const export = document.getElementById("export");
+        // export
+        const exportBtn = document.getElementById("exportBtn");
 
-        inport.addEventListener("change",(){
-
+        exportBtn.addEventListener("click",() => {
+            const content = input.value;
+            const blob = new Blob([content],{type:"text/markdown"});
+            const URL = URL.createObjectURL(blob);
+            const a_tag = document.createElement("a");
+            a_tag.href = URL;
+            a_tag.download = "HIMAORG-APP.md";
+            a_tag.click();
         })
     </script>
 </body>
