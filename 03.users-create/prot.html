@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロット</title>
+    <style>
+        .textarea{
+            width: 30%;
+            height: 30vh;
+            padding: 0.5em;
+            margin: 0.5em;
+            border: solid #ddd;
+            box-sizing: border-box;
+            overflow-y: scroll;
+            font-size: 1.1em;
+            font-weight: normal;
+            line-height: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            box-sizing: border-box;
+        }
+        #wrap{
+            width: 100%;
+            height: 80vh;
+            overflow: scroll;
+        }
+        #control{
+            width: 100%;
+            height: 20vh;
+            top: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+        <textarea class="textarea"></textarea>
+    </div>
+    <div id="control">
+        <input type="file" id="import">
+        <button id="export">名前をつけて保存</button>
+    </div>
+    <script>
+        const exportButton = document.getElementById('export');
+        const importInput = document.getElementById('import');
+        const textareas = document.querySelectorAll('.textarea');
+
+        // 保存機能
+        exportButton.addEventListener('click', () => {
+            const data = Array.from(textareas).map(textarea => textarea.value).join('\n---\n'); // 各テキストエリアを分ける区切り文字を設定
+            const blob = new Blob([data], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'plot.txt';
+            a.click();
+            URL.revokeObjectURL(a.href);
+        });
+
+        // 読み込み機能
+        importInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const contents = e.target.result.split('\n---\n'); // 区切り文字で分割
+                textareas.forEach((textarea, index) => {
+                    textarea.value = contents[index] || ''; // 分割されたテキストをそれぞれのtextareaにセット
+                });
+            };
+            reader.readAsText(file);
+        });
+    </script>
+</body>
+</html>

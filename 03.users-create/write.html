@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>執筆</title>
     <style>
-        #input,#preview{
+        #input, #preview {
             width: 50%;
             height: 80vh;
             padding: 0.5em;
@@ -20,11 +20,11 @@
             color: #333;
             box-sizing: border-box;
         }
-        #wrap{
+        #wrap {
             display: flex;
             justify-content: space-between;
         }
-        #input{
+        #input {
             resize: none;
         }
     </style>
@@ -32,55 +32,58 @@
 <body>
     <div id="wrap">
         <textarea id="input" placeholder="マークダウン記法で書いてください。右側にHTMLプレビューが表示されます。"></textarea>
-        
-        
         <div id="preview"></div>
     </div>
     <input type="file" id="selectInputFile" accept=".md">
-    <button id="exportBtn">名前をつけて保存（動かない）</button>
-        
-        
+    <button id="exportBtn">名前をつけて保存</button>
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-
-
     <script>
-        // markdownからHTMLへparsed
         const input = document.getElementById("input");
         const preview = document.getElementById("preview");
-    
-        input.addEventListener("input",() => {
+        const selectInputFile = document.getElementById("selectInputFile");
+        const exportBtn = document.getElementById("exportBtn");
+
+        // プレビューを更新する関数
+        function updatePreview() {
             const inputTextParsed = marked.parse(input.value);
             preview.innerHTML = inputTextParsed;
-        });
+        }
 
-        // import
-        const selectInputFile = document.getElementById("selectInputFile")
-        selectInputFile.addEventListener("change",(changeEvent) => {
-            const importFiles = changeEvent.target.files[0];
-            if(importFiles){
+        // 入力時にプレビューを更新
+        input.addEventListener("input", updatePreview);
+
+        // ファイルをインポートする処理
+        selectInputFile.addEventListener("change", (changeEvent) => {
+            const importFile = changeEvent.target.files[0];
+            if (importFile) {
                 const reader = new FileReader();
                 reader.onload = (readerEvent) => {
                     const readAsMarkdownText = readerEvent.target.result;
                     input.value = readAsMarkdownText;
-                    updatePreview();
+                    updatePreview(); // 読み込み後にプレビューを更新
                 }
-                reader.readAsText(importFiles);
+                reader.readAsText(importFile);
             }
-        })
+        });
 
-        // export
-        const exportBtn = document.getElementById("exportBtn");
-
-        exportBtn.addEventListener("click",() => {
+        // ファイルをエクスポートする処理
+        exportBtn.addEventListener("click", () => {
             const content = input.value;
-            const blob = new Blob([content],{type:"text/markdown"});
-            const URL = URL.createObjectURL(blob);
-            const a_tag = document.createElement("a");
-            a_tag.href = URL;
-            a_tag.download = "HIMAORG-APP.md";
-            a_tag.click();
-        })
+            const blob = new Blob([content], { type: "text/markdown" });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = "HIMAORG-APP.md";
+            document.body.appendChild(a); // 必要な場合だけ追加
+            a.click();
+            document.body.removeChild(a); // 使用後に削除
+            URL.revokeObjectURL(url); // メモリを解放
+        });
+
+        // 初期化時にプレビューを更新
+        updatePreview();
     </script>
 </body>
 </html>
