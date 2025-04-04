@@ -1,24 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application</title>
+    <style>
+        .title{
+            font-size: 3rem;
+            color: gainsboro;
+        }
+        .wrap{
+            display: flex;
+            gap: 2em;
+            width: 100%;
+            height: 80vh;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+        }
+        .content{
+            list-style: none;
+            font-size: 2rem;
+            width: 7em;
+            height: 7em;
+            background-color: gainsboro;
+            border: 0.05em solid #1f1f1f;
+        }
+        video{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <h1>作ったアプリ一覧</h1>
-    <p>使いやすいタスク管理ツール</p>
-    <p>使いやすいマインドマップ</p>
-    <p>面白いノベルゲーム</p>
-    <p>パックマンもどき</p>
-    <p>AIのVTuber生成キット</p>
-    <p>仮想オーディオインターフェース</p>
-    <p>超便利なRSS</p>
-    <p>コード進行ダイアグラム</p>
-    <p>ストーリー進行ダイアグラム</p>
-    <p>ブラウザで使える画像編集アプリ</p>
-    <p>ブラウザで使える動画編集アプリ</p>
-    <p>多機能な目覚まし時計</p>
-    <p></p>
+    <video src="../../videos/network_-_12716 (1080p).mp4" autoplay loop></video>
+    <div class="title">Application</div>
+    <ul class="wrap">
+        <li class="content"><a href="">魔法少女音街ウナ設定資料（none）</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+        <li class="content"><a href="">comeingSoon</a></li>
+    </ul>
 </body>
 </html>
