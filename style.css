@@ -168,6 +168,7 @@ body{
     background-image: url(./images/backGround/cafe.png);
     background-size: cover;
     background-position: center;
+    object-fit: cover;
 }
 
 
