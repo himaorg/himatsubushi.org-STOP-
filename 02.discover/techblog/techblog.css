@@ -33,7 +33,7 @@ body{
     list-style: none;
     width: 80%;
     height: auto;
-    gap: 10px;
+    gap: 1em;
     flex-wrap: wrap;
     box-shadow: 2px,2px,5px;
 }
