@@ -3,19 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HIMAORGのアカウント紹介</title>
+    <style>
+#wrap-1, #wrap-2, #wrap-3 {
+        width: 100%;
+        margin-top: 5vh;
+        display: flex;
+        gap: 2%;
+    }
+    .first, .second{
+            width: 50%;
+            height: 30vh;
+    }
+    .first{
+        margin-left: 2%;
+    }
+    .second{
+        margin-left: 10%;
+    }
+    #content{
+        position: absolute;
+        left: 30%;
+        width: 40%;
+        background-color: whitesmoke;
+        padding: 1%;
+        box-shadow: 0px 0px 0.3em 0.2em gainsboro;
+    }
+    body{
+        background-color: whitesmoke;
+    }
+        </style>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <h1>HIMAORGのアカウント紹介</h1>
+        <h2>娯楽</h2>
+        <div id="wrap-1">
+            <div class="first">
+                <h3>E-Mail</h3>
+                <div>なし</div>
+            </div>
+            <div class="second">
+                <h3>プラットフォーム</h3>
+                <div>
+                    <a href="https://www.youtube.com/@himaorg-YT">YouTube</a>
+                </div>
+                <div>
+                    <a href="https://x.com/work_himaorg">X</a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/work_himaorg">Instagram</a>
+                </div>
+                <div>
+                    <a href="https://github.com/himaorg">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <h2>求人</h2>
+        <div id="wrap-2">
+            <div class="first">
+                <h3>E-Mail</h3>
+                <div>検討中</div>
+            </div>
+            <div class="second">
+                <h3>プラットフォーム</h3>
+                <div>なし</div>
+            </div>
+        </div>
+        <h2>受注</h2>
+        <div id="wrap-3">
+            <div class="first">
+                <h3>E-Mail</h3>
+                <div>contact@himatsubushi.org</div>
+            </div>
+            <div class="second">
+                <h3>プラットフォーム</h3>
+                <div>
+                    <a href="https://https://crowdworks.jp/public/employees/6305890?ref=share_url_wkprofile">CloudWorks</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        fetch("./contact.md")
-            .then(response => response.text())
-            .then(markdown => {
-                document.getElementById("content").innerHTML = marked.parse(markdown);
-            })
-            .catch(error => console.error("Error fetching the Markdown file:", error));
-    </script>
 </body>
 </html>

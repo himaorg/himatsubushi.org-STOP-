@@ -31,7 +31,7 @@ body{
 .content{
     display: flex;
     list-style: none;
-    width: 80%;
+    width: 100%;
     height: auto;
     gap: 1em;
     flex-wrap: wrap;
