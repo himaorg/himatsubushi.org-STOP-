@@ -61,6 +61,36 @@
             text-orientation: mixed;
             padding-top: 1em;
         }
+
+
+        @media screen and (max-width: 768px) {
+            #wrap {
+                flex-direction: column; /* 要素を縦に並べる */
+            }
+
+            #input, #preview {
+                width: 100%;       /* スマホ画面では全幅 */
+                height: 40vh;      /* 高さを少し低くして2つ収める */
+                font-size: 1em;    /* フォントサイズ少し調整 */
+            }
+
+            #control {
+                height: auto;
+                background-position-y: center;
+                padding: 1em;
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                align-items: center;
+            }
+
+            #control input,
+            #control button {
+                width: 90%;
+                max-width: 400px;
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>

@@ -100,6 +100,64 @@
             left: 60%;
             font-size: 3rem;
         }
+
+
+        @media screen and (max-width: 768px) {
+            #title {
+                font-size: 4rem;
+                top: 0.5em;
+                left: 5%;
+            }
+
+            #second-title {
+                font-size: 2rem;
+                left: auto;
+                right: 5%;
+                writing-mode: horizontal-tb;
+                text-orientation: mixed;
+                top: 6rem;
+                position: absolute;
+            }
+
+            #thred-title {
+                font-size: 2rem;
+                top: 10rem;
+                left: 5%;
+                line-height: 1.6em;
+            }
+
+            #force-title {
+                font-size: 1.2rem;
+                top: auto;
+                bottom: 1rem;
+                left: 5%;
+            }
+
+            #nav-wrap {
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                gap: 0.5em;
+                margin-top: 1em;
+            }
+
+            .nav {
+                font-size: 1.2rem;
+            }
+
+            #second-nav-wrap,
+            #thred-nav-wrap {
+                position: static;
+                margin-top: 2rem;
+                padding: 0 1rem;
+            }
+
+            #second-image {
+                height: 50vh;
+                background-position: center;
+            }
+        }
+
     </style>
 </head>
 <body>

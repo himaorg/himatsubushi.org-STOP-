@@ -49,6 +49,41 @@
             background-color: aqua;
             display: flex;
         }
+
+
+        @media screen and (max-width: 768px) {
+            .nav-wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .wrap-title {
+                display: none; /* タイトルを省略してスッキリ */
+            }
+
+            .video-wrap {
+                position: static;
+                width: 100%;
+                padding: 1em;
+                justify-content: center;
+            }
+
+            .video {
+                width: 45vw;
+                height: 25vw;
+            }
+
+            body {
+                font-size: 1em;
+            }
+
+            a {
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
@@ -142,10 +177,10 @@
 
 
 
-    <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm44696203" scrolling="no" style="border:solid 1px #ccc;" frameborder="0">
+    <!-- <iframe width="312" height="176" src="https://ext.nicovideo.jp/thumb/sm44696203" scrolling="no" style="border:solid 1px #ccc;" frameborder="0">
         <a href="https://www.nicovideo.jp/watch/sm44696203">visualStudioで日本語が文字化けする人のための動画</a>
     </iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/69o1dkiiUQc?si=GF_zANFM5QQWZQ1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/69o1dkiiUQc?si=GF_zANFM5QQWZQ1Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
 </body>
 </html>

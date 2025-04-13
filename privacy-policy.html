@@ -19,6 +19,23 @@
         body{
             background-color: gold;
         }
+
+
+        @media screen and (max-width: 600px) {
+            #privacy-policy {
+                width: 90%;
+                left: 5%;
+                position: static; /* 固定を解除して自然なスクロールに */
+                box-shadow: none; /* スマホでは影をなくすことで軽量化 */
+                padding: 15px;
+                border-radius: 4px;
+                margin-top: 20px;
+            }
+
+            body {
+                background-color: #fff8dc; /* 背景色をより落ち着いた色に */
+            }
+        }
     </style>
 </head>
 <body>

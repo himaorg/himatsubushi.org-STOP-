@@ -38,6 +38,25 @@
         body{
             background-image: url(../images/backGround/96.png);
         }
+
+
+        @media (max-width: 768px) {
+            .textarea {
+                width: 90%; /* スマホでは1行1つずつ見せる */
+                height: 20vh; /* 高さも少し縮める */
+                font-size: 1em;
+            }
+
+            #wrap {
+                height: auto;
+                overflow: visible;
+            }
+
+            #control {
+                height: auto;
+                padding: 1em;
+            }
+        }
     </style>
 </head>
 <body>

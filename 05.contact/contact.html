@@ -32,7 +32,27 @@
     body{
         background-color: whitesmoke;
     }
-        </style>
+
+
+    @media screen and (max-width: 768px) {
+        #wrap-1, #wrap-2, #wrap-3 {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .first, .second {
+            width: 100%;
+            height: auto;
+            margin-left: 0;
+        }
+
+        #content {
+            position: static;
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+    </style>
 </head>
 <body>
     <div id="content">

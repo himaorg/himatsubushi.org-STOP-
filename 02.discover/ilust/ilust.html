@@ -49,6 +49,41 @@
             background-color: aqua;
             display: flex;
         }
+
+
+        @media screen and (max-width: 768px) {
+            .nav-wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .wrap-title {
+                display: none; /* タイトルを省略してスッキリ */
+            }
+
+            .video-wrap {
+                position: static;
+                width: 100%;
+                padding: 1em;
+                justify-content: center;
+            }
+
+            .video {
+                width: 45vw;
+                height: 25vw;
+            }
+
+            body {
+                font-size: 1em;
+            }
+
+            a {
+                font-size: 0.9em;
+            }
+        }
     </style>
 </head>
 <body>
