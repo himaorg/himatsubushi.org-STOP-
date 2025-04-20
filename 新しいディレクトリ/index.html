@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMAORG ひまおーぐ</title>
+    <style>
+        #img-1{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 38.7%;
+            height: 99vh;
+            top: 0;
+            left: 0;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #img-2{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 0;
+            left: 38.7%;
+            background-color: #73c2ca;
+        }
+        #img-3{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 0;
+            left: 69.35%;
+            background-color: #e07690;
+        }
+        #img-4{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 33vh;
+            left: 38.7%;
+            background-color: #9722f9;
+        }
+        #img-5{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 33vh;
+            left: 69.35%;
+            background-color: #e7ab4e;
+        }
+        #img-6{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 66vh;
+            left: 38.7%;
+            background-color: #5d00b3;
+        }
+        #img-7{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 30.6%;
+            height: 33vh;
+            top: 66vh;
+            left: 69.35%;
+            background-color: #f1df55;
+        }
+        #ziko{
+            position: absolute;
+            z-index: 5;
+            color: #ffffff;
+            font-size: 5em;
+            top: 8vh;
+            left: 42%;
+            cursor: default;
+        }
+        #mondai{
+            position: absolute;
+            z-index: 5;
+            color: #ffffff;
+            font-size: 5em;
+            top: 1vh;
+            left: 73%;
+        }
+        #monogatari{
+            position: absolute;
+            z-index: 5;
+            color: #ffffff;
+            font-size: 5em;
+            top: 41vh;
+            left: 42%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <img id="img-1" class="img" src="./images/テキスト付き宣材写真.png" alt="" onclick="">
+    <img id="img-2" class="img" src="#" alt="" onclick="url_1()">
+    <img id="img-3" class="img" src="#" alt="" onclick="url_2()">
+    <img id="img-4" class="img" src="#" alt="" onclick="url_3()">
+    <img id="img-5" class="img" src="#" alt="" onclick="url_4()">
+    <img id="img-6" class="img" src="#" alt="" onclick="url_5()">
+    <img id="img-7" class="img" src="#" alt="" onclick="url_6()">
+
+    <span id="ziko" onclick="url_1()">自己紹介</span>
+    <span id="mondai" onclick="url_2()">問題解決LABO</span>
+    <span id="monogatari" onclick="url_3()">物語CMS</span>
+
+    <script>
+        function url_1 () {
+            window.location.href = "./自己紹介.html";
+        }
+    </script>
+</body>
+</html>

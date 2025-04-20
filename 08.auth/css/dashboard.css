@@ -322,6 +322,12 @@ a:visited{
 
     /* BGMボタン位置修正 */
     #bgm-button {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        height: 8vh;
+        left: 50%;
         font-size: 4vw;
         margin: 1em auto;
         display: block;
@@ -329,8 +335,13 @@ a:visited{
 
     /* socialリンク調整 */
     #social {
-        top: auto !important;
-        margin: 2em auto;
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        height: 12vh;
+        left: 50%;
+        z-index: 5;
     }
 
 }
