@@ -102,32 +102,43 @@
             top: 41vh;
             left: 42%;
         }
-
+        #oldHP{
+            position: absolute;
+            z-index: 5;
+            color: #ffffff;
+            font-size: 3em;
+            top: 44vh;
+            left: 72%;
+        }
 
     </style>
 </head>
 <body>
-    <img id="img-1" class="img" src="./images/テキスト付き宣材写真.png" alt="" onclick="">
-    <img id="img-2" class="img" src="#" alt="" onclick="url_1()">
-    <img id="img-3" class="img" src="#" alt="" onclick="url_2()">
-    <img id="img-4" class="img" src="#" alt="" onclick="url_3()">
-    <img id="img-5" class="img" src="#" alt="" onclick="url_4()">
-    <img id="img-6" class="img" src="#" alt="" onclick="url_5()">
-    <img id="img-7" class="img" src="#" alt="" onclick="url_6()">
+    <img id="img-1" class="img" src="./new-images/テキスト付き宣材写真.png" alt="" onclick="">
+    <div id="img-2" class="img" src="#" alt="" onclick="url_1()"></div>
+    <div id="img-3" class="img" src="#" alt="" onclick="url_2()"></div>
+    <div id="img-4" class="img" src="#" alt="" onclick="url_3()"></div>
+    <div id="img-5" class="img" src="#" alt="" onclick="url_4()"></div>
+    <div id="img-6" class="img" src="#" alt="" onclick="url_5()"></div>
+    <div id="img-7" class="img" src="#" alt="" onclick="url_6()"></div>
 
     <span id="ziko" onclick="url_1()">自己紹介</span>
     <span id="mondai" onclick="url_2()">社会適応LABO</span>
     <span id="monogatari" onclick="url_3()">物語CMS</span>
+    <span id="oldHP" onclick="url_4()">旧ホームページ</span>
 
     <script>
         function url_1 () {
-            window.location.href = "./自己紹介/index.html";
+            window.location.href = "./new-自己紹介/index.html";
         }
         function url_2 () {
-            window.location.href = "./社会適応LABO/index.html";
+            window.location.href = "./new-社会適応LABO/index.html";
         }
         function url_3 () {
-            window.location.href = "./story-CMS/index.html";
+            window.location.href = "./new-story-CMS/index.html";
+        }
+        function url_4 () {
+            window.location.href = "./oldindex.php";
         }
     </script>
 </body>
