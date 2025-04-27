@@ -1,124 +1,184 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>社会適応LABO</title>
-    <style>
-        #img-1{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            width: 65%;
-            height: 97vh;
-            background-color: blue;
-            border-top-right-radius: 50%;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>社会適応LABO</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    #img-1 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 65%;
+        height: 97vh;
+        background-color: blue;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    #img-2 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        height: 97vh;
+        left: 66%;
+        background-image: url(../new-images/社会.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 100%;
+    }
+
+    #text-1 {
+        position: absolute;
+        width: 60%;
+        height: 50vh;
+        top: 28vh;
+        left: 15%;
+        font-size: 8em;
+        color: white;
+    }
+
+    #text-2 {
+        position: absolute;
+        width: 60%;
+        height: 50vh;
+        top: 100vh;
+        left: 5%;
+        font-size: 5em;
+        color: white;
+    }
+
+    #img-3 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 100vh;
+        width: 100%;
+        height: 97vh;
+        background-color: rgb(53, 161, 255);
+        z-index: -1;
+    }
+
+    #wrap-1 {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        top: 120vh;
+        left: 10%;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+    }
+
+    #wrap-1 li {
+        list-style: none;
+        width: 22%;
+    }
+
+    #wrap-1 li img {
+        width: 100%;
+    }
+
+    @media (max-width: 768px) {
+        #img-1 {
+            width: 100%;
+            height: 30vh;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 50%;
             border-bottom-right-radius: 50%;
+        }
 
-        }
-        #img-2{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            width: 40%;
-            height: 97vh;
-            left: 66%;
-            background-image: url(../new-images/社会.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            border-radius: 100%;
-        }
-        #text-1{
-            position: absolute;
+        #img-2 {
             width: 60%;
-            height: 50vh;
-            top: 28vh;
-            left: 15%;
-            font-size: 8em;
-            color: white;
+            height: 60vh;
+            left: 20%;
+            top: 0;
         }
-        #text-2{
-            position: absolute;
-            width: 60%;
-            height: 50vh;
-            top: 100vh;
+
+        #text-1 {
+            width: 90%;
+            top: 0vh;
             left: 5%;
-            font-size: 5em;
-            color: white;
+            font-size: 4em;
+            text-align: center;
         }
-        #img-3{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 100vh;
-            width: 100%;
-            height: 97vh;
-            background-color: rgb(53, 161, 255);
-            z-index: -1;
-        }
-        #wrap-1{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 120vh;
-            left: 10%;
-            width: 80%;
-            height: 77vh;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        #wrap-1 li{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            width: 25%;
-            margin-right: 5em;
-        }
-        #wrap-1 li img{
-            width: 100%;
 
+        #img-3 {
+            top: 30vh;
+            height: 20vh;
         }
-    </style>
+
+        #text-2 {
+            top: 35vh;
+            font-size: 3em;
+            width: 90%;
+            left: 5%;
+            text-align: center;
+        }
+
+        #wrap-1 {
+            position: absolute;
+            top: 50vh;
+            left: 5%;
+            width: 90%;
+            gap: 1em;
+            justify-content: center;
+        }
+
+        #wrap-1 li {
+            width: 45%;
+        }
+    }
+</style>
 </head>
 <body>
-    <div id="img-1"></div>
-    <div id="img-2"></div>
-    <div id="text-1">社会適応<br>LABO</div>
-    <div id="text-2">コース概要</div>
-    <div id="img-3"></div>
+  <div id="img-1"></div>
+  <!-- <div id="img-2"></div> -->
+  <div id="text-1">社会適応<br>LABO</div>
+  <div id="text-2">コース概要</div>
+  <div id="img-3"></div>
 
-    <ul id="wrap-1">
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>童貞を卒業するコース</div>
-            <div>恋愛市場における価値を高める</div>
-        </li>
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>最低賃金から脱出するコース</div>
-            <div>労働市場における価値を高める</div>
-        </li>
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>コミュ障を治療するコース</div>
-            <div>人間関係構築における技術的課題を解決する</div>
-        </li>
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>中卒が高認試験に合格して放送大学に入学するコース</div>
-            <div>最低限の学歴を獲得する</div>
-        </li>
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>none</div>
-            <div>example</div>
-        </li>
-        <li>
-            <img  src="../new-images/社会.png" alt="">
-            <div>none</div>
-            <div>example</div>
-        </li>
-    </ul>
+  <ul id="wrap-1">
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>童貞を卒業するコース</div>
+      <div>恋愛市場における価値を高める</div>
+    </li>
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>最低賃金から脱出するコース</div>
+      <div>労働市場における価値を高める</div>
+    </li>
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>コミュ障を治療するコース</div>
+      <div>人間関係構築における技術的課題を解決する</div>
+    </li>
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>中卒が高認試験に合格して放送大学に入学するコース</div>
+      <div>最低限の学歴を獲得する</div>
+    </li>
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>none</div>
+      <div>example</div>
+    </li>
+    <li>
+      <img src="../new-images/社会.png" alt="">
+      <div>none</div>
+      <div>example</div>
+    </li>
+  </ul>
 </body>
 </html>
