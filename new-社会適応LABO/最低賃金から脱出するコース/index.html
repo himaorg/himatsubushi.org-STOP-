@@ -7,35 +7,37 @@
     <style>
         .nav{
             list-style: none;
+            color: gainsboro;
         }
+
         .nav:hover{
             cursor: pointer;
             background-color: rgb(82, 82, 82);
         }
+
         .nav-wrap{
             margin: 0;
             padding: 0;
             width: 15%;
             height: auto;
         }
-        a{
-            color: gainsboro;
-            text-decoration: none;
-        }
+
         .wrap-title{
             color: #ff0000;
             width: 100%;
             font-size: 1.8vw;
             background-color: rgb(252, 255, 61);
         }
+
         body{
             background-color: black;
         }
+
         .video-wrap{
             position: absolute;
             left: 20%;
             top: 0%;
-            width: 85%;
+            width: 80%;
             height: 80vh;
             display: flex;
             margin: 0;
@@ -45,13 +47,34 @@
             flex-wrap: wrap;
             overflow-y: scroll;
         }
-        .video{
+
+        .video-wrap li{
             list-style: none;
             width: 16em;
-            height: 9em;
-            background-color: aqua;
+            height: 13.8em;
+            background-color: rgb(105, 105, 105);
             display: flex;
         }
+
+        .video-wrap li a{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+        }
+
+        .video-wrap li a img{
+            width: 100%;
+            height: 65%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .video-wrap li a div{
+            padding-bottom: 1em;
+        }
+
+
 
 
         @media screen and (max-width: 768px) {
@@ -63,10 +86,6 @@
                 justify-content: space-around;
             }
 
-            /* .wrap-title {
-                display: none; タイトルを省略してスッキリ
-            }
- */
             .video-wrap {
                 position: static;
                 width: 100%;
@@ -74,68 +93,107 @@
                 justify-content: center;
             }
 
-            .video {
-                width: 45vw;
-                height: 25vw;
+            .video-wrap li {
+                width: 76.8vw;
+                height: 66.24vw;
             }
 
             body {
                 font-size: 1em;
             }
 
-            a {
-                font-size: 0.9em;
-            }
         }
     </style>
 </head>
 <body>
     <ul class="nav-wrap">
-        <li class="nav" data-target="home"><a href="#">ホーム</a></li>
-        <li class="nav" data-target="shorts"><a href="#">ショート</a></li>
-        <li class="nav" data-target="subscriptions"><a href="#">登録チャンネル</a></li>
+        <li class="nav" data-target="home">ホーム</li>
+        <li class="nav" data-target="release-video">release-video</li>
+        <li class="nav" data-target="subscriptions">登録チャンネル</li>
         <div class="wrap-title">マイページ</div>
-        <li class="nav"><a href="">履歴</a></li>
-        <li class="nav"><a href="">再生リスト</a></li>
-        <li class="nav"><a href="">作成した動画</a></li>
-        <li class="nav"><a href="">マイポッドキャスト</a></li>
-        <li class="nav"><a href="">後で見る</a></li>
-        <li class="nav"><a href="">高く評価した動画</a></li>
+        <li class="nav">履歴</li>
+        <li class="nav">再生リスト</li>
+        <li class="nav">作成した動画</li>
+        <li class="nav">マイポッドキャスト</li>
+        <li class="nav">後で見る</li>
+        <li class="nav">高く評価した動画</li>
         <div class="wrap-title">channel</div>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
         <div class="wrap-title">探索</div>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
         <div class="wrap-title">他のサービス</div>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">none</a></li>
-        <li class="nav"><a href="">設定</a></li>
-        <li class="nav"><a href="">報告履歴</a></li>
-        <li class="nav"><a href="">ヘルプ</a></li>
-        <li class="nav"><a href="">フィードバック</a></li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">設定</li>
+        <li class="nav">報告履歴</li>
+        <li class="nav">ヘルプ</li>
+        <li class="nav">フィードバック</li>
     </ul>
     
     <!-- 各 video-wrap に ID を付ける -->
     <ul class="video-wrap" id="home">
-        <li class="video"><a href="">ホーム動画1</a></li>
-        <li class="video"><a href="">ホーム動画2</a></li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画1<br>aaaaaa<br>aaaaaaa</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画2</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画3</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画4</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画5</div>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ホーム動画6</div>
+            </a>
+        </li>
     </ul>
     
-    <ul class="video-wrap" id="shorts" style="display: none;">
-        <li class="video"><a href="">ショート動画1</a></li>
-        <li class="video"><a href="">ショート動画2</a></li>
+    <ul class="video-wrap" id="release-video" style="display: none;">
+        <li>
+            <a href="./release-video/社会適応LABO共通ver.0.1.mp4">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ver.0.1</div>
+            </a>
+        </li>
     </ul>
     
     <ul class="video-wrap" id="subscriptions" style="display: none;">
-        <li class="video"><a href="">登録チャンネル動画1</a></li>
-        <li class="video"><a href="">登録チャンネル動画2</a></li>
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>チャンネル1</div>
+            </a>
+        </li>
     </ul>
 
     <script>
