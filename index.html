@@ -57,18 +57,6 @@
     #img-6 { background-color: #5d00b3; }
     #img-7 { background-color: #f1df55; }
 
-    .labels {
-      display: flex;
-      flex-direction: column;
-      gap: 1em;
-      padding: 1em;
-      font-size: 2.5em;
-      text-align: center;
-    }
-
-    .labels span {
-      cursor: pointer;
-    }
 
     @media (min-width: 768px) {
       .container {
@@ -89,11 +77,6 @@
         font-size: 3em;
       }
 
-      .labels {
-        flex-direction: row;
-        justify-content: space-around;
-        font-size: 2.5em;
-      }
     }
   </style>
 </head>
@@ -111,15 +94,6 @@
         <div id="img-6" class="grid-item" onclick="url_5()">旧ホームページ</div>
         <div id="img-7" class="grid-item" onclick="url_6()">URL 6</div>
       </div>
-      <div class="labels">
-        <span onclick="url_1()">自己紹介</span>
-        <span onclick="url_2()">社会適応LABO</span>
-        <span onclick="url_3()">物語CMS</span>
-        <span onclick="url_4()">求人サイト</span>
-        <span onclick="url_5()">旧ホームページ</span>
-      </div>
-    </div>
-  </div>
 
   <script>
     function url_1 () {

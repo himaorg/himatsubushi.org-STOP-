@@ -338,10 +338,13 @@ a:visited{
         position: absolute;
         margin: 0;
         padding: 0;
-        width: 20%;
+        width: 10%;
         height: 12vh;
         left: 50%;
         z-index: 5;
     }
 
+    #social li{
+        list-style: none;
+    }
 }
