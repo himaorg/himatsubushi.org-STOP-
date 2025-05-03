@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心の理論について検討するコース</title>
+    <style>
+        .nav{
+            list-style: none;
+            color: gainsboro;
+        }
+
+        .nav:hover{
+            cursor: pointer;
+            background-color: rgb(82, 82, 82);
+        }
+
+        .nav-wrap{
+            margin: 0;
+            padding: 0;
+            width: 15%;
+            height: auto;
+        }
+
+        .wrap-title{
+            color: #ff0000;
+            width: 100%;
+            font-size: 1.8vw;
+            background-color: rgb(252, 255, 61);
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        .video-wrap{
+            position: absolute;
+            left: 20%;
+            top: 0%;
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            margin: 0;
+            margin-top: 2vw;
+            padding: 0;
+            gap: 1em;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+        }
+
+        .video-wrap li{
+            list-style: none;
+            width: 16em;
+            height: 13.8em;
+            background-color: rgb(105, 105, 105);
+            display: flex;
+        }
+
+        .video-wrap li a{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: white;
+        }
+
+        .video-wrap li a img{
+            width: 100%;
+            height: 65%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .video-wrap li a div{
+            padding-bottom: 1em;
+        }
+
+
+
+
+        @media screen and (max-width: 768px) {
+            .nav-wrap {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .video-wrap {
+                position: static;
+                width: 100%;
+                padding: 1em;
+                justify-content: center;
+            }
+
+            .video-wrap li {
+                width: 76.8vw;
+                height: 66.24vw;
+            }
+
+            body {
+                font-size: 1em;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav-wrap">
+        <li class="nav" data-target="home">ホーム</li>
+        <li class="nav" data-target="release-video">release-video</li>
+        <li class="nav" data-target="subscriptions">登録チャンネル</li>
+        <div class="wrap-title">マイページ</div>
+        <li class="nav">履歴</li>
+        <li class="nav">再生リスト</li>
+        <li class="nav">作成した動画</li>
+        <li class="nav">マイポッドキャスト</li>
+        <li class="nav">後で見る</li>
+        <li class="nav">高く評価した動画</li>
+        <div class="wrap-title">情報収集</div>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <div class="wrap-title">考える</div>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <div class="wrap-title">成果物</div>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <div class="wrap-title">探索</div>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <div class="wrap-title">他のサービス</div>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
+        <li class="nav">設定</li>
+        <li class="nav">報告履歴</li>
+        <li class="nav">ヘルプ</li>
+        <li class="nav">フィードバック</li>
+    </ul>
+    
+    <!-- 各 video-wrap に ID を付ける -->
+    <ul class="video-wrap" id="home">
+        <h1>LPみたいなやつをここに表示する</h1>
+        <p>人間味のある人間になるためには心の理論について検討する必要がある。</p>
+        <p>だから心の理論について検討することにした。</p>
+    </ul>
+    
+    <ul class="video-wrap" id="release-video" style="display: none;">
+        <li>
+            <a href="./release-video/社会適応LABO共通ver.0.1.mp4">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>ver.0.1</div>
+            </a>
+        </li>
+    </ul>
+    
+    <ul class="video-wrap" id="subscriptions" style="display: none;">
+        <li>
+            <a href="">
+                <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
+                <div>チャンネル1</div>
+            </a>
+        </li>
+    </ul>
+
+    <script>
+        const navItems = document.querySelectorAll('.nav');
+        const videoWraps = document.querySelectorAll('.video-wrap');
+    
+        navItems.forEach(nav => {
+            nav.addEventListener('click', (e) => {
+                e.preventDefault(); // aタグのリンク動作を無効化
+                const targetId = nav.getAttribute('data-target');
+    
+                // 全て非表示にする
+                videoWraps.forEach(v => v.style.display = 'none');
+    
+                // 対象だけ表示
+                const targetWrap = document.getElementById(targetId);
+                if (targetWrap) {
+                    targetWrap.style.display = 'flex';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
