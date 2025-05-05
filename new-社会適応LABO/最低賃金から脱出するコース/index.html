@@ -49,7 +49,7 @@
             overflow-y: scroll;
         }
 
-        .video-wrap li{
+        .video{
             list-style: none;
             width: 16em;
             height: 13.8em;
@@ -57,23 +57,37 @@
             display: flex;
         }
 
-        .video-wrap li a{
+        .video a{
             width: 100%;
             height: 100%;
             text-decoration: none;
             color: white;
         }
 
-        .video-wrap li a img{
+        .video a img{
             width: 100%;
             height: 65%;
             background-position: center;
             background-size: cover;
         }
 
-        .video-wrap li a div{
+        .video a div{
             padding-bottom: 1em;
         }
+
+        .LP{
+                width: 100%;
+                height: 100%;
+            }
+
+        .LP img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 
 
 
@@ -94,7 +108,7 @@
                 justify-content: center;
             }
 
-            .video-wrap li {
+            .video {
                 width: 76.8vw;
                 height: 66.24vw;
             }
@@ -103,14 +117,15 @@
                 font-size: 1em;
             }
 
+
         }
     </style>
 </head>
 <body>
     <ul class="nav-wrap">
         <li class="nav" data-target="home">ホーム</li>
-        <li class="nav" data-target="release-video">release-video</li>
-        <li class="nav" data-target="subscriptions">登録チャンネル</li>
+        <li class="nav" data-target="release-video">課金要素</li>
+        <li class="nav" data-target="subscriptions">このページの使い方</li>
         <div class="wrap-title">マイページ</div>
         <li class="nav">履歴</li>
         <li class="nav">再生リスト</li>
@@ -121,20 +136,15 @@
         <div class="wrap-title">手に職を付ける方法</div>
         <li class="nav">製造業のライン工</li>
         <li class="nav">プログラマー</li>
-        <li class="nav">none</li>
-        <li class="nav">none</li>
         <div class="wrap-title">短期的に稼ぐ方法</div>
         <li class="nav">タイミー</li>
         <li class="nav">男性の性欲を利用する</li>
-        <li class="nav">none</li>
-        <li class="nav">none</li>
         <div class="wrap-title">その他の稼ぎ方</div>
         <li class="nav">アフィリエイト</li>
         <li class="nav">アドセンス</li>
         <li class="nav">直接広告</li>
-        <li class="nav">none</li>
-        <div class="wrap-title">探索</div>
-        <li class="nav">none</li>
+        <div class="wrap-title">ブログ</div>
+        <li class="nav">サイト開発でお金を稼ぐ方法について考える</li>
         <li class="nav">none</li>
         <li class="nav">none</li>
         <li class="nav">none</li>
@@ -151,11 +161,23 @@
     
     <!-- 各 video-wrap に ID を付ける -->
     <ul class="video-wrap" id="home">
-        <h1>LPみたいなやつをここに表示する</h1>
+        <li class="LP"><img src="./videos/01.gif" alt=""></li>
+        <li class="LP"><img src="./videos/02.gif" alt=""></li>
+        <li class="LP"><img src="./videos/03.gif" alt=""></li>
+        <li class="LP"><img src="./videos/04.gif" alt=""></li>
+        <li class="LP"><img src="./videos/05.gif" alt=""></li>
+        <li class="LP"><img src="./videos/06.gif" alt=""></li>
+        <li class="LP"><img src="./videos/07.gif" alt=""></li>
+        <li class="LP"><img src="./videos/08.gif" alt=""></li>
+        <li class="LP"><img src="./videos/09.gif" alt=""></li>
+        <li class="LP"><img src="./videos/10.gif" alt=""></li>
+        <li class="LP"><img src="./videos/11.gif" alt=""></li>
+        <li class="LP"><img src="./videos/12.gif" alt=""></li>
+        <li class="LP"><img src="./videos/13.gif" alt=""></li>
     </ul>
     
     <ul class="video-wrap" id="release-video" style="display: none;">
-        <li>
+        <li class="video">
             <a href="./release-video/社会適応LABO共通ver.0.1.mp4">
                 <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
                 <div>ver.0.1</div>
@@ -164,7 +186,7 @@
     </ul>
     
     <ul class="video-wrap" id="subscriptions" style="display: none;">
-        <li>
+        <li class="video">
             <a href="">
                 <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
                 <div>チャンネル1</div>

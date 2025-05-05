@@ -49,7 +49,7 @@
             overflow-y: scroll;
         }
 
-        .video-wrap li{
+        .video{
             list-style: none;
             width: 16em;
             height: 13.8em;
@@ -57,23 +57,37 @@
             display: flex;
         }
 
-        .video-wrap li a{
+        .video a{
             width: 100%;
             height: 100%;
             text-decoration: none;
             color: white;
         }
 
-        .video-wrap li a img{
+        .video a img{
             width: 100%;
             height: 65%;
             background-position: center;
             background-size: cover;
         }
 
-        .video-wrap li a div{
+        .video a div{
             padding-bottom: 1em;
         }
+
+        .LP{
+                width: 100%;
+                height: 100%;
+            }
+
+        .LP img{
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
 
 
 
@@ -94,7 +108,7 @@
                 justify-content: center;
             }
 
-            .video-wrap li {
+            .video {
                 width: 76.8vw;
                 height: 66.24vw;
             }
@@ -103,21 +117,22 @@
                 font-size: 1em;
             }
 
+
         }
     </style>
 </head>
 <body>
     <ul class="nav-wrap">
         <li class="nav" data-target="home">ホーム</li>
-        <li class="nav" data-target="release-video">release-video</li>
-        <li class="nav" data-target="subscriptions">登録チャンネル</li>
+        <li class="nav" data-target="release-video">課金要素</li>
+        <li class="nav" data-target="subscriptions">このページの使い方</li>
         <div class="wrap-title">マイページ</div>
-        <li class="nav"><a href="">履歴</a></li>
-        <li class="nav"><a href="">再生リスト</a></li>
-        <li class="nav"><a href="">作成した動画</a></li>
-        <li class="nav"><a href="">マイポッドキャスト</a></li>
-        <li class="nav"><a href="">後で見る</a></li>
-        <li class="nav"><a href="">高く評価した動画</a></li>
+        <li class="nav">履歴</li>
+        <li class="nav">再生リスト</li>
+        <li class="nav">作成した動画</li>
+        <li class="nav">マイポッドキャスト</li>
+        <li class="nav">後で見る</li>
+        <li class="nav">高く評価した動画</li>
         <div class="wrap-title">労働力を提供する</div>
         <li class="nav">自分で働く</li>
         <li class="nav">労働者を転がす</li>
@@ -135,6 +150,10 @@
         <li class="nav">服を作って転がす</li>
         <li class="nav">農作物を作って転がす</li>
         <li class="nav">料理を作って転がす</li>
+        <div class="wrap-title">ブログ</div>
+        <li class="nav">お金を稼ぐにはどうすればいいかを考える</li>
+        <li class="nav">none</li>
+        <li class="nav">none</li>
         <div class="wrap-title">他のサービス</div>
         <li class="nav">none</li>
         <li class="nav">none</li>
@@ -148,12 +167,23 @@
     
     <!-- 各 video-wrap に ID を付ける -->
     <ul class="video-wrap" id="home">
-        <li class="video"><a href="">ホーム動画1</a></li>
-        <li class="video"><a href="">ホーム動画2</a></li>
+        <li class="LP"><img src="./videos/01.gif" alt=""></li>
+        <li class="LP"><img src="./videos/02.gif" alt=""></li>
+        <li class="LP"><img src="./videos/03.gif" alt=""></li>
+        <li class="LP"><img src="./videos/04.gif" alt=""></li>
+        <li class="LP"><img src="./videos/05.gif" alt=""></li>
+        <li class="LP"><img src="./videos/06.gif" alt=""></li>
+        <li class="LP"><img src="./videos/07.gif" alt=""></li>
+        <li class="LP"><img src="./videos/08.gif" alt=""></li>
+        <li class="LP"><img src="./videos/09.gif" alt=""></li>
+        <li class="LP"><img src="./videos/10.gif" alt=""></li>
+        <li class="LP"><img src="./videos/11.gif" alt=""></li>
+        <li class="LP"><img src="./videos/12.gif" alt=""></li>
+        <li class="LP"><img src="./videos/13.gif" alt=""></li>
     </ul>
     
     <ul class="video-wrap" id="release-video" style="display: none;">
-        <li>
+        <li class="video">
             <a href="./release-video/社会適応LABO共通ver.0.1.mp4">
                 <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
                 <div>ver.0.1</div>
@@ -162,7 +192,7 @@
     </ul>
     
     <ul class="video-wrap" id="subscriptions" style="display: none;">
-        <li>
+        <li class="video">
             <a href="">
                 <img src="../../images/拾い画像/安易な形容詞から斜め上の比喩表現へ.jpg" alt="">
                 <div>チャンネル1</div>
