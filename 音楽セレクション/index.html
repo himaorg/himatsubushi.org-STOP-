@@ -1,13 +1,92 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     ミライアカリ　アクセル
     アクセルハーツ　dear tomorrow
-    
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>音楽一覧</title>
+    <style>
+        body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        padding: 20px;
+        }
+
+        h1 {
+        color: #333;
+        }
+
+        #music-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+
+        .music-item {
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .music-info {
+        display: flex;
+        flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 音楽セレクション</h1>
+    <div id="music-list"></div>
+
+    <audio id="audio-player" controls style="display:none;"></audio>
+
+    <script>
+        const musicData = [
+        {
+            title: "アクセル",
+            artist: "ミライアカリ",
+            src: ""
+        },
+        {
+            title: "風の詩",
+            artist: "ナチュラルビート",
+            src: "music/kaze.mp3"
+        },
+        {
+            title: "夜空のメロディー",
+            artist: "スターシンフォニー",
+            src: "music/yozora.mp3"
+        }
+        ];
+
+        const list = document.getElementById("music-list");
+        const player = document.getElementById("audio-player");
+
+        musicData.forEach(track => {
+        const item = document.createElement("div");
+        item.className = "music-item";
+
+        const info = document.createElement("div");
+        info.className = "music-info";
+        info.innerHTML = `<strong>${track.title}</strong><span>${track.artist}</span>`;
+
+        const playBtn = document.createElement("button");
+        playBtn.textContent = "▶️ 再生";
+        playBtn.onclick = () => {
+            player.src = track.src;
+            player.style.display = "block";
+            player.play();
+        };
+
+        item.appendChild(info);
+        item.appendChild(playBtn);
+        list.appendChild(item);
+        });
+
+    </script>
 </body>
 </html>

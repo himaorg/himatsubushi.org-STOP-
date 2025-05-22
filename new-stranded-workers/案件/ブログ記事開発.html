@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stranded Workers - Job Listings</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #f4f4f9;
+      color: #333;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #1a1a1a;
+    }
+
+    .job-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .job-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .job-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #111;
+      margin-bottom: 0.5rem;
+    }
+
+    .job-description {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 1rem;
+      color: #0055ff;
+      cursor: pointer;
+    }
+
+    .job-detail {
+      background: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Stranded Workers - 案件一覧</h1>
+  </header>
+
+  <div id="jobList" class="job-list"></div>
+
+  <div id="jobDetail" class="job-detail hidden">
+    <div class="back-button" onclick="goBack()">← 案件一覧に戻る</div>
+    <h2 id="detailTitle"></h2>
+    <p id="detailDescription"></p>
+    <p><strong>報酬:</strong> <span id="detailPay"></span></p>
+    <p><strong>期間:</strong> <span id="detailPeriod"></span></p>
+    <p><strong>必要なスキル:</strong> <span id="detailSkills"></span></p>
+  </div>
+
+  <script>
+    const jobs = [
+      {
+        title: 'チラシデザイン作成',
+        description: '地域イベントのためのチラシをデザインしてください。',
+        pay: '¥15,000',
+        period: '3日間',
+        skills: 'Photoshop, Illustrator'
+      },
+      {
+        title: '荷物運搬の手伝い',
+        description: '家具の運搬を2時間ほど手伝っていただきたいです。',
+        pay: '¥5,000',
+        period: '当日限り',
+        skills: '体力, 丁寧さ'
+      },
+      {
+        title: 'WordPress サイト構築',
+        description: 'NPO団体向けのサイトをWordPressで制作。',
+        pay: '¥80,000',
+        period: '1週間',
+        skills: 'WordPress, HTML, CSS, JavaScript'
+      }
+    ];
+
+    const jobList = document.getElementById('jobList');
+    const jobDetail = document.getElementById('jobDetail');
+
+    const detailTitle = document.getElementById('detailTitle');
+    const detailDescription = document.getElementById('detailDescription');
+    const detailPay = document.getElementById('detailPay');
+    const detailPeriod = document.getElementById('detailPeriod');
+    const detailSkills = document.getElementById('detailSkills');
+
+    jobs.forEach((job, index) => {
+      const card = document.createElement('div');
+      card.className = 'job-card';
+      card.innerHTML = `
+        <div class="job-title">${job.title}</div>
+        <div class="job-description">${job.description}</div>
+      `;
+      card.onclick = () => showDetail(index);
+      jobList.appendChild(card);
+    });
+
+    function showDetail(index) {
+      const job = jobs[index];
+      detailTitle.textContent = job.title;
+      detailDescription.textContent = job.description;
+      detailPay.textContent = job.pay;
+      detailPeriod.textContent = job.period;
+      detailSkills.textContent = job.skills;
+      jobList.classList.add('hidden');
+      jobDetail.classList.remove('hidden');
+    }
+
+    function goBack() {
+      jobDetail.classList.add('hidden');
+      jobList.classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
