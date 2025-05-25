@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#222222">
+  <title>HIMAORG</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>HIMAORG（ひまおーぐ）</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">ホーム [提供サービス, 開発者紹介, お問い合わせ]</a></li>
+        <li><a href="./privacy.html">プライバシーポリシー</a></li>
+        <li><a href="./terms.html">利用規約</a></li>
+        <li><a href="./law.html">特商法の記載</a></li>
+        <li><a href="./disclaimer.html">免責事項</a></li>
+        <li><a href="./faq.html">よくある質問</a></li>
+        <li><a href="./mission.html">ミッション</a></li>
+        <li><a href="./news.html">ニュース</a></li>
+        <li><a href="./sitemap.html">サイトマップ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>HIMAORGへようこそ</h2>
+      <p>HIMAORGは、三宅脩翔が開発した、生きづらい現代社会を乗り越えるためのウェブサービス群です。</p>
+    </section>
+
+    <section id="services">
+      <h2>提供サービス</h2>
+
+      <article>
+        <h3><a href="/stranded-workers/index.html">Stranded Workers</a></h3>
+        <p>仕事を受けたい人と、仕事を発注したい人が出会う場所です。フリーランス、個人、少人数チームを応援します。</p>
+      </article>
+
+      <article>
+        <h3><a href="/labo/index.html">社会適応LABO</a></h3>
+        <ul>
+          <li>童貞を卒業するコース</li>
+          <li>最低賃金から脱出するコース</li>
+          <li>高認合格→放送大学入学コース</li>
+        </ul>
+        <p>社会に適応できず悩む人に、具体的な行動支援を提供します。</p>
+      </article>
+
+      <article>
+        <h3><a href="/storycms/index.html">物語CMS</a></h3>
+        <p>物語制作のすべてをこのサイトで完結。考案、執筆、投稿、宣伝、販売、購読のプロセスを統合。</p>
+      </article>
+    </section>
+
+    <section id="about">
+      <h2>開発者 三宅脩翔</h2>
+      <p>私は、社会に適応できず苦しむ人のために、役立つ仕組みと場をつくりたいと考えています。プログラミングと物語制作の力で、「誰でも参加できる新しい社会」を提案します。</p>
+    </section>
+
+    <section id="contact">
+      <h2>お問い合わせ</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HIMAORG / 三宅脩翔. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker 登録成功:', reg))
+        .catch(err => console.error('SW登録失敗:', err));
+    }
+  </script>
+</body>
+</html>
