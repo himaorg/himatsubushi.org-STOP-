@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>プロット作成支援ツール</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    :root {
+      --bg: #f4f6f9;
+      --card-bg: #ffffff;
+      --accent: #007BFF;
+      --text: #333;
+      --border: #ddd;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      font-family: "Segoe UI", sans-serif;
+      color: var(--text);
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 1rem;
+      justify-content: center;
+    }
+
+    #controls input[type="text"], #controls input[type="file"] {
+      padding: 10px;
+      font-size: 1rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    button {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 16px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    li {
+      background: var(--card-bg);
+      margin: 8px 0;
+      padding: 10px;
+      border-left: 4px solid var(--accent);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .task {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .task input[type="text"] {
+      flex: 1;
+      min-width: 100px;
+      padding: 6px;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 6px;
+    }
+
+    li ul {
+      margin-left: 20px;
+      padding-left: 0;
+      border-left: 2px dashed #ccc;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      #controls {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .task {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>プロット作成支援ツール</h1>
+
+  <div id="controls">
+    <input type="text" id="new-task" placeholder="新しいタスク">
+    <button onclick="addTask()">追加</button>
+    <button onclick="saveToFile()">保存</button>
+    <input type="file" id="file-input" accept=".json" onchange="loadFromFile()">
+  </div>
+
+  <ul id="todo-list"></ul>
+
+  <script>
+    const todoList = document.getElementById('todo-list');
+
+    function createTaskElement(taskData = { text: '', children: [] }) {
+      const li = document.createElement('li');
+
+      const div = document.createElement('div');
+      div.className = 'task';
+
+      const input = document.createElement('input');
+      input.type = 'text';
+      input.value = taskData.text;
+
+      const buttons = document.createElement('div');
+      buttons.className = 'buttons';
+
+      const addChildButton = document.createElement('button');
+      addChildButton.textContent = '+ 子';
+      addChildButton.onclick = () => {
+        const childUl = li.querySelector('ul') || (() => {
+          const newUl = document.createElement('ul');
+          li.appendChild(newUl);
+          return newUl;
+        })();
+        childUl.appendChild(createTaskElement());
+      };
+
+      const deleteButton = document.createElement('button');
+      deleteButton.textContent = '削除';
+      deleteButton.onclick = () => {
+        li.style.animation = "fadeOut 0.2s forwards";
+        setTimeout(() => li.remove(), 200);
+      };
+
+      buttons.appendChild(addChildButton);
+      buttons.appendChild(deleteButton);
+
+      div.appendChild(input);
+      div.appendChild(buttons);
+      li.appendChild(div);
+
+      if (taskData.children && taskData.children.length > 0) {
+        const ul = document.createElement('ul');
+        taskData.children.forEach(child => {
+          ul.appendChild(createTaskElement(child));
+        });
+        li.appendChild(ul);
+      }
+
+      return li;
+    }
+
+    function addTask() {
+      const input = document.getElementById('new-task');
+      const text = input.value.trim();
+      if (text !== '') {
+        const taskData = { text: text, children: [] };
+        todoList.appendChild(createTaskElement(taskData));
+        input.value = '';
+      }
+    }
+
+    function buildTaskData(ul) {
+      const result = [];
+      for (const li of ul.children) {
+        const input = li.querySelector('input[type="text"]');
+        const childUl = li.querySelector('ul');
+        result.push({
+          text: input.value,
+          children: childUl ? buildTaskData(childUl) : []
+        });
+      }
+      return result;
+    }
+
+    function saveToFile() {
+      const data = buildTaskData(todoList);
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'todo-list.json';
+      a.click();
+    }
+
+    function loadFromFile() {
+      const fileInput = document.getElementById('file-input');
+      const file = fileInput.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const data = JSON.parse(e.target.result);
+        todoList.innerHTML = '';
+        data.forEach(task => {
+          todoList.appendChild(createTaskElement(task));
+        });
+      };
+      reader.readAsText(file);
+    }
+  </script>
+</body>
+</html>
