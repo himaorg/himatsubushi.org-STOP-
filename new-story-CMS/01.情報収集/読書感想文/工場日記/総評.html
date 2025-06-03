@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工場日記総評</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4a90e2;
+      --background: #f9f9fb;
+      --text: #333;
+      --accent: #ff5a5f;
+      --card-bg: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.8s ease-in-out;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      display: grid;
+      gap: 2rem;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    main a {
+      text-decoration: none;
+    }
+
+    .post {
+      background-color: var(--card-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .post h2 {
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+
+    .post p {
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>情報収集</h1>
+    <p>読書感想文>>工場日記>>総評</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">戻る</a>
+  </nav>
+
+  <main class="wrap" id="a-wrap">
+        <div class="post">
+            <h2>総評</h2>
+
+            <p>作品概要</p><br>
+            <p>『工場日記』は、フランスの実存的思想家シモーヌ・ヴェイユが1934年から1935年にかけて実際に工場労働者として働いた体験を記録した貴重な文献である。哲学教師の職を辞し、25歳の若さでアルストン、ルノーなどの工場で女工として働いた彼女の生々しい記録は、20世紀の労働哲学における重要な証言となっている。</p><br><br>
+
+            <p>内容の特徴</p><br>
+            <p>本書の最も印象的な特徴は、その徹底的なリアリズムにある。ヴェイユは工場での日々を詳細に記録し、作業内容から賃金、同僚との関係、身体的疲労まで包み隠さず描写している。</p><br>
+            <p>「月曜―火曜――ねじ、C4×16、鉄／4フラン50で5000個プラス賞金1フラン」といった具体的な作業記録から始まる文章は、工場労働の機械的で非人間的な側面を浮き彫りにする。しかし同時に、ヴェイユは単なる社会告発にとどまらず、労働の中に人間の尊厳と自由の可能性を見出そうとする深い思索を展開している。</p><br><br>
+
+            <p>哲学的意義</p><br>
+            <p>この作品の真価は、理論と実践の統合にある。ヴェイユは労働者の苦境を外側から観察するのではなく、自らその立場に身を置くことで、労働と人間性の関係について根本的な問いを投げかけている。工場の苛酷な環境の中で「全宇宙の実在性を身体で実感する」という彼女の体験は、後の神秘主義的思想の土台となった。</p><br><br>
+
+            <p>文体と構成</p><br>
+            <p>日記形式で書かれた本書は、学術的な論文とは異なる生々しさを持つ。断片的な記述の中に深い洞察が散りばめられており、読者は工場労働の現実と哲学的思索の両方を同時に体験することになる。文体は簡潔で力強く、無駄のない文章の中に強い意志と知性が感じられる。</p><br><br>
+
+            <p>現代的意義</p><br>
+            <p>現代においても、この作品が持つ意義は色褪せない。グローバル化した現代社会において、労働の疎外や機械化による人間性の問題は依然として重要なテーマである。AIやロボットが普及する現代だからこそ、人間の労働の意味と価値について考察したヴェイユの視点は新たな意味を持つ。</p><br><br>
+
+            <p>読書体験</p><br>
+            <p>本書を読むことは決して快適な体験ではない。工場労働の過酷さが容赦なく描かれ、読者もまた疲労感を覚える。しかし、その中に希望の光を見出そうとするヴェイユの姿勢に、人間の尊厳と可能性への深い信頼を感じることができる。</p><br><br>
+
+            <p>推奨読者</p><br>
+            <p>この作品は特に以下のような読者に推奨したい：</p><br>
+            <p>労働哲学や社会思想に興味のある人</p>
+            <p>実存主義や20世紀フランス思想の研究者</p>
+            <p>現代の労働問題について深く考えたい人</p>
+            <p>理論と実践の統合について学びたい人</p><br><br>
+
+            <p>総評</p><br>
+            <p>『工場日記』は、20世紀思想史における貴重な文献であると同時に、現代にも通じる普遍的な問題を提起する重要な作品である。ヴェイユの勇気ある実践と深い思索は、読者に労働と人間性について根本的に考え直すきっかけを与えてくれる。哲学書としても社会記録としても価値の高い、一読の価値ある作品と言える。</p>
+        </div>
+  </main>
+
+  <footer>
+    &copy; 2025 HIMAORG/ひまおーぐ. All rights reserved.
+  </footer>
+
+  <script>
+    // JavaScriptによるインタラクション（例: ページロード時アニメーション）
+    document.addEventListener('DOMContentLoaded', () => {
+      document.body.style.opacity = '1';
+    });
+
+        const navItems = document.querySelectorAll('.nav');
+        const wraps = document.querySelectorAll('.wrap');
+    
+        navItems.forEach(nav => {
+            nav.addEventListener('click', (e) => {
+                e.preventDefault(); // aタグのリンク動作を無効化
+                const targetId = nav.getAttribute('data-target');
+    
+                // 全て非表示にする
+                wraps.forEach(v => v.style.display = 'none');
+    
+                // 対象だけ表示
+                const targetwrap = document.getElementById(targetId);
+                if (targetwrap) {
+                    targetwrap.style.display = 'grid';
+                }
+            });
+        });
+
+  </script>
+</body>
+</html>
