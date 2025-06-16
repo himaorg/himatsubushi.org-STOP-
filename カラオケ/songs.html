@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>曲一覧 - カラオケステーション</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #f0f0f0;
+    }
+    header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .song {
+      padding: 1rem;
+      border-bottom: 1px solid #ddd;
+    }
+    .song:last-child {
+      border-bottom: none;
+    }
+    .song-title {
+      font-size: 1.2rem;
+      margin: 0 0 0.2rem 0;
+    }
+    .song-artist {
+      color: #555;
+    }
+    .play-button {
+      margin-top: 0.5rem;
+      display: inline-block;
+      background: #ff5e62;
+      color: white;
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>カラオケステーション</h1>
+    <nav>
+      <a href="./index.html">ホーム</a>
+      <a href="#">曲一覧</a>
+      <a href="mypage.html">マイページ</a>
+      <a href="#">ログイン</a>
+      <a href="./dev-memo.md">開発者メモ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>曲一覧</h2>
+
+    <div class="song">
+      <p class="song-title">桜の記憶</p>
+      <p class="song-artist">ひまつぶしバンド</p>
+      <a class="play-button" href="player.html?id=1">歌う ▶</a>
+    </div>
+
+    <div class="song">
+      <p class="song-title">夜空のメロディー</p>
+      <p class="song-artist">YoruStar</p>
+      <a class="play-button" href="player.html?id=2">歌う ▶</a>
+    </div>
+
+    <div class="song">
+      <p class="song-title">未来へのドア</p>
+      <p class="song-artist">未来音楽団</p>
+      <a class="play-button" href="player.html?id=3">歌う ▶</a>
+    </div>
+  </div>
+</body>
+</html>

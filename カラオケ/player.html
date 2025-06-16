@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プレイヤー - カラオケステーション</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #f8f8f8;
+    }
+    header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+    audio {
+      width: 100%;
+      margin: 1rem 0;
+    }
+    .lyrics {
+      margin-top: 2rem;
+    }
+    .line {
+      margin-bottom: 1rem;
+    }
+    .lyric-text {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+    .note {
+      width: 100%;
+      padding: 0.4rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>カラオケステーション</h1>
+    <nav>
+      <a href="./index.html">ホーム</a>
+      <a href="./songs.html">曲一覧</a>
+      <a href="#">マイページ</a>
+      <a href="#">ログイン</a>
+      <a href="./dev-memo.md">開発者メモ</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>夜空のメロディー - YoruStar</h2>
+
+    <audio controls>
+      <source src="audio/yozora.mp3" type="audio/mp3">
+      このブラウザはオーディオ再生に対応していません。
+    </audio>
+
+    <div class="lyrics">
+      <div class="line">
+        <div class="lyric-text">夜空に響く あのメロディー</div>
+        <textarea class="note" placeholder="memo"></textarea>
+      </div>
+      <div class="line">
+        <div class="lyric-text">心に染みる 君の声</div>
+        <textarea class="note" placeholder="memo"></textarea>
+      </div>
+      <div class="line">
+        <div class="lyric-text">重ねた願い 星に託して</div>
+        <textarea class="note" placeholder="memo"></textarea>
+      </div>
+      <div class="line">
+        <div class="lyric-text">今ここから 歌い始めよう</div>
+        <textarea class="note" placeholder="memo"></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
