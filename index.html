@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HIMAORG ひまおーぐ</title>
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#2196f3">
   <style>
     * {
       box-sizing: border-box;
@@ -95,6 +97,7 @@
         <div id="img-6" class="grid-item" onclick="url_5()">カラオケ</div>
         <div id="img-7" class="grid-item" onclick="url_6()">journaling</div>
         <div id="img-8" class="grid-item" onclick="url_7()">同人サークル</div>
+        <div id="img-8" class="grid-item" onclick="url_8()">アプリ一覧</div>
       </div>
 
   <script>
@@ -118,6 +121,16 @@
     }
     function url_7 () {
       window.location.href = "./同人サークル/index.html";
+    }
+    function url_8 () {
+      window.location.href = "./app-install/index.html";
+    }
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker registered:', reg))
+        .catch(err => console.error('Service Worker registration failed:', err));
     }
   </script>
 </body>
