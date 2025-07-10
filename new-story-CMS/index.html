@@ -1,155 +1,121 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>物語CMS</title>
-    <style>
-        #img-1{
-            position:absolute;
-            margin: 0;
-            padding: 0;
-            width: 50%;
-            height: 99vh;
-            top: 0;
-            left: 0;
-            background-image: url(../images/社会.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            z-index: -1;
-        }
-        #img-2{
-            position:absolute;
-            margin: 0;
-            padding: 0;
-            width: 50%;
-            height: 99vh;
-            top: 0;
-            left: 50%;
-            background-color: #e87026;
-        }
-        #text-1{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            top: 35vh;
-            left: 8%;
-            font-size: 7em;
-            color: firebrick;
-        }
-        #text-2{
-            position: absolute;
-            top: 10vh;
-            left: 30%;
-            font-size: 3em;
-            color: white;
-        }
-        #text-3{
-            position: absolute;
-            margin: 0;
-            padding: 0;
-            font-size: 2em;
-            color: white;
-            width: 100%;
-            height: 75vh;
-            top: 25vh;
-            left: 30%;
-        }
-        #text-3 li{
-            list-style: none;
-            margin-bottom: 1em;
-            border-bottom: 0.05em solid #ccc;
-            width: 44.5%;
-            cursor: pointer;
-        }
-        #text-3 li:hover{
-            background-color: #010101;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>物語CMS | HIMAORG ひまおーぐ</title>
+  <meta name="theme-color" content="#2196f3">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        @media screen and (max-width: 768px) {
-            #img-1 {
-                position: absolute;
-                width: 100%;
-                height: 50vh;
-                top: 0;
-                left: 0;
-                background-size: cover;
-            }
-            
-            #img-2{
-                position: absolute;
-                width: 100%;
-                height: 100vh;
-                top: 0;
-                left: 0;
-                background-size: cover;
-            }
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
 
-            #text-1 {
-                top: 0vh;
-                left: 5%;
-                font-size: 4em;
-            }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
-            #text-2 {
-                top: 5vh;
-                left: 5%;
-                font-size: 2.5em;
-            }
+    .left-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
 
-            #text-3 {
-                top: 20vh;
-                left: 5%;
-                width: 90%;
-                font-size: 1.5em;
-                height: auto;
-            }
+    .left-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-            #text-3 li {
-                width: 100%;
-                font-size: 1.2em;
-                text-align: center;
-            }
-        }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
 
-    </style>
+    .grid-item {
+      flex: 1 0 50%;
+      height: 33vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+    #img-2 { background-color: #73c2ca; }
+    #img-3 { background-color: #e07690; }
+    #img-4 { background-color: #9722f9; }
+    #img-5 { background-color: #e7ab4e; }
+    #img-6 { background-color: #5d00b3; }
+    #img-7 { background-color: #f1df55; }
+    #img-8 { background-color: #55f16f; }
+
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+
+      .left-img {
+        flex: 0 0 38.7%;
+        max-width: 38.7%;
+      }
+
+      .right {
+        flex: 1;
+      }
+
+      .grid-item {
+        flex: 1 0 50%;
+        font-size: 3em;
+      }
+
+    }
+  </style>
 </head>
 <body>
-    <div id="img-1"></div>
-    <div id="text-1">物語CMS</div>
-
-    <div id="img-2">
-        <div id="text-2">小説家になる</div>
-        <ul id="text-3">
-            <li onclick="url_1()">01.読書感想文</li>
-            <li onclick="url_2()">02.考える</li>
-            <li onclick="url_3()">03.プロットを書く</li>
-            <li onclick="url_4()">04.本文を執筆する</li>
-            <li onclick="url_5()">05.投稿する</li>
-            <li onclick="url_6()">06.閲覧する</li>
-        </ul>
+  <div class="container">
+    <div class="left-img">
+      <img src="../new-images/ホームページ.png" alt="">
     </div>
+    <div class="right">
+      <div class="grid">
+        <div id="img-2" class="grid-item" onclick="url_1()">01.読書感想文</div>
+        <div id="img-3" class="grid-item" onclick="url_2()">02.考える</div>
+        <div id="img-4" class="grid-item" onclick="url_3()">03.プロットを書く</div>
+        <div id="img-5" class="grid-item" onclick="url_4()">04.本文を書く</div>
+        <div id="img-6" class="grid-item" onclick="url_5()">05.投稿する</div>
+        <div id="img-7" class="grid-item" onclick="url_6()">06.閲覧する</div>
+      </div>
 
-    <script>
-        function url_1 () {
-            window.location.href = "./01.読書感想文/index.html";
-        }
-        function url_2 () {
-            window.location.href = "./02.考える/index.html";
-        }
-        function url_3 () {
-            window.location.href = "./03.プロットを書く/index.html";
-        }
-        function url_4 () {
-            window.location.href = "./04.本文を執筆する/index.html";
-        }
-        function url_5 () {
-            window.location.href = "./05.投稿する/index.html";
-        }
-        function url_6 () {
-            window.location.href = "./06.閲覧する/index.html";
-        }
-    </script>
+  <script>
+    function url_1 () {
+      window.location.href = "./01.読書感想文/index.html";
+    }
+    function url_2 () {
+      window.location.href = "./02.考える/index.html";
+    }
+    function url_3 () {
+      window.location.href = "./03.プロットを書く/index.html";
+    }
+    function url_4 () {
+      window.location.href = "./04.本文を執筆する/index.html";
+    }
+    function url_5 () {
+      window.location.href = "./05.投稿する/index.html";
+    }
+    function url_6 () {
+      window.location.href = "./閲覧する/index.html";
+    }
+  </script>
 </body>
 </html>

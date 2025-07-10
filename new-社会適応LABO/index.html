@@ -3,235 +3,131 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>社会適応LABO</title>
+  <title>HIMAORG ひまおーぐ</title>
+  <meta name="theme-color" content="#2196f3">
   <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
     }
 
-    #img-1 {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 65%;
-        height: 97vh;
-        background-color: blue;
-        border-top-right-radius: 50%;
-        border-bottom-right-radius: 50%;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
     }
 
-    #img-2 {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        width: 40%;
-        height: 97vh;
-        left: 66%;
-        background-image: url(../new-images/社会.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        border-radius: 100%;
+    .left-img {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
 
-    #text-1 {
-        position: absolute;
-        width: 60%;
-        height: 50vh;
-        top: 28vh;
-        left: 15%;
-        font-size: 8em;
-        color: white;
+    .left-img img {
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
-    #text-2 {
-        position: absolute;
-        width: 60%;
-        height: 50vh;
-        top: 100vh;
-        left: 5%;
-        font-size: 5em;
-        color: white;
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
-    #img-3 {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        top: 100vh;
-        width: 100%;
-        height: 97vh;
-        background-color: rgb(53, 161, 255);
-        z-index: -1;
+    .grid-item {
+      flex: 1 0 50%;
+      height: 33vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
     }
 
-    #wrap-1 {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        top: 120vh;
-        left: 10%;
-        width: 80%;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2em;
+    #img-2 { background-color: #73c2ca; }
+    #img-3 { background-color: #e07690; }
+    #img-4 { background-color: #9722f9; }
+    #img-5 { background-color: #e7ab4e; }
+    #img-6 { background-color: #5d00b3; }
+    #img-7 { background-color: #f1df55; }
+    #img-8 { background-color: #55f16f; }
+
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+
+      .left-img {
+        flex: 0 0 38.7%;
+        max-width: 38.7%;
+      }
+
+      .right {
+        flex: 1;
+      }
+
+      .grid-item {
+        flex: 1 0 50%;
+        font-size: 3em;
+      }
+
     }
-
-    #wrap-1 li {
-        list-style: none;
-        width: 22%;
-    }
-
-    #wrap-1 li img {
-        width: 100%;
-    }
-
-    a {
-          text-decoration: none;
-          color: #000000;
-        }
-
-
-    @media (max-width: 768px) {
-        #img-1 {
-            width: 100%;
-            height: 30vh;
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-            border-bottom-left-radius: 50%;
-            border-bottom-right-radius: 50%;
-        }
-
-        #img-2 {
-            width: 60%;
-            height: 60vh;
-            left: 20%;
-            top: 0;
-        }
-
-        #text-1 {
-            width: 90%;
-            top: 0vh;
-            left: 5%;
-            font-size: 4em;
-            text-align: center;
-        }
-
-        #img-3 {
-            top: 30vh;
-            height: 20vh;
-        }
-
-        #text-2 {
-            top: 35vh;
-            font-size: 3em;
-            width: 90%;
-            left: 5%;
-            text-align: center;
-        }
-
-        #wrap-1 {
-            position: absolute;
-            top: 50vh;
-            left: 5%;
-            width: 90%;
-            gap: 1em;
-            justify-content: center;
-        }
-
-        #wrap-1 li {
-            width: 45%;
-        }
-    }
-</style>
+  </style>
 </head>
 <body>
-  <div id="img-1"></div>
-  <!-- <div id="img-2"></div> -->
-  <div id="text-1">社会適応<br>LABO</div>
-  <div id="text-2">コース概要</div>
-  <div id="img-3"></div>
+  <div class="container">
+    <div class="left-img">
+      <img src="../new-images/ホームページ.png" alt="">
+    </div>
+    <div class="right">
+      <div class="grid">
+        <div id="img-2" class="grid-item" onclick="url_1()">童貞卒業する</div>
+        <div id="img-3" class="grid-item" onclick="url_2()">低賃金卒業する</div>
+        <div id="img-4" class="grid-item" onclick="url_3()">コミュ障卒業する</div>
+        <div id="img-5" class="grid-item" onclick="url_4()">高校卒業程度認定試験に合格する</div>
+        <div id="img-6" class="grid-item" onclick="url_5()">料理上達させる</div>
+        <div id="img-7" class="grid-item" onclick="url_6()">ビジネス始める</div>
+        <div id="img-8" class="grid-item" onclick="url_7()">高橋留美子のキャラクターを描く</div>
+        <div id="img-8" class="grid-item" onclick="url_8()">基本情報技術者試験に合格する</div>
+        <div id="img-8" class="grid-item" onclick="url_9()">管理栄養士試験に合格する</div>
+      </div>
 
-  <ul id="wrap-1">
-    <li>
-      <a href="./童貞を卒業するコース/index.html">
-        <img src="./童貞を卒業するコース/videos/01.png" alt="">
-        <div>童貞を卒業するコース</div>
-        <div>恋愛市場における価値を高める</div>
-      </a>
-    </li>
-    <li>
-      <a href="./最低賃金から脱出するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>最低賃金から脱出するコース</div>
-        <div>労働市場における価値を高める</div>
-      </a>
-    </li>
-    <li>
-      <a href="./コミュ障を治療するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>コミュ障を治療するコース</div>
-        <div>人間関係構築における技術的課題を解決する</div>
-      </a>
-    </li>
-    <li>
-      <a href="./中卒が高認試験に合格して放送大学に入学するコース/index.html">
-        <img src="./中卒が高認試験に合格して放送大学に入学するコース/videos/01.gif" alt="">
-        <div>中卒が高認試験に合格して放送大学に入学するコース</div>
-        <div>最低限の学歴を獲得する</div>
-      </a>
-    </li>
-    <li>
-      <a href="./料理をするコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>料理をするコース</div>
-        <div>自炊をして節約する</div>
-      </a>
-    </li>
-    <li>
-      <a href="./貿易をするコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>貿易をするコース</div>
-        <div>産業活動で有利なポジションに立つ</div>
-      </a>
-    </li>
-    <li>
-      <a href="./心の理論について検討するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>心の理論について検討するコース</div>
-        <div>効率的に人間関係を構築する</div>
-      </a>
-    </li>
-    <li>
-      <a href="./購入するべきものとそうではないものを検討するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>購入するべきものとそうではないものを検討するコース</div>
-        <div>買い物上手になる</div>
-      </a>
-    </li>
-    <li>
-      <a href="./高橋留美子さんのような絵を描くコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>高橋留美子さんのような絵を描くコース</div>
-        <div>あの絵柄が好きだから真似したいと思う</div>
-      </a>
-    </li>
-    <li>
-      <a href="./基本情報技術者試験に合格するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>基本情報技術者試験に合格するコース</div>
-        <div>ITエンジニアになる</div>
-      </a>
-    </li>
-    <li>
-      <a href="./管理栄養士試験に合格するコース/index.html">
-        <img src="../new-images/社会.png" alt="">
-        <div>管理栄養士試験に合格するコース</div>
-        <div>管理栄養士になる</div>
-      </a>
-    </li>
-  </ul>
+  <script>
+    function url_1 () {
+      window.location.href = "./童貞を卒業するコース/index.html";
+    }
+    function url_2 () {
+      window.location.href = "./最低賃金から脱出するコース/index.html";
+    }
+    function url_3 () {
+      window.location.href = "./コミュ障を治療するコース/index.html";
+    }
+    function url_4 () {
+      window.location.href = "./中卒が高認試験に合格して放送大学に入学するコース/index.html";
+    }
+    function url_5 () {
+      window.location.href = "./料理をするコース/index.html";
+    }
+    function url_6 () {
+      window.location.href = "./貿易をするコース/index.html";
+    }
+    function url_7 () {
+      window.location.href = "./高橋留美子さんのような絵を描くコース/index.html";
+    }
+    function url_8 () {
+      window.location.href = "./基本情報技術者試験に合格するコース/index.html";
+    }
+    function url_9 () {
+      window.location.href = "./管理栄養士試験に合格するコース/index.html";
+    }
+  </script>
 </body>
 </html>

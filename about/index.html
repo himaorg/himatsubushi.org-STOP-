@@ -3,87 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#222222">
-  <title>HIMAORG</title>
-  <link rel="manifest" href="/manifest.json">
-  <link rel="stylesheet" href="./style.css">
-  <script defer src="./script.js"></script>
+  <title>About | HIMAORG ひまおーぐ</title>
+  <meta name="theme-color" content="#2196f3">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .left-img {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .left-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .grid-item {
+      flex: 1 0 50%;
+      height: 33vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      cursor: pointer;
+    }
+
+    #img-2 { background-color: #73c2ca; }
+    #img-3 { background-color: #e07690; }
+    #img-4 { background-color: #9722f9; }
+    #img-5 { background-color: #e7ab4e; }
+    #img-6 { background-color: #5d00b3; }
+    #img-7 { background-color: #f1df55; }
+    #img-8 { background-color: #55f16f; }
+
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+      }
+
+      .left-img {
+        flex: 0 0 38.7%;
+        max-width: 38.7%;
+      }
+
+      .right {
+        flex: 1;
+      }
+
+      .grid-item {
+        flex: 1 0 50%;
+        font-size: 3em;
+      }
+
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>HIMAORG（ひまおーぐ）</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">ホーム [提供サービス, 開発者紹介, お問い合わせ]</a></li>
-        <li><a href="./privacy.html">プライバシーポリシー</a></li>
-        <li><a href="./terms.html">利用規約</a></li>
-        <li><a href="./law.html">特商法の記載</a></li>
-        <li><a href="./disclaimer.html">免責事項</a></li>
-        <li><a href="./faq.html">よくある質問</a></li>
-        <li><a href="./mission.html">ミッション</a></li>
-        <li><a href="./news.html">ニュース</a></li>
-        <li><a href="./sitemap.html">サイトマップ</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="home">
-      <h2>HIMAORGへようこそ</h2>
-      <p>HIMAORGは、三宅脩翔が開発した、生きづらい現代社会を乗り越えるためのウェブサービス群です。</p>
-      <p>物事を達成する導線を提供します。</p>
-      <p>自分が消費しているものの作る側に回ることに注力します。</p>
-    </section>
-
-    <section id="services">
-      <h2>提供サービス</h2>
-
-      <article>
-        <h3><a href="../new-stranded-workers/index.html">Stranded Workers</a></h3>
-        <p>仕事を受けたい人と、仕事を発注したい人が出会う場所です。フリーランス、個人、少人数チームを応援します。</p>
-      </article>
-
-      <article>
-        <h3><a href="../new-社会適応LABO/index.html">社会適応LABO</a></h3>
-        <ul>
-          <li>童貞を卒業するコース</li>
-          <li>最低賃金から脱出するコース</li>
-          <li>高認合格→放送大学入学コース</li>
-        </ul>
-        <p>社会に適応できず悩む人に、具体的な行動支援を提供します。</p>
-      </article>
-
-      <article>
-        <h3><a href="../new-story-CMS/index.html">物語CMS</a></h3>
-        <p>物語制作のすべてをこのサイトで完結。考案、執筆、投稿、宣伝、販売、購読のプロセスを統合。</p>
-      </article>
-    </section>
-
-    <section id="about">
-      <h2>開発者 三宅脩翔</h2>
-      <p>私は、社会に適応できず苦しむ人のために、役立つ仕組みと場をつくりたいと考えています。プログラミングと物語制作の力で、「誰でも参加できる新しい社会」を提案します。</p>
-    </section>
-
-    <section id="contact">
-      <h2>お問い合わせ</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="お名前" required>
-        <input type="email" name="email" placeholder="メールアドレス" required>
-        <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
-        <button type="submit">送信</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 HIMAORG / 三宅脩翔. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <div class="left-img">
+      <img src="../new-images/ホームページ.png" alt="">
+    </div>
+    <div class="right">
+      <div class="grid">
+        <div id="img-2" class="grid-item" onclick="url_1()">プライバシーポリシー</div>
+        <div id="img-3" class="grid-item" onclick="url_2()">利用規約</div>
+        <div id="img-4" class="grid-item" onclick="url_3()">特商法の記載</div>
+        <div id="img-5" class="grid-item" onclick="url_4()">免責事項</div>
+        <div id="img-6" class="grid-item" onclick="url_5()">よくある質問</div>
+        <div id="img-7" class="grid-item" onclick="url_6()">ミッション</div>
+        <div id="img-8" class="grid-item" onclick="url_7()">ニュース</div>
+        <div id="img-8" class="grid-item" onclick="url_8()">サイトマップ</div>
+      </div>
 
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('Service Worker 登録成功:', reg))
-        .catch(err => console.error('SW登録失敗:', err));
+    function url_1 () {
+      window.location.href = "./privacy.html";
+    }
+    function url_2 () {
+      window.location.href = "./terms.html";
+    }
+    function url_3 () {
+      window.location.href = "./law.html";
+    }
+    function url_4 () {
+      window.location.href = "./disclaimer.html";
+    }
+    function url_5 () {
+      window.location.href = "./faq.html";
+    }
+    function url_6 () {
+      window.location.href = "./mission.html";
+    }
+    function url_7 () {
+      window.location.href = "./news.html";
+    }
+    function url_8 () {
+      window.location.href = "./sitemap.html";
     }
   </script>
 </body>

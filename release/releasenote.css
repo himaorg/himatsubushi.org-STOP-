@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main1{
+    width: 100%;
+    height: 100%;
+    color: #d7bc61;
+    display: grid;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    }
+    
+#main1-background{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #272727;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+
+
+#release-note{
+    padding-top: 150px;
+    padding-left: 35%;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* ボタン */
+#release-note-button{
+    display: flex;
+	position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #0e397b;
+    /* 文字の色 */
+    color: #d7bc61;
+    border: none;
+    /* ボタンを大きくする */
+    padding: 20px 40px;
+    /* ボーダーを下に付ける */
+    border-bottom: 7px solid #0f2547;
+    box-shadow: 0px 3px 4px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 23px;
+    /* ホバーの処理を0.2sかけて行う */
+    transition: all 0.2s;
+}    
+
+#release-note-button:hover{
+    /* 上に5px空ける */
+    margin-top: 5px;
+    /* ボーダーの太さを再設定することで、ボタンっぽくなる */
+    border-bottom: 1px solid #0e397b;
+}
+
+
+
+.release-note-report h1{
+    font: size 1.3rem;
+    margin: 20px 0px;
+}
+
+.release-note-report p{
+    padding: 5px 25px;
+}
+
+.create-note-report h1{
+    font: size 1.3rem;
+    margin: 20px 0px;
+}
+
+
+.update-frame
+{
+	height: 250px;
+	overflow: auto;
+	overflow-x: hidden;
+	padding-right: 10px;
+	box-sizing: border-box;
+}
+.update-frame dl
+{
+	border-bottom: 2px dotted #FFCC00;
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+}
+.update-frame dt
+{
+	float: left;
+	color: #F60;
+	width: 7em;
+}
+.update-frame dd
+{
+	margin: 0px 0px 0px 7em;
+	color: #cccccc;
+}
+.update-frame dd.modalBtn
+{
+	margin: 0px 0px 0px 7em;
+	color: #739dfa;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+/* モーダルウィンドウのスタイル */
+.modal {
+    display: none; /* 初期状態では非表示 */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* 透明度を設定 */
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* モーダルコンテンツのスタイル */
+  .modal-content {
+    color: #141111;
+    background-color: #eed23f;
+    margin-top: 50px;
+    margin-left: 35.5%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    height: 80%;
+    word-wrap: break-word;
+  }
+
+  .modalBtn {
+    /* 以下のプロパティを設定して、overflowが表示されるようにします */
+    overflow: auto;
+    /* 高さを固定したい場合、適切な値を指定します */
+    max-height: 100px; /* 例: 300px */
+    cursor: pointer;
+}
