@@ -4,126 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HIMAORG ひまおーぐ</title>
-  <meta name="theme-color" content="#2196f3">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    :root {
+      --bg-gradient: linear-gradient(135deg, #121212, #1a1a1a);
+      --link-bg: rgba(255,255,255,0.1);
+      --link-hover-bg: rgba(255,255,255,0.2);
+      --text-color: #e0e0e0;
+      --hover-shadow-color: rgba(229,46,113,0.7);
+      --loader-bg: #121212;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    html,body{width:100%;height:100%;overflow:hidden;}
+    body{font-family:'Poppins',sans-serif;color:var(--text-color);background:var(--bg-gradient);}
+
+    /* Loading Screen */
+    #loading-screen{
+      position:fixed;top:0;left:0;width:100%;height:100%;
+      background:var(--loader-bg);display:flex;align-items:center;justify-content:center;
+      z-index:1000;transition:opacity .6s ease,visibility .6s ease;
+    }
+    #loading-screen.loaded{opacity:0;visibility:hidden;}
+    .spinner{
+      border:8px solid #f3f3f3;border-top:8px solid #e52e71;
+      border-radius:50%;width:60px;height:60px;
+      animation:spin 1s linear infinite;
+    }
+    @keyframes spin{0%{transform:rotate(0deg);}100%{transform:rotate(360deg);}}
+
+    /* Background Sway */
+    @keyframes sway{0%{transform:translate(0,0) rotate(0);}25%{transform:translate(10px,-10px) rotate(1deg);}50%{transform:translate(0,0) rotate(0);}75%{transform:translate(-10px,10px) rotate(-1deg);}100%{transform:translate(0,0) rotate(0);}}
+    .wrapper{position:relative;width:100%;height:100%;display:flex;align-items:center;justify-content:center;animation:sway 20s ease-in-out infinite;}
+    .wrapper::before{
+      content:"HIMAORG";position:absolute;top:50%;left:50%;
+      transform:translate(-50%,-50%) rotate(-45deg);
+      font-size:20vw;font-family:'Poppins',sans-serif;font-weight:900;
+      color:rgba(255,255,255,0.05);pointer-events:none;white-space:nowrap;z-index:0;
     }
 
-    body {
-      font-family: sans-serif;
-      background-color: #111;
-      color: #fff;
+    /* Navigation */
+    .nav-container{position:relative;z-index:1;display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:20px;
+      width:80%;max-width:800px;
     }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
+    .nav-link{
+      display:block;padding:20px;text-align:center;text-decoration:none;
+      font-size:1.2rem;font-weight:600;color:var(--text-color);
+      background:var(--link-bg);border-radius:12px;transition:background .3s ease;
+      transform-origin:center;
     }
-
-    .left-img {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
-
-    .left-img img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-    }
-
-    .grid-item {
-      flex: 1 0 50%;
-      height: 33vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 2em;
-      cursor: pointer;
-    }
-
-    #img-2 { background-color: #73c2ca; }
-    #img-3 { background-color: #e07690; }
-    #img-4 { background-color: #9722f9; }
-    #img-5 { background-color: #e7ab4e; }
-    #img-6 { background-color: #5d00b3; }
-    #img-7 { background-color: #f1df55; }
-    #img-8 { background-color: #55f16f; }
-
-
-    @media (min-width: 768px) {
-      .container {
-        flex-direction: row;
-      }
-
-      .left-img {
-        flex: 0 0 38.7%;
-        max-width: 38.7%;
-      }
-
-      .right {
-        flex: 1;
-      }
-
-      .grid-item {
-        flex: 1 0 50%;
-        font-size: 3em;
-      }
-
-    }
+    @keyframes hoverPulse{0%{box-shadow:0 0 0 var(--hover-shadow-color);transform:scale(1);}50%{box-shadow:0 0 20px var(--hover-shadow-color);transform:scale(1.1);}100%{box-shadow:0 0 0 var(--hover-shadow-color);transform:scale(1);}}
+    .nav-link:hover{background:var(--link-hover-bg);animation:hoverPulse .6s ease-out both;}
+    @keyframes clickEffect{0%{transform:scale(1);opacity:1;}50%{transform:scale(0.85);opacity:0.8;}100%{transform:scale(1);opacity:1;}}
+    .nav-link:active{animation:clickEffect .3s ease-out both;}
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="left-img">
-      <img src="./new-images/ホームページ.png" alt="">
-    </div>
-    <div class="right">
-      <div class="grid">
-        <div id="img-2" class="grid-item" onclick="url_1()">About</div>
-        <div id="img-3" class="grid-item" onclick="url_2()">Udemy講座一覧</div>
-        <div id="img-4" class="grid-item" onclick="url_3()">物語制作組合に参加</div>
-        <div id="img-5" class="grid-item" onclick="url_4()">仕事してお金稼ぐ</div>
-        <div id="img-6" class="grid-item" onclick="url_5()">歌う</div>
-        <div id="img-7" class="grid-item" onclick="url_6()">開発者日記を読む</div>
-        <div id="img-8" class="grid-item" onclick="url_7()">同人サークルの求人票</div>
-        <div id="img-8" class="grid-item" onclick="url_8()">アプリ一覧</div>
-      </div>
-
+  <div id="loading-screen"><div class="spinner"></div></div>
+  <div class="wrapper">
+    <nav class="nav-container">
+      <a href="./about/index.html" class="nav-link">About</a>
+      <a href="./udemy/index.html" class="nav-link">Udemy講座</a>
+      <a href="./shosetsu/index.html" class="nav-link">小説家になろう</a>
+      <a href="./youtube/index.html" class="nav-link">YouTube</a>
+      <a href="./app-store/index.html" class="nav-link">アプリストア</a>
+      <a href="./kyuzin/index.html" class="nav-link">求人票</a>
+    </nav>
+  </div>
   <script>
-    function url_1 () {
-      window.location.href = "./about/index.html";
-    }
-    function url_2 () {
-      window.location.href = "./new-社会適応LABO/index.html";
-    }
-    function url_3 () {
-      window.location.href = "./new-story-CMS/index.html";
-    }
-    function url_4 () {
-      window.location.href = "./new-stranded-workers/index.html";
-    }
-    function url_5 () {
-      window.location.href = "./カラオケ/index.html";
-    }
-    function url_6 () {
-      window.location.href = "./journaling/index.html";
-    }
-    function url_7 () {
-      window.location.href = "./同人サークル/index.html";
-    }
-    function url_8 () {
-      window.location.href = "./app-install/index.html";
-    }
+    window.addEventListener('load', ()=>{
+      const loader=document.getElementById('loading-screen');
+      loader.classList.add('loaded');
+      setTimeout(()=>{loader.style.display='none';},600);
+    });
   </script>
 </body>
 </html>
