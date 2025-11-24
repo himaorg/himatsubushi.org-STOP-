@@ -1,0 +1,124 @@
+/* article.css または style.css への追記 */
+
+/* 記事全体のコンテナ */
+.blog-article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    line-height: 1.8; /* 本文の読みやすさを向上 */
+}
+
+/* 記事メタ情報（日時、カテゴリ、出典） */
+.article-meta {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed #eee;
+    padding-bottom: 10px;
+}
+
+.category-tag {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.source-link a {
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* 記事のメイン見出し */
+.article-headline {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+/* 記事本文 */
+.article-body {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.article-body p {
+    margin-bottom: 1em;
+}
+
+/* 本文中の小見出し */
+.article-body h3 {
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 4px solid #e74c3c; /* まとめサイトらしい色付け */
+    color: #e74c3c;
+}
+
+/* 引用（ブロッククォート） */
+.article-body blockquote {
+    background-color: #f0f0f0;
+    border-left: 5px solid #bdc3c7;
+    padding: 15px 20px;
+    margin: 15px 0;
+    font-style: italic;
+    color: #555;
+}
+
+/* 画像コンテナ */
+.article-image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-caption {
+    font-size: 13px;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* 関連記事エリア */
+.related-articles {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.related-articles h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.related-articles ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.related-articles a {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* コメントセクション（基本のスタイル） */
+.comment-section h3 {
+    font-size: 20px;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ddd;
+    color: #2c3e50;
+}
+
+/* レスポンシブ対応は、前回の `style.css` の `@media` クエリが引き続き適用されます。 */

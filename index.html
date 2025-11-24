@@ -1,489 +1,137 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件｜Official Site</title>
-  <meta name="description" content="小説『転生したらヒンドゥー教とマルクス主義に染まった異世界だった件』の公式サイト。最新情報、動画、キャラクター、グッズ、イベント情報をお届けします。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="転生したらヒンドゥー教とマルクス主義に染まった異世界だった件｜Official Site" />
-  <meta property="og:description" content="『転生したらヒンドゥー教とマルクス主義に染まった異世界だった件』公式ポータル。ニュース／動画／キャラクター／グッズ／イベント。" />
-  <meta property="og:image" content="/ogp.jpg" />
-  <meta name="theme-color" content="#6ab3ff" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;800&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0a0c12;
-      --panel: #0f1320;
-      --ink: #eaf3ff;
-      --sub: #9db7e5;
-      --brand: #79b8ff;
-      --brand-2: #a084ff;
-      --accent: #ffd166;
-      --blur: rgba(122, 170, 255, .15);
-      --border: rgba(255,255,255,.08);
-      --radius: 16px;
-      --radius-lg: 22px;
-      --shadow: 0 10px 30px rgba(0,10,40,.32);
-    }
-    * { box-sizing: border-box; }
-    html,body { height: 100%; }
-    body{
-      margin:0; background: radial-gradient(1200px 600px at 75% -10%, rgba(112,152,255,.25), transparent 60%),
-                 radial-gradient(900px 500px at 10% 10%, rgba(160,132,255,.25), transparent 60%),
-                 var(--bg);
-      color: var(--ink);
-      font-family: 'Noto Sans JP', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-      line-height: 1.75;
-      letter-spacing: .02em;
-      overflow-x: hidden;
-    }
-    a{ color:inherit; text-decoration: none; }
-    img{ max-width: 100%; height: auto; display:block; }
-    /* —— Layout —— */
-    .wrap{ width: min(1200px, 100% - 32px); margin: 0 auto; }
-    header.site{
-      position: sticky; top:0; z-index: 50;
-      backdrop-filter: saturate(140%) blur(10px);
-      background: linear-gradient(0deg, rgba(10,12,18,.55), rgba(10,12,18,.55));
-      border-bottom: 1px solid var(--border);
-    }
-    .nav{ display:flex; align-items:center; gap: 20px; padding: 12px 0; }
-    .brand{ display:flex; align-items:center; gap:12px; font-family: 'Outfit', sans-serif; }
-    .brand .logo{ width: 36px; height:36px; border-radius: 50%; background: linear-gradient(135deg, var(--brand), var(--brand-2)); box-shadow: 0 0 24px rgba(121,184,255,.65) inset, 0 0 30px rgba(160,132,255,.35); position: relative; }
-    .brand .logo:after{ content:""; position:absolute; inset:4px; border-radius:50%; background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.85), rgba(255,255,255,.08) 45%, transparent 65%); }
-    .brand b{ font-weight:800; letter-spacing:.03em; font-size: 1.05rem; width: 330px;}
-    .nav a{ opacity:.9; }
-    .nav .links{ margin-left:auto; display:flex; gap: 16px; flex-wrap: wrap; }
-    .nav .links a{ padding:8px 12px; border-radius: 999px; border:1px solid transparent; }
-    .nav .links a:hover{ border-color: var(--border); background: rgba(255,255,255,.04); }
-    .cta{ display:flex; align-items:center; gap:8px; padding:8px 14px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); border-radius:999px; box-shadow: var(--shadow); font-weight:700; }
-    .cta:hover{ transform: translateY(-1px); }
-
-    /* —— Hero —— */
-    .hero{ position: relative; isolation: isolate; }
-    #starfield{ position:absolute; inset:0; z-index:-1; }
-    .hero .wrap{ display:grid; grid-template-columns: 1.1fr .9fr; gap: 24px; padding: clamp(28px, 6vw, 80px) 0; align-items: center; }
-    .hero h1{ font-family: 'Outfit', sans-serif; font-weight:800; font-size: clamp(28px, 6vw, 64px); line-height:1.1; margin:0 0 10px; }
-    .hero p.lead{ color: var(--sub); margin: 0 0 16px; font-size: clamp(14px, 2.4vw, 18px); }
-    .badges{ display:flex; gap:12px; flex-wrap: wrap; margin: 14px 0 26px; }
-    .badge{ padding: 8px 12px; background: rgba(255,255,255,.06); border: 1px solid var(--border); border-radius: 999px; font-weight:600; font-size: .9rem; }
-    .hero .teaser{ aspect-ratio: 16/9; border-radius: var(--radius-lg); overflow:hidden; border:1px solid var(--border); background: #000; box-shadow: var(--shadow); }
-    .marquee{ white-space: nowrap; overflow:hidden; border-top:1px solid var(--border); border-bottom:1px solid var(--border); background: rgba(255,255,255,.02); }
-    .marquee span{ display:inline-block; padding: 10px 24px; letter-spacing:.08em; color: var(--sub); animation: scroll 22s linear infinite; }
-    @keyframes scroll{ from{ transform: translateX(0);} to{ transform: translateX(-50%);} }
-
-    /* —— Sections —— */
-    section{ padding: clamp(32px, 7vw, 72px) 0; }
-    h2.heading{ font-family:'Outfit', sans-serif; font-weight:800; letter-spacing:.02em; font-size: clamp(22px, 3.6vw, 36px); margin: 0 0 18px; }
-    p.section-lead{ color: var(--sub); margin-top: -6px; }
-
-    .cards{ display:grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
-    .card{ grid-column: span 4; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02)); border: 1px solid var(--border); border-radius: var(--radius); overflow:hidden; min-height: 240px; display:flex; flex-direction:column; }
-    .card .thumb{ aspect-ratio: 16/9; background: #111; border-bottom:1px solid var(--border); }
-    .card .body{ padding: 14px; display:flex; flex-direction:column; gap: 6px; }
-    .card .meta{ color: var(--sub); font-size:.85rem; }
-    .card .title{ font-weight:700; }
-    .card .actions{ margin-top: auto; display:flex; gap:10px; }
-    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 12px; border-radius: 12px; border: 1px solid var(--border); background: rgba(255,255,255,.03); }
-    .btn:hover{ background: rgba(255,255,255,.06); }
-    .btn.primary{ border-color: transparent; background: linear-gradient(135deg, var(--brand), var(--brand-2)); font-weight:700; }
-
-    /* —— Timeline —— */
-    .timeline{ display:grid; gap: 14px; }
-    .event{ display:grid; grid-template-columns: 120px 1fr; gap: 16px; align-items:flex-start; padding: 14px; border:1px solid var(--border); border-radius: var(--radius); background: rgba(255,255,255,.03); }
-    .event .date{ font-weight:700; color: var(--accent); }
-
-    /* —— Footer —— */
-    footer{ border-top: 1px solid var(--border); background: rgba(255,255,255,.02); }
-    .footgrid{ display:grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 24px; padding: 28px 0; }
-    .social{ display:flex; gap:10px; flex-wrap:wrap; }
-    .social a{ padding:8px 12px; border:1px solid var(--border); border-radius: 999px; background: rgba(255,255,255,.03); }
-
-    /* —— Responsive —— */
-    @media (max-width: 920px){
-      .hero .wrap{ grid-template-columns: 1fr; }
-      .card{ grid-column: span 6; }
-      .footgrid{ grid-template-columns: 1fr; }
-    }
-    @media (max-width: 640px){
-      .cards{ grid-template-columns: repeat(6, 1fr); }
-      .card{ grid-column: span 6; }
-      .event{ grid-template-columns: 1fr; }
-      .nav .links{ display:none; }
-    }
-  </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-  <!-- ===== Header / Global Nav ===== -->
-  <header class="site">
-    <div class="wrap nav">
-      <a class="brand" href="#">
-        <span class="logo" aria-hidden="true"></span>
-        <b>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件</b>
-      </a>
-      <nav class="links" aria-label="Primary">
-        <a href="#news">NEWS</a>
-        <a href="#characters">CHARACTERS</a>
-        <a href="#world">WORLD</a>
-        <a href="#merch">MERCH</a>
-        <a href="#events">EVENTS</a>
-      </nav>
-      <a class="cta" href="https://www.youtube.com/@himaorg-YT" target="_blank" rel="noopener">▶ 公式YouTube</a>
+    <div id="wrapper">
+        <header id="header">
+            <h1 class="site-title">
+                <a href="#">転生したらヒンドゥー教とマルクス主義に染まった異世界だった件</a>
+            </h1>
+            <nav class="main-nav">
+                <a href="#" class="nav-item active">新着</a>
+                <a href="#" class="nav-item">人気</a>
+                <a href="#" class="nav-item">おすすめ</a>
+            </nav>
+        </header>
+
+        <div id="container">
+            <main id="main-content">
+                <section class="article-list-section">
+                    <h2>新着記事一覧</h2>
+                    <ul class="article-list">
+                        <li class="article-item">
+                            <a href="./毎日ブロマガ/2025/11/20.html" class="article-link">
+                                <span class="article-title">
+                                    11月20日/毎日ブロマガ
+                                </span>
+                                <span class="source-site">[毎日ブロマガ]</span>
+                            </a>
+                            <span class="timestamp">2025/11/21</span>
+                        </li>
+
+                        <li class="article-item">
+                            <a href="./毎日ブロマガ/2025/11/19.html" class="article-link">
+                                <span class="article-title">
+                                    11月19日/毎日ブロマガ
+                                </span>
+                                <span class="source-site">[毎日ブロマガ]</span>
+                            </a>
+                            <span class="timestamp">2025/11/19</span>
+                        </li>
+
+                        <li class="article-item">
+                            <a href="./毎日ブロマガ/2025/11/18.html" class="article-link">
+                                <span class="article-title">
+                                    11月18日/毎日ブロマガ
+                                </span>
+                                <span class="source-site">[毎日ブロマガ]</span>
+                            </a>
+                            <span class="timestamp">2025/11/18</span>
+                        </li>
+                        
+                        <li class="article-item">
+                            <a href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/27184592/" class="article-link">
+                                <span class="article-title">
+                                    転生したらヒンドゥー教とマルクス主義に染まった異世界だった件、第三話投稿しました
+                                </span>
+                                <span class="source-site">[オリジナル小説]</span>
+                            </a>
+                            <span class="timestamp">2025/10/26</span>
+                        </li>
+                        
+                        <li class="article-item">
+                            <a href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/26461406/" class="article-link">
+                                <span class="article-title">
+                                    転生したらヒンドゥー教とマルクス主義に染まった異世界だった件、第二話改稿しました
+                                </span>
+                                <span class="source-site">[オリジナル小説]</span>
+                            </a>
+                            <span class="timestamp">2025/10/25</span>
+                        </li>
+
+                        <li class="article-item">
+                            <a href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/26386124/" class="article-link">
+                                <span class="article-title">
+                                    転生したらヒンドゥー教とマルクス主義に染まった異世界だった件、第一話を改稿しました
+                                </span>
+                                <span class="source-site">[オリジナル小説]</span>
+                            </a>
+                            <span class="timestamp">2025/10/25</span>
+                        </li>
+                        
+                        <li class="article-item">
+                            <a href="./数学/latex記法一覧.html" class="article-link">
+                                <span class="article-title">
+                                    latex記法一覧
+                                </span>
+                                <span class="source-site">[数学]</span>
+                            </a>
+                            <span class="timestamp">2025/10/24</span>
+                        </li>
+                        
+                        <li class="article-item">
+                            <a href="./サイト運営/HIMAORGは魔法少女ゆりな公式サイトとして生まれ変わりました.html" class="article-link">
+                                <span class="article-title">
+                                    HIMAORGは魔法少女ゆりな公式サイトとして生まれ変わりました
+                                </span>
+                                <span class="source-site">[サイト運営]</span>
+                            </a>
+                            <span class="timestamp">2025/10/24</span>
+                        </li>
+                        
+                    </ul>
+                </section>
+            </main>
+
+            <aside id="sidebar">
+                <div class="sidebar-block ranking-block">
+                    <h3>✅ 人気ランキング</h3>
+                    <ul>
+                        <li><a href="#">人気記事タイトル 1</a></li>
+                        <li><a href="#">人気記事タイトル 2</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-block category-block">
+                    <h3>📚 カテゴリ</h3>
+                    <ul>
+                        <li><a href="#">オリジナル小説</a></li>
+                        <li><a href="#">毎日ブロマガ</a></li>
+                        <li><a href="#">サイト運営</a></li>
+                        <li><a href="#">数学</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <footer id="footer">
+            <p>&copy; 2025 転生したらヒンドゥー教とマルクス主義に染まった異世界だった件</p>
+        </footer>
     </div>
-  </header>
-
-  <!-- ===== Hero ===== -->
-  <section class="hero">
-    <canvas id="starfield" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <div>
-        <h1>万国の労働者よ、<br/>団結せよ！</h1>
-        <p class="lead">『転生したらヒンドゥー教とマルクス主義に染まった異世界だった件』</p>
-        <div class="badges">
-          <span class="badge">ヒンドゥー教オタク</span>
-          <span class="badge">マルクス主義オタク</span>
-          <span class="badge">萌え系オタク</span>
-          <span class="badge">集まれ</span>
-        </div>
-        <div class="actions">
-          <a class="btn primary" href="#news">最新ニュース</a>
-        </div>
-      </div>
-      <div class="teaser">
-        <!-- ここに公式トレーラー(YouTube)を埋め込み -->
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/w5fBQD0fx_0?si=Jx_U1pwmDrIBqACa" title="YURINA Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="marquee" aria-hidden="true">
-      <span>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件公式サイト • 原作 • 派生作品 • 設定資料 • 商品紹介 </span>
-      <span>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件公式サイト • 原作 • 派生作品 • 設定資料 • 商品紹介 </span>
-    </div>
-  </section>
-
-  <!-- ===== NEWS ===== -->
-  <section id="news" class="wrap">
-    <h2 class="heading">NEWS</h2>
-    <p class="section-lead">全ての投稿物を新しい順に並べています。</p>
-    <div class="cards" id="news-list">
-      <!-- 例：ニュースカード -->
-      <article class="card">
-        <div class="thumb" style="background:url('childPage/journal/everyblomaga/images/11月テンプレート/11月テンプレート.004.jpeg') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-11-21</div>
-          <div class="title">11月21日/毎日ブロマガ</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/everyblomaga/11/21.html">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('childPage/journal/everyblomaga/images/11月テンプレート/11月テンプレート.003.jpeg') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-11-20</div>
-          <div class="title">11月20日/毎日ブロマガ</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/everyblomaga/11/20.html">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('./childPage/journal/everyblomaga/images/11月テンプレート/11月テンプレート.002.jpeg') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-11-19</div>
-          <div class="title">11月19日/毎日ブロマガ</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/everyblomaga/11/19.html">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('./childPage/journal/everyblomaga/images/11月テンプレート/11月テンプレート.001.jpeg') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-11-18</div>
-          <div class="title">11月18日/毎日ブロマガ</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/everyblomaga/11/18.html">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('./images/youtube/試作math.png') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-30</div>
-          <div class="title">高卒認定試験の動画投稿しました</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/youtube/1.html">観る</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('images/魔法少女ゆりなアイキャッチ/魔法少女ゆりな第三話.png') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-26</div>
-          <div class="title">第三話投稿しました</div>
-          <div class="actions">
-            <a class="btn" href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/27184592/">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('images/魔法少女ゆりなアイキャッチ/魔法少女ゆりな第二話.png') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-25</div>
-          <div class="title">第二話改稿しました</div>
-          <div class="actions">
-            <a class="btn" href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/26461406/">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('images/魔法少女ゆりなアイキャッチ/魔法少女ゆりな第一話.png') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-25</div>
-          <div class="title">第一話改稿しました</div>
-          <div class="actions">
-            <a class="btn" href="https://syosetu.com/usernoveldatamanage/top/ncode/2802723/noveldataid/26386124/">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/yurina1/800/450') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-24</div>
-          <div class="title">latex記法一覧</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/latex記法一覧.html">読む</a>
-          </div>
-        </div>
-      </article>
-      <article class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/yurina2/800/450') center/cover"></div>
-        <div class="body">
-          <div class="meta">2025-10-24</div>
-          <div class="title">公式サイト公開</div>
-          <div class="actions">
-            <a class="btn" href="./childPage/journal/公式サイト公開.html">読む</a>
-          </div>
-        </div>
-      </article>
-    </div>
-  </section>
-  
-  <!-- ===== CHARACTERS ===== -->
-  <section id="characters" class="wrap">
-    <h2 class="heading">CHARACTERS</h2>
-    <p class="section-lead">主要キャラクターのプロフィール。</p>
-    <div class="cards">
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/heroine/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">ゆりな</div>
-          <div class="meta">転生者</div>
-          <p>example</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/vishnu/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">ブラフマー</div>
-          <div class="meta">創造神</div>
-          <p>example</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/shiva/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">ヴィシュヌ</div>
-          <div class="meta">保守神</div>
-          <p>example</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/shiva/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">シヴァ</div>
-          <div class="meta">破壊神</div>
-          <p>example</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- ===== WORLD ===== -->
-  <section id="world" class="wrap">
-    <h2 class="heading">WORLD</h2>
-    <p class="section-lead">世界樹・72のplace・宗教とギルド・経済圏などの世界設定。</p>
-    <div class="timeline">
-      <div class="event"><div class="date">枝葉</div><div>パノプティコン研究所</div></div>
-      <div class="event"><div class="date">枝葉</div><div>ルベリオス</div></div>
-      <div class="event"><div class="date">枝葉</div><div>リベルタリア</div></div>
-      <div class="event"><div class="date">幹</div><div>マーダカ農園</div></div>
-      <div class="event"><div class="date">幹</div><div>デトロイト</div></div>
-      <div class="event"><div class="date">幹</div><div>樹脈採掘場</div></div>
-      <div class="event"><div class="date">幹</div><div>アウロラ造幣局</div></div>
-      <div class="event"><div class="date">幹</div><div>首都ドミニオン</div></div>
-      <div class="event"><div class="date">根</div><div>アトランティス</div></div>
-      <div class="event"><div class="date">根</div><div>首都メディアーナ</div></div>
-    </div>
-  </section>
-
-  <!-- ===== MERCH ===== -->
-  <section id="merch" class="wrap">
-    <h2 class="heading">MERCH</h2>
-    <p class="section-lead">coming soon</p>
-    <div class="cards">
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/mug/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">coming soon</div>
-          <div class="meta">coming soon</div>
-          <div class="actions">
-            <a class="btn" href="#">coming soon</a>
-            <a class="btn primary" href="#">coming soon</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/acrylic/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">coming soon</div>
-          <div class="meta">coming soon</div>
-          <div class="actions">
-            <a class="btn" href="#">coming soon</a>
-            <a class="btn primary" href="#">coming soon</a>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="thumb" style="background:url('https://picsum.photos/seed/tshirt/800/450') center/cover"></div>
-        <div class="body">
-          <div class="title">coming soon</div>
-          <div class="meta">coming soon</div>
-          <div class="actions">
-            <a class="btn" href="#">coming soon</a>
-            <a class="btn primary" href="#">coming soon</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== EVENTS ===== -->
-  <section id="events" class="wrap">
-    <h2 class="heading">EVENTS</h2>
-    <p class="section-lead">リアルタイムイベントの予定。</p>
-    <div class="timeline">
-      <div class="event"><div class="date">coming soon</div><div>coming soon</div></div>
-      <div class="event"><div class="date">coming soon</div><div>coming soon</div></div>
-      <div class="event"><div class="date">coming soon</div><div>coming soon</div></div>
-    </div>
-  </section>
-
-  <!-- ===== Newsletter ===== -->
-  <section aria-labelledby="newsletter" class="wrap">
-    <h2 id="newsletter" class="heading">coming soon</h2>
-    <p class="section-lead">coming soon</p>
-    <form class="card" onsubmit="event.preventDefault(); alert('ありがとうございます。登録が完了しました。');" style="grid-column: span 12; padding: 14px;">
-      <label for="email">coming soon</label>
-      <div style="display:flex; gap:10px; margin-top:8px; flex-wrap:wrap;">
-        <input id="email" type="email" required placeholder="you@example.com" style="flex:1; min-width: 240px; padding: 12px 14px; border-radius: 12px; border:1px solid var(--border); background: rgba(0,0,0,.3); color: var(--ink);">
-        <button class="btn primary" type="submit">coming soon</button>
-      </div>
-    </form>
-  </section>
-
-  <!-- ===== Footer ===== -->
-  <footer>
-    <div class="wrap footgrid">
-      <div>
-        <div class="brand"><span class="logo"></span><b>転生したらヒンドゥー教とマルクス主義に染まった異世界だった件</b></div>
-        <p style="color:var(--sub); margin-top:12px;">Copyright © 2025 Yurina Project</p>
-        <div class="social" style="margin-top:10px;">
-          <a href="https://x.com/himaorg3" target="_blank" rel="noopener">X / Twitter</a>
-          <a href="https://www.youtube.com/@himaorg-YT" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://discord.gg/Q6zRxdSRkP" target="_blank" rel="noopener">Discord</a>
-          <a href="./about/privacy.html">プライバシー</a>
-        </div>
-      </div>
-      <div>
-        <b>Sections</b>
-        <ul style="list-style:none; padding:0; margin:10px 0 0; color:var(--sub);">
-          <li><a href="#news">News</a></li>
-          <li><a href="#characters">Characters</a></li>
-          <li><a href="#world">World</a></li>
-          <li><a href="#merch">Merch</a></li>
-          <li><a href="#events">Events</a></li>
-        </ul>
-      </div>
-      <div>
-        <b>Contact</b>
-        <ul style="list-style:none; padding:0; margin:10px 0 0; color:var(--sub);">
-          <li>info@example.com</li>
-          <li>Business: biz@example.com</li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ===== JSON-LD ===== -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"転生したらヒンドゥー教とマルクス主義に染まった異世界だった件",
-    "url":"https://himatsubushi.org",
-    "sameAs":["https://x.com/himaorg3","https://www.youtube.com/@himaorg-YT"],
-    "logo":"https://himatsubushi.org/99.others/favicon/HIMAORG-Logo.png"
-  }
-  </script>
-
-  <!-- ===== Scripts ===== -->
-  <script>
-  // —— Starfield (軽量パーティクル) ——
-  const canvas = document.getElementById('starfield');
-  const ctx = canvas.getContext('2d');
-  let w, h, stars;
-  function resize(){ w = canvas.width = innerWidth; h = canvas.height = document.querySelector('.hero').offsetHeight; }
-  function init(){
-    resize();
-    stars = Array.from({length: Math.min(220, Math.floor(w/6))}, ()=>({
-      x: Math.random()*w,
-      y: Math.random()*h,
-      z: Math.random()*1+0.2,
-      r: Math.random()*1.4+0.2,
-      dx: (Math.random()*0.5+0.2),
-    }));
-    loop();
-  }
-  function loop(){
-    ctx.clearRect(0,0,w,h);
-    for(const s of stars){
-      ctx.globalAlpha = s.z;
-      ctx.fillStyle = '#cfe7ff';
-      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
-      s.x -= s.dx*s.z; if(s.x < -2){ s.x = w+2; s.y = Math.random()*h; }
-    }
-    requestAnimationFrame(loop);
-  }
-  addEventListener('resize', resize);
-  init();
-
-  // —— Smooth scroll for anchor links ——
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click', e=>{
-      const id = a.getAttribute('href');
-      if(id === '#' || id.length < 2) return;
-      const el = document.querySelector(id);
-      if(!el) return;
-      e.preventDefault();
-      window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 64, behavior: 'smooth' });
-    });
-  });
-  </script>
 </body>
 </html>
-
